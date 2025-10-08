@@ -1,0 +1,86 @@
+[
+  {
+    "id": "project-1",
+    "title": "Membuat Landing Page Sederhana",
+    "description": "Buat landing page untuk cafe menggunakan HTML dan CSS dasar. Latihan struktur HTML dan styling dengan CSS.",
+    "level": "Beginner",
+    "locked": false,
+    "requiredMaterials": [],
+    "tasks": [
+      "Buat struktur HTML dengan header, hero section, dan footer",
+      "Tambahkan styling dengan CSS",
+      "Gunakan flexbox untuk layout",
+      "Buat responsive dengan media query"
+    ]
+  },
+  {
+    "id": "project-2",
+    "title": "Portfolio Personal",
+    "description": "Buat website portfolio pribadi dengan section About, Skills, Projects, dan Contact.",
+    "level": "Beginner",
+    "locked": false,
+    "requiredMaterials": ["html-dasar", "css-dasar"],
+    "tasks": [
+      "Design layout portfolio dengan Figma/wireframe",
+      "Implementasi HTML untuk semua section",
+      "Styling dengan CSS dan animasi sederhana",
+      "Deploy ke GitHub Pages"
+    ]
+  },
+  {
+    "id": "project-3",
+    "title": "Calculator Interaktif",
+    "description": "Buat kalkulator sederhana dengan operasi dasar menggunakan JavaScript.",
+    "level": "Intermediate",
+    "locked": true,
+    "requiredMaterials": ["html-dasar", "css-dasar", "javascript-dasar"],
+    "tasks": [
+      "Buat UI kalkulator dengan HTML dan CSS",
+      "Implementasi logika operasi matematika",
+      "Tambahkan event listener untuk tombol",
+      "Handle error dan edge cases"
+    ]
+  },
+  {
+    "id": "project-4",
+    "title": "To-Do List App",
+    "description": "Aplikasi to-do list dengan fitur tambah, edit, hapus, dan tandai selesai.",
+    "level": "Intermediate",
+    "locked": true,
+    "requiredMaterials": ["html-dasar", "css-dasar", "javascript-dasar"],
+    "tasks": [
+      "Buat UI form input dan list",
+      "Implementasi CRUD operations",
+      "Simpan data di localStorage",
+      "Tambahkan filter (All, Active, Completed)"
+    ]
+  },
+  {
+    "id": "project-5",
+    "title": "Weather App dengan API",
+    "description": "Aplikasi cuaca yang menggunakan OpenWeatherMap API untuk menampilkan data cuaca real-time.",
+    "level": "Advanced",
+    "locked": true,
+    "requiredMaterials": ["html-dasar", "css-dasar", "javascript-dasar"],
+    "tasks": [
+      "Integrasi dengan OpenWeatherMap API",
+      "Tampilkan data cuaca dengan UI menarik",
+      "Implementasi search by city",
+      "Tambahkan error handling untuk API calls"
+    ]
+  },
+  {
+    "id": "project-6",
+    "title": "Mini E-Commerce",
+    "description": "Website e-commerce sederhana dengan katalog produk, keranjang belanja, dan checkout simulation.",
+    "level": "Advanced",
+    "locked": true,
+    "requiredMaterials": ["html-dasar", "css-dasar", "javascript-dasar"],
+    "tasks": [
+      "Buat halaman produk dengan grid layout",
+      "Implementasi shopping cart functionality",
+      "Tambahkan filter dan sorting produk",
+      "Buat checkout form dengan validasi"
+    ]
+  }
+]

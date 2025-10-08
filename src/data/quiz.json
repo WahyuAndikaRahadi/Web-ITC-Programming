@@ -1,0 +1,212 @@
+[
+  {
+    "id": "quiz-html",
+    "title": "Quiz HTML Dasar",
+    "topic": "HTML",
+    "description": "Uji pemahaman Anda tentang HTML dasar",
+    "locked": false,
+    "requiredMaterials": ["html-dasar"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa kepanjangan dari HTML?",
+        "options": [
+          "Hyper Text Markup Language",
+          "High Tech Modern Language",
+          "Home Tool Markup Language",
+          "Hyperlinks and Text Markup Language"
+        ],
+        "correctAnswer": 0,
+        "explanation": "HTML adalah singkatan dari Hyper Text Markup Language, bahasa markup standar untuk membuat halaman web."
+      },
+      {
+        "id": "q2",
+        "question": "Tag mana yang digunakan untuk membuat paragraf?",
+        "options": [
+          "<paragraph>",
+          "<p>",
+          "<para>",
+          "<text>"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tag <p> digunakan untuk membuat paragraf dalam HTML."
+      },
+      {
+        "id": "q3",
+        "question": "Atribut apa yang digunakan untuk menambahkan link di HTML?",
+        "options": [
+          "src",
+          "link",
+          "href",
+          "url"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Atribut href digunakan dalam tag <a> untuk menentukan URL tujuan link."
+      },
+      {
+        "id": "q4",
+        "question": "Tag heading terbesar dalam HTML adalah?",
+        "options": [
+          "<h6>",
+          "<h1>",
+          "<heading>",
+          "<head>"
+        ],
+        "correctAnswer": 1,
+        "explanation": "<h1> adalah tag heading dengan ukuran terbesar dan tingkat kepentingan tertinggi."
+      },
+      {
+        "id": "q5",
+        "question": "Di mana kita meletakkan tag <title> dalam dokumen HTML?",
+        "options": [
+          "Di dalam <body>",
+          "Di dalam <head>",
+          "Di dalam <footer>",
+          "Di dalam <div>"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tag <title> harus diletakkan di dalam tag <head> untuk menentukan judul halaman yang muncul di browser tab."
+      }
+    ]
+  },
+  {
+    "id": "quiz-css",
+    "title": "Quiz CSS Dasar",
+    "topic": "CSS",
+    "description": "Uji pemahaman Anda tentang CSS dasar",
+    "locked": false,
+    "requiredMaterials": ["css-dasar"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa kepanjangan dari CSS?",
+        "options": [
+          "Cascading Style Sheets",
+          "Computer Style Sheets",
+          "Creative Style System",
+          "Colorful Style Sheets"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CSS adalah Cascading Style Sheets, digunakan untuk styling halaman web."
+      },
+      {
+        "id": "q2",
+        "question": "Simbol apa yang digunakan untuk class selector?",
+        "options": [
+          "#",
+          ".",
+          "*",
+          "@"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Titik (.) digunakan untuk memilih elemen berdasarkan class. Contoh: .nama-class"
+      },
+      {
+        "id": "q3",
+        "question": "Property CSS mana yang mengubah warna teks?",
+        "options": [
+          "text-color",
+          "font-color",
+          "color",
+          "text-style"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Property 'color' digunakan untuk mengubah warna teks dalam CSS."
+      },
+      {
+        "id": "q4",
+        "question": "Urutan Box Model dari luar ke dalam adalah?",
+        "options": [
+          "Content, Padding, Border, Margin",
+          "Margin, Border, Padding, Content",
+          "Border, Margin, Padding, Content",
+          "Padding, Content, Border, Margin"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Urutan Box Model dari luar: Margin → Border → Padding → Content"
+      },
+      {
+        "id": "q5",
+        "question": "Bagaimana cara membuat teks menjadi bold di CSS?",
+        "options": [
+          "text-style: bold;",
+          "font-weight: bold;",
+          "text-weight: bold;",
+          "font-style: bold;"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Property font-weight: bold; digunakan untuk membuat teks tebal."
+      }
+    ]
+  },
+  {
+    "id": "quiz-js",
+    "title": "Quiz JavaScript Dasar",
+    "topic": "JavaScript",
+    "description": "Uji pemahaman Anda tentang JavaScript dasar",
+    "locked": true,
+    "requiredMaterials": ["javascript-dasar"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Mana yang merupakan cara benar mendeklarasikan variabel di JavaScript?",
+        "options": [
+          "variable nama = 'Budi';",
+          "let nama = 'Budi';",
+          "v nama = 'Budi';",
+          "var: nama = 'Budi';"
+        ],
+        "correctAnswer": 1,
+        "explanation": "let adalah cara modern untuk mendeklarasikan variabel di JavaScript."
+      },
+      {
+        "id": "q2",
+        "question": "Apa output dari: console.log(typeof 'Hello')?",
+        "options": [
+          "text",
+          "string",
+          "str",
+          "char"
+        ],
+        "correctAnswer": 1,
+        "explanation": "typeof 'Hello' akan menghasilkan 'string' karena 'Hello' adalah tipe data string."
+      },
+      {
+        "id": "q3",
+        "question": "Method array mana yang menambahkan elemen di akhir array?",
+        "options": [
+          "push()",
+          "pop()",
+          "shift()",
+          "unshift()"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Method push() menambahkan elemen baru di akhir array."
+      },
+      {
+        "id": "q4",
+        "question": "Apa perbedaan utama antara let dan const?",
+        "options": [
+          "Tidak ada perbedaan",
+          "let untuk angka, const untuk teks",
+          "const nilainya tidak bisa diubah setelah deklarasi",
+          "let lebih cepat dari const"
+        ],
+        "correctAnswer": 2,
+        "explanation": "const digunakan untuk variabel yang nilainya tidak akan diubah (konstan), sedangkan let bisa diubah."
+      },
+      {
+        "id": "q5",
+        "question": "Bagaimana cara menulis arrow function yang menjumlahkan dua angka?",
+        "options": [
+          "function(a, b) => { return a + b }",
+          "const sum = (a, b) => a + b",
+          "const sum = a, b => a + b",
+          "arrow sum(a, b) => a + b"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Arrow function ditulis dengan sintaks: const namaFunction = (parameter) => expression"
+      }
+    ]
+  }
+]

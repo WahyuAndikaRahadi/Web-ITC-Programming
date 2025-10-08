@@ -1,0 +1,159 @@
+[
+  {
+    "id": "html-dasar",
+    "title": "HTML Dasar",
+    "description": "Pelajari dasar-dasar HTML untuk membangun struktur web",
+    "icon": "code",
+    "subContent": [
+      {
+        "id": "struktur-dokumen",
+        "title": "Struktur Dokumen HTML",
+        "description": "Memahami struktur dasar dokumen HTML",
+        "contentDetails": [
+          {
+            "id": "doctype-html",
+            "title": "DOCTYPE dan Tag HTML",
+            "explanation": "DOCTYPE mendefinisikan versi HTML yang digunakan. Tag <html> adalah root element yang membungkus seluruh konten halaman.",
+            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Judul Halaman</title>\n  </head>\n  <body>\n    <!-- Konten halaman di sini -->\n  </body>\n</html>",
+            "video": ""
+          },
+          {
+            "id": "head-tag",
+            "title": "Tag Head",
+            "explanation": "Tag <head> berisi metadata, link ke CSS, JavaScript, dan informasi lain yang tidak ditampilkan langsung di halaman.",
+            "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Judul Halaman</title>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>",
+            "video": ""
+          }
+        ]
+      },
+      {
+        "id": "body-html",
+        "title": "Body HTML",
+        "description": "Elemen-elemen yang ditampilkan di halaman web",
+        "contentDetails": [
+          {
+            "id": "tag-p",
+            "title": "Tag Paragraph (p)",
+            "explanation": "Tag <p> digunakan untuk membuat paragraf teks. Browser otomatis menambahkan margin di atas dan bawah paragraf.",
+            "code": "<p>Ini adalah paragraf pertama.</p>\n<p>Ini adalah paragraf kedua.</p>",
+            "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+          },
+          {
+            "id": "tag-heading",
+            "title": "Tag Heading (h1-h6)",
+            "explanation": "Tag heading digunakan untuk membuat judul dengan 6 tingkat prioritas, h1 yang paling penting hingga h6.",
+            "code": "<h1>Judul Utama</h1>\n<h2>Sub Judul</h2>\n<h3>Sub Sub Judul</h3>",
+            "video": ""
+          },
+          {
+            "id": "tag-img",
+            "title": "Tag Image (img)",
+            "explanation": "Tag <img> digunakan untuk menampilkan gambar. Atribut src menentukan lokasi file gambar, dan alt memberikan teks alternatif.",
+            "code": "<img src=\"gambar.jpg\" alt=\"Deskripsi gambar\" width=\"300\">",
+            "video": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-dasar",
+    "title": "CSS Dasar",
+    "description": "Belajar styling dan layout dengan CSS",
+    "icon": "palette",
+    "subContent": [
+      {
+        "id": "selector-css",
+        "title": "Selector CSS",
+        "description": "Cara memilih elemen HTML untuk di-styling",
+        "contentDetails": [
+          {
+            "id": "selector-element",
+            "title": "Element Selector",
+            "explanation": "Selector element memilih semua elemen dengan tag tertentu.",
+            "code": "/* Memilih semua tag p */\np {\n  color: blue;\n  font-size: 16px;\n}",
+            "video": ""
+          },
+          {
+            "id": "selector-class",
+            "title": "Class Selector",
+            "explanation": "Class selector menggunakan titik (.) dan memilih elemen dengan class tertentu. Satu elemen bisa memiliki banyak class.",
+            "code": "/* CSS */\n.highlight {\n  background-color: yellow;\n}\n\n/* HTML */\n<p class=\"highlight\">Teks ini di-highlight</p>",
+            "video": ""
+          },
+          {
+            "id": "selector-id",
+            "title": "ID Selector",
+            "explanation": "ID selector menggunakan tanda pagar (#) dan memilih elemen dengan ID unik. Setiap ID hanya boleh digunakan sekali per halaman.",
+            "code": "/* CSS */\n#header {\n  font-size: 24px;\n  font-weight: bold;\n}\n\n/* HTML */\n<div id=\"header\">Header Utama</div>",
+            "video": ""
+          }
+        ]
+      },
+      {
+        "id": "box-model",
+        "title": "Box Model",
+        "description": "Memahami margin, border, padding, dan content",
+        "contentDetails": [
+          {
+            "id": "margin-padding",
+            "title": "Margin dan Padding",
+            "explanation": "Margin adalah ruang di luar border, sedangkan padding adalah ruang di dalam border antara border dan konten.",
+            "code": ".box {\n  margin: 20px;        /* Ruang luar */\n  padding: 15px;       /* Ruang dalam */\n  border: 2px solid black;\n}",
+            "video": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "javascript-dasar",
+    "title": "JavaScript Dasar",
+    "description": "Membuat website interaktif dengan JavaScript",
+    "icon": "zap",
+    "subContent": [
+      {
+        "id": "variable-js",
+        "title": "Variable JavaScript",
+        "description": "Cara menyimpan data dalam variable",
+        "contentDetails": [
+          {
+            "id": "let-const",
+            "title": "let dan const",
+            "explanation": "let digunakan untuk variable yang nilainya bisa diubah, const untuk variable yang nilainya tetap.",
+            "code": "let nama = \"Budi\";\nnama = \"Andi\";  // Boleh diubah\n\nconst PI = 3.14;\n// PI = 3.15;  // Error! Tidak bisa diubah",
+            "video": ""
+          },
+          {
+            "id": "tipe-data",
+            "title": "Tipe Data",
+            "explanation": "JavaScript memiliki berbagai tipe data: string (teks), number (angka), boolean (true/false), array, object, dll.",
+            "code": "let teks = \"Hello\";        // String\nlet angka = 42;             // Number\nlet benar = true;           // Boolean\nlet daftar = [1, 2, 3];     // Array\nlet objek = {nama: \"Budi\"}; // Object",
+            "video": ""
+          }
+        ]
+      },
+      {
+        "id": "function-js",
+        "title": "Function JavaScript",
+        "description": "Membuat dan menggunakan function",
+        "contentDetails": [
+          {
+            "id": "function-declaration",
+            "title": "Function Declaration",
+            "explanation": "Function adalah blok kode yang dapat digunakan berulang kali. Gunakan keyword 'function' untuk membuat function.",
+            "code": "function sapa(nama) {\n  return \"Halo, \" + nama + \"!\";\n}\n\nconsole.log(sapa(\"Budi\"));  // Output: Halo, Budi!",
+            "video": ""
+          },
+          {
+            "id": "arrow-function",
+            "title": "Arrow Function",
+            "explanation": "Arrow function adalah cara singkat menulis function dengan sintaks yang lebih modern.",
+            "code": "const tambah = (a, b) => a + b;\n\nconsole.log(tambah(5, 3));  // Output: 8",
+            "video": ""
+          }
+        ]
+      }
+    ]
+  }
+]
