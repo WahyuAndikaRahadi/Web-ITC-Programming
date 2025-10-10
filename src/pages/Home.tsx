@@ -34,13 +34,13 @@ const Home = ({ darkMode, onNavigate }: HomeProps) => {
       page: 'project',
       color: 'green',
     },
-    {
-      icon: Trophy,
-      title: 'Lomba',
-      description: 'Ikuti kompetisi programming nasional',
-      page: 'lomba',
-      color: 'yellow',
-    },
+    // {
+    //   icon: Trophy,
+    //   title: 'Lomba',
+    //   description: 'Ikuti kompetisi programming nasional',
+    //   page: 'lomba',
+    //   color: 'yellow',
+    // },
     {
       icon: Brain,
       title: 'Quiz',
