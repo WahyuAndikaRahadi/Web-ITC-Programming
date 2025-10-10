@@ -1,80 +1,410 @@
 [
+{
+  "id": "quiz-dasar-pemrograman-web",
+  "title": "Quiz: Dasar Pemrograman Web",
+  "topic": "Web Programming Fundamentals",
+  "description": "Uji pemahaman Anda tentang fondasi web: internet, browser, server, HTTP, dan peran developer.",
+  "locked": false,
+  "requiredMaterials": ["pengantar-web-programming"],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Apa peran utama Frontend Developer?",
+      "options": [
+        "Mengelola database dan server",
+        "Membangun antarmuka pengguna yang interaktif",
+        "Mengatur infrastruktur jaringan",
+        "Mengelola keamanan firewall"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Frontend Developer fokus pada tampilan dan interaksi pengguna menggunakan HTML, CSS, dan JavaScript."
+    },
+    {
+      "id": "q2",
+      "question": "Apa yang dimaksud dengan siklus Request-Response dalam web?",
+      "options": [
+        "Server mengirim data tanpa permintaan",
+        "Client → Request → Server → Response → Client",
+        "Browser menyimpan data selamanya",
+        "DNS mengenkripsi data pengguna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Siklus ini adalah fondasi komunikasi web: client (browser) mengirim request, server memproses dan mengirim response."
+    },
+    {
+      "id": "q3",
+      "question": "Mengapa HTTPS lebih aman daripada HTTP?",
+      "options": [
+        "HTTPS lebih cepat",
+        "HTTPS menggunakan enkripsi SSL/TLS",
+        "HTTPS tidak memerlukan server",
+        "HTTPS hanya untuk website besar"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTTPS mengenkripsi data dengan SSL/TLS, sehingga informasi sensitif tidak bisa dibaca pihak ketiga."
+    },
+    {
+      "id": "q4",
+      "question": "Apa fungsi utama DNS (Domain Name System)?",
+      "options": [
+        "Menyimpan file website",
+        "Mengenkripsi data pengguna",
+        "Mengonversi nama domain menjadi alamat IP",
+        "Menjalankan kode JavaScript"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DNS bertindak seperti buku telepon internet—mengubah nama domain (misalnya dicoding.com) menjadi alamat IP."
+    },
+    {
+      "id": "q5",
+      "question": "Rendering Engine pada browser berfungsi untuk?",
+      "options": [
+        "Mengunduh file CSS",
+        "Mengubah kode HTML/CSS/JS menjadi tampilan visual",
+        "Mengirim request ke server",
+        "Menyimpan cookie pengguna"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rendering Engine (seperti Blink atau WebKit) mengubah kode mentah menjadi piksel yang ditampilkan di layar."
+    },
+    {
+      "id": "q6",
+      "question": "Apa yang dimaksud dengan 'Separation of Concerns' dalam pengembangan web?",
+      "options": [
+        "Menggabungkan semua kode dalam satu file",
+        "Memisahkan struktur (HTML), gaya (CSS), dan perilaku (JS)",
+        "Hanya menggunakan JavaScript untuk segalanya",
+        "Menghindari penggunaan CSS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prinsip ini memisahkan tanggung jawab: HTML untuk struktur, CSS untuk tampilan, dan JS untuk interaktivitas."
+    },
+    {
+      "id": "q7",
+      "question": "Apa peran Web Server dalam arsitektur web?",
+      "options": [
+        "Menampilkan halaman di browser",
+        "Menyimpan dan mengirim konten website saat diminta",
+        "Mengatur koneksi internet pengguna",
+        "Mengganti peran DNS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Web Server (seperti Apache atau NGINX) menyimpan file website dan merespons permintaan dari browser."
+    },
+    {
+      "id": "q8",
+      "question": "Apa kepanjangan dari URL?",
+      "options": [
+        "Uniform Resource Locator",
+        "Universal Rendering Language",
+        "User Request Link",
+        "Unique Response Location"
+      ],
+      "correctAnswer": 0,
+      "explanation": "URL (Uniform Resource Locator) adalah alamat lengkap untuk mengakses sumber daya di web."
+    },
+    {
+      "id": "q9",
+      "question": "Tool apa yang paling sering digunakan developer untuk men-debug HTML dan CSS?",
+      "options": [
+        "Microsoft Word",
+        "Chrome DevTools",
+        "Notepad",
+        "Windows Explorer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Chrome DevTools memungkinkan developer menginspeksi elemen, mengedit CSS, dan menganalisis jaringan secara real-time."
+    },
+    {
+      "id": "q10",
+      "question": "Apa yang dimaksud dengan 'Full-Stack Developer'?",
+      "options": [
+        "Developer yang hanya bekerja di backend",
+        "Developer yang ahli desain grafis",
+        "Developer yang menguasai frontend dan backend",
+        "Developer yang membuat aplikasi mobile saja"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Full-Stack Developer memahami seluruh lapisan aplikasi: dari antarmuka pengguna hingga logika server dan database."
+    }
+  ]
+},
+{
+  "id": "quiz-html-dasar",
+  "title": "Quiz: HTML Dasar",
+  "topic": "HTML",
+  "description": "Uji pemahaman Anda tentang struktur dokumen HTML, tag semantik, atribut, dan praktik terbaik.",
+  "locked": false,
+  "requiredMaterials": ["html-dasar"],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Apa kepanjangan dari HTML?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Tech Modern Language",
+        "Home Tool Markup Language",
+        "Hyper Transfer Markup Logic"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HTML adalah singkatan dari Hyper Text Markup Language—bahasa markup untuk membuat halaman web."
+    },
+    {
+      "id": "q2",
+      "question": "Tag apa yang HARUS digunakan untuk judul utama halaman?",
+      "options": [
+        "<h2>",
+        "<title>",
+        "<h1>",
+        "<header>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "<h1> digunakan untuk judul utama konten halaman. Setiap halaman sebaiknya hanya memiliki satu <h1>."
+    },
+    {
+      "id": "q3",
+      "question": "Atribut apa yang WAJIB ada pada tag <img> untuk aksesibilitas?",
+      "options": [
+        "src",
+        "title",
+        "alt",
+        "width"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Atribut alt menyediakan teks alternatif untuk pengguna tunanetra dan saat gambar gagal dimuat."
+    },
+    {
+      "id": "q4",
+      "question": "Di mana tag <meta charset=\"UTF-8\"> sebaiknya ditempatkan?",
+      "options": [
+        "Di dalam <body>",
+        "Di dalam <head>",
+        "Setelah </html>",
+        "Di dalam <footer>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Semua metadata, termasuk charset, ditempatkan di dalam bagian <head> dokumen HTML."
+    },
+    {
+      "id": "q5",
+      "question": "Tag apa yang digunakan untuk membuat daftar tanpa urutan?",
+      "options": [
+        "<ol>",
+        "<list>",
+        "<ul>",
+        "<dl>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "<ul> (unordered list) digunakan untuk daftar yang tidak memiliki urutan penting, seperti daftar fitur."
+    },
+    {
+      "id": "q6",
+      "question": "Apa fungsi dari elemen <nav>?",
+      "options": [
+        "Menampilkan iklan",
+        "Menandai blok navigasi utama",
+        "Mengganti fungsi <a>",
+        "Menyimpan gambar navigasi"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<nav> adalah elemen semantik untuk menandai bagian navigasi, seperti menu utama website."
+    },
+    {
+      "id": "q7",
+      "question": "Apa tujuan dari komentar HTML <!-- komentar -->?",
+      "options": [
+        "Menampilkan teks tersembunyi di halaman",
+        "Menonaktifkan JavaScript",
+        "Memberi catatan untuk developer tanpa ditampilkan di browser",
+        "Mengenkripsi kode"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Komentar tidak ditampilkan di browser, tapi berguna untuk dokumentasi dan debugging kode."
+    },
+    {
+      "id": "q8",
+      "question": "Tag apa yang digunakan untuk kutipan panjang?",
+      "options": [
+        "<quote>",
+        "<q>",
+        "<cite>",
+        "<blockquote>"
+      ],
+      "correctAnswer": 3,
+      "explanation": "<blockquote> digunakan untuk kutipan panjang yang berdiri sendiri, biasanya dengan margin khusus."
+    },
+    {
+      "id": "q9",
+      "question": "Apa atribut yang digunakan untuk membuka link di tab baru secara aman?",
+      "options": [
+        "target=\"_blank\" saja",
+        "target=\"_blank\" rel=\"noopener noreferrer\"",
+        "newtab=\"true\"",
+        "open=\"new\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kombinasi target=\"_blank\" dan rel=\"noopener noreferrer\" mencegah kerentanan keamanan saat membuka tab baru."
+    },
+    {
+      "id": "q10",
+      "question": "Elemen apa yang digunakan untuk mengelompokkan gambar dan caption-nya secara semantik?",
+      "options": [
+        "<div> dan <p>",
+        "<img> dan <alt>",
+        "<figure> dan <figcaption>",
+        "<section> dan <label>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "<figure> membungkus gambar/diagram, dan <figcaption> memberikan keterangan—struktur semantik yang benar."
+    }
+  ]
+},
   {
-    "id": "quiz-html",
-    "title": "Quiz HTML Dasar",
+    "id": "quiz-html-menengah",
+    "title": "Quiz HTML Menengah",
     "topic": "HTML",
-    "description": "Uji pemahaman Anda tentang HTML dasar",
-    "locked": false,
-    "requiredMaterials": ["html-dasar"],
+    "description": "Uji pemahaman Anda tentang semantic HTML, form, dan tabel.",
+    "locked": true,
+    "requiredMaterials": ["html-menengah"],
     "questions": [
       {
         "id": "q1",
-        "question": "Apa kepanjangan dari HTML?",
+        "question": "Tag HTML5 mana yang digunakan untuk konten utama halaman?",
         "options": [
-          "Hyper Text Markup Language",
-          "High Tech Modern Language",
-          "Home Tool Markup Language",
-          "Hyperlinks and Text Markup Language"
+          "<main>",
+          "<body>",
+          "<content>",
+          "<section>"
         ],
         "correctAnswer": 0,
-        "explanation": "HTML adalah singkatan dari Hyper Text Markup Language, bahasa markup standar untuk membuat halaman web."
+        "explanation": "Tag <main> digunakan untuk menandai konten utama halaman yang unik dan tidak termasuk dalam header, footer, atau sidebar."
       },
       {
         "id": "q2",
-        "question": "Tag mana yang digunakan untuk membuat paragraf?",
+        "question": "Apa fungsi atribut 'alt' pada tag <img>?",
         "options": [
-          "<paragraph>",
-          "<p>",
-          "<para>",
-          "<text>"
+          "Menentukan ukuran gambar",
+          "Memberikan teks alternatif untuk accessibility dan SEO",
+          "Mengatur warna latar gambar",
+          "Menghubungkan gambar ke link"
         ],
         "correctAnswer": 1,
-        "explanation": "Tag <p> digunakan untuk membuat paragraf dalam HTML."
+        "explanation": "Atribut alt memberikan deskripsi teks untuk gambar, penting untuk pengguna screen reader dan SEO."
       },
       {
         "id": "q3",
-        "question": "Atribut apa yang digunakan untuk menambahkan link di HTML?",
+        "question": "Untuk membuat form yang mengirim data ke server, atribut 'method' yang paling umum digunakan adalah?",
         "options": [
-          "src",
-          "link",
-          "href",
-          "url"
+          "GET",
+          "POST",
+          "SEND",
+          "PUT"
         ],
-        "correctAnswer": 2,
-        "explanation": "Atribut href digunakan dalam tag <a> untuk menentukan URL tujuan link."
+        "correctAnswer": 1,
+        "explanation": "Method POST digunakan untuk mengirim data sensitif atau besar ke server, sedangkan GET untuk permintaan biasa."
       },
       {
         "id": "q4",
-        "question": "Tag heading terbesar dalam HTML adalah?",
+        "question": "Apa tag yang digunakan untuk membuat dropdown list dalam form?",
         "options": [
-          "<h6>",
-          "<h1>",
-          "<heading>",
-          "<head>"
+          "<input type=\"dropdown\">",
+          "<list>",
+          "<select>",
+          "<option-group>"
         ],
-        "correctAnswer": 1,
-        "explanation": "<h1> adalah tag heading dengan ukuran terbesar dan tingkat kepentingan tertinggi."
+        "correctAnswer": 2,
+        "explanation": "Tag <select> digunakan bersama <option> untuk membuat dropdown menu dalam form HTML."
       },
       {
         "id": "q5",
-        "question": "Di mana kita meletakkan tag <title> dalam dokumen HTML?",
+        "question": "Apa tujuan dari tag <caption> dalam tabel?",
         "options": [
-          "Di dalam <body>",
-          "Di dalam <head>",
-          "Di dalam <footer>",
-          "Di dalam <div>"
+          "Memberi judul pada tabel untuk accessibility",
+          "Mengatur warna header",
+          "Menyembunyikan tabel di mobile",
+          "Menghitung jumlah baris"
         ],
-        "correctAnswer": 1,
-        "explanation": "Tag <title> harus diletakkan di dalam tag <head> untuk menentukan judul halaman yang muncul di browser tab."
+        "correctAnswer": 0,
+        "explanation": "Tag <caption> memberikan judul deskriptif untuk tabel, sangat membantu pengguna screen reader."
       }
     ]
   },
   {
-    "id": "quiz-css",
+    "id": "quiz-html-advanced",
+    "title": "Quiz HTML Advanced",
+    "topic": "HTML",
+    "description": "Uji pemahaman lanjutan: Web Components, accessibility, dan performance.",
+    "locked": true,
+    "requiredMaterials": ["html-advanced"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa tujuan utama dari Shadow DOM dalam Web Components?",
+        "options": [
+          "Meningkatkan kecepatan rendering",
+          "Mengisolasi styling dan markup komponen dari dokumen utama",
+          "Mengganti JavaScript dengan HTML",
+          "Mengenkripsi konten halaman"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Shadow DOM mengisolasi CSS dan DOM internal komponen agar tidak terpengaruh oleh gaya global."
+      },
+      {
+        "id": "q2",
+        "question": "Atribut ARIA apa yang digunakan untuk memberi label pada elemen non-semantik seperti <div>?",
+        "options": [
+          "aria-id",
+          "aria-label",
+          "aria-title",
+          "aria-describe"
+        ],
+        "correctAnswer": 1,
+        "explanation": "aria-label memberikan label aksesibel pada elemen yang tidak memiliki teks terlihat."
+      },
+      {
+        "id": "q3",
+        "question": "Apa fungsi dari <link rel=\"preload\">?",
+        "options": [
+          "Memuat halaman berikutnya secara otomatis",
+          "Menghindari XSS",
+          "Memberi tahu browser untuk memuat sumber daya penting lebih awal",
+          "Mengganti favicon"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Preload memerintahkan browser untuk memuat aset kritis (seperti font atau CSS) lebih awal untuk meningkatkan performa."
+      },
+      {
+        "id": "q4",
+        "question": "Mana yang BUKAN cara mencegah serangan XSS di frontend?",
+        "options": [
+          "Gunakan textContent alih-alih innerHTML",
+          "Validasi input di sisi server",
+          "Gunakan innerHTML dengan data pengguna langsung",
+          "Terapkan Content Security Policy (CSP)"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Menggunakan innerHTML dengan input pengguna mentah sangat berbahaya dan bisa menyebabkan XSS."
+      },
+      {
+        "id": "q5",
+        "question": "Tag <template> digunakan untuk?",
+        "options": [
+          "Membuat halaman default",
+          "Menyimpan markup yang tidak dirender sampai dibutuhkan",
+          "Mengganti fungsi JavaScript",
+          "Mengatur tema warna"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tag <template> menyimpan konten HTML yang disembunyikan dan hanya dirender saat dikloning via JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "quiz-css-dasar",
     "title": "Quiz CSS Dasar",
     "topic": "CSS",
     "description": "Uji pemahaman Anda tentang CSS dasar",
-    "locked": false,
+    "locked": true,
     "requiredMaterials": ["css-dasar"],
     "questions": [
       {
@@ -140,7 +470,147 @@
     ]
   },
   {
-    "id": "quiz-js",
+    "id": "quiz-css-menengah",
+    "title": "Quiz CSS Menengah",
+    "topic": "CSS",
+    "description": "Uji pemahaman Anda tentang Flexbox, Grid, dan Responsive Design.",
+    "locked": true,
+    "requiredMaterials": ["css-menengah"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa properti utama untuk membuat container Flexbox?",
+        "options": [
+          "display: flex;",
+          "layout: flex;",
+          "flex: true;",
+          "display: grid;"
+        ],
+        "correctAnswer": 0,
+        "explanation": "display: flex; mengaktifkan Flexbox layout pada container."
+      },
+      {
+        "id": "q2",
+        "question": "Apa yang dilakukan oleh grid-template-columns: repeat(3, 1fr);?",
+        "options": [
+          "Membuat 3 kolom dengan lebar sama",
+          "Membuat 3 baris",
+          "Mengulang baris 3 kali",
+          "Membagi kolom menjadi 1 bagian"
+        ],
+        "correctAnswer": 0,
+        "explanation": "repeat(3, 1fr) membuat 3 kolom dengan ukuran fleksibel yang sama."
+      },
+      {
+        "id": "q3",
+        "question": "Media query @media (max-width: 768px) berlaku untuk?",
+        "options": [
+          "Layar lebih besar dari 768px",
+          "Layar tepat 768px",
+          "Layar 768px atau lebih kecil",
+          "Hanya tablet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "max-width: 768px berarti gaya diterapkan jika lebar layar ≤ 768px (mobile/tablet)."
+      },
+      {
+        "id": "q4",
+        "question": "Apa fungsi dari justify-content dalam Flexbox?",
+        "options": [
+          "Mengatur perataan item sepanjang sumbu utama",
+          "Mengatur tinggi item",
+          "Mengatur warna latar",
+          "Mengatur margin antar item"
+        ],
+        "correctAnswer": 0,
+        "explanation": "justify-content mengatur distribusi item di sepanjang main axis (horizontal jika flex-direction: row)."
+      },
+      {
+        "id": "q5",
+        "question": "Mana yang BUKAN unit responsif dalam CSS?",
+        "options": [
+          "vw",
+          "em",
+          "px",
+          "rem"
+        ],
+        "correctAnswer": 2,
+        "explanation": "px adalah unit absolut, tidak responsif. vw, em, dan rem bersifat relatif terhadap viewport atau font size."
+      }
+    ]
+  },
+  {
+    "id": "quiz-css-advanced",
+    "title": "Quiz CSS Advanced",
+    "topic": "CSS",
+    "description": "Uji pemahaman Anda tentang animasi, preprocessors, dan arsitektur CSS.",
+    "locked": true,
+    "requiredMaterials": ["css-advanced"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa yang dilakukan oleh @keyframes dalam CSS?",
+        "options": [
+          "Mendefinisikan transisi warna",
+          "Mendefinisikan langkah-langkah animasi",
+          "Mengatur ukuran font",
+          "Mengimpor file eksternal"
+        ],
+        "correctAnswer": 1,
+        "explanation": "@keyframes mendefinisikan urutan perubahan dalam animasi CSS."
+      },
+      {
+        "id": "q2",
+        "question": "Dalam metodologi BEM, apa arti 'M'?",
+        "options": [
+          "Main",
+          "Module",
+          "Modifier",
+          "Method"
+        ],
+        "correctAnswer": 2,
+        "explanation": "BEM = Block__Element--Modifier. Modifier mengubah tampilan/state block atau element."
+      },
+      {
+        "id": "q3",
+        "question": "Apa keuntungan menggunakan Sass dibanding CSS biasa?",
+        "options": [
+          "File lebih kecil otomatis",
+          "Bisa pakai variabel, nesting, dan mixins",
+          "Tidak perlu browser modern",
+          "Tidak butuh kompilasi"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Sass memungkinkan fitur pemrograman seperti variabel dan nesting, yang tidak tersedia di CSS murni."
+      },
+      {
+        "id": "q4",
+        "question": "Transition tidak bisa menganimasikan properti?",
+        "options": [
+          "color",
+          "opacity",
+          "display",
+          "transform"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Properti display (misal: none ↔ block) tidak bisa di-transisi karena bersifat diskrit, bukan kontinu."
+      },
+      {
+        "id": "q5",
+        "question": "Apa itu CSS Custom Properties?",
+        "options": [
+          "Fitur untuk menghapus CSS lama",
+          "Variabel CSS yang didefinisikan dengan --nama",
+          "Plugin untuk Visual Studio Code",
+          "Framework CSS baru"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CSS Custom Properties (variabel CSS) ditulis sebagai --primary-color: blue; dan digunakan dengan var(--primary-color)."
+      }
+    ]
+  },
+  {
+    "id": "quiz-js-dasar",
     "title": "Quiz JavaScript Dasar",
     "topic": "JavaScript",
     "description": "Uji pemahaman Anda tentang JavaScript dasar",
@@ -206,6 +676,146 @@
         ],
         "correctAnswer": 1,
         "explanation": "Arrow function ditulis dengan sintaks: const namaFunction = (parameter) => expression"
+      }
+    ]
+  },
+  {
+    "id": "quiz-js-menengah",
+    "title": "Quiz JavaScript Menengah",
+    "topic": "JavaScript",
+    "description": "Uji pemahaman Anda tentang DOM, event, dan async dasar.",
+    "locked": true,
+    "requiredMaterials": ["javascript-menengah"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa cara terbaik memilih satu elemen dengan ID 'header'?",
+        "options": [
+          "document.getElementsByTagName('header')",
+          "document.getElementById('header')",
+          "document.querySelector('.header')",
+          "document.find('header')"
+        ],
+        "correctAnswer": 1,
+        "explanation": "getElementById() adalah cara paling efisien untuk memilih elemen berdasarkan ID."
+      },
+      {
+        "id": "q2",
+        "question": "Apa output dari [1, 2, 3].map(x => x * 2)?",
+        "options": [
+          "[1, 2, 3]",
+          "[2, 4, 6]",
+          "[3, 4, 5]",
+          "undefined"
+        ],
+        "correctAnswer": 1,
+        "explanation": "map() mengembalikan array baru dengan setiap elemen dikalikan 2."
+      },
+      {
+        "id": "q3",
+        "question": "Apa yang terjadi jika Anda menambahkan event listener ke tombol tanpa mencegah default?",
+        "options": [
+          "Form tidak akan submit",
+          "Halaman akan refresh jika tombol di dalam form",
+          "Tidak ada efek",
+          "JavaScript error"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tombol di dalam form secara default memicu submit → refresh halaman. Gunakan event.preventDefault() untuk mencegahnya."
+      },
+      {
+        "id": "q4",
+        "question": "Apa hasil dari fetch().then(res => res.json())?",
+        "options": [
+          "String mentah",
+          "Objek JSON",
+          "Blob file",
+          "Array buffer"
+        ],
+        "correctAnswer": 1,
+        "explanation": "res.json() mengonversi response body menjadi objek JavaScript dari JSON."
+      },
+      {
+        "id": "q5",
+        "question": "Apa fungsi dari forEach()?",
+        "options": [
+          "Mengembalikan array baru",
+          "Menyaring elemen",
+          "Menjalankan fungsi untuk setiap elemen tanpa mengembalikan nilai",
+          "Mengurutkan array"
+        ],
+        "correctAnswer": 2,
+        "explanation": "forEach() digunakan untuk iterasi, bukan transformasi. Tidak mengembalikan array baru."
+      }
+    ]
+  },
+  {
+    "id": "quiz-js-advanced",
+    "title": "Quiz JavaScript Advanced",
+    "topic": "JavaScript",
+    "description": "Uji pemahaman lanjutan: ES6+, modul, closure, dan design patterns.",
+    "locked": true,
+    "requiredMaterials": ["javascript-advanced"],
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Apa output dari kode berikut?\nconst arr = [1, 2, 3];\nconst [a, , c] = arr;\nconsole.log(a, c);",
+        "options": [
+          "1 2",
+          "1 3",
+          "undefined 3",
+          "Error"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Destructuring array melewatkan elemen kedua (koma ganda), sehingga a=1, c=3."
+      },
+      {
+        "id": "q2",
+        "question": "Apa yang dimaksud dengan closure?",
+        "options": [
+          "Fungsi yang tidak pernah berhenti",
+          "Fungsi yang mengembalikan promise",
+          "Fungsi dalam yang mengakses variabel luar meski sudah return",
+          "Fungsi yang ditulis di akhir file"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Closure terjadi ketika fungsi dalam 'mengingat' lingkungan leksikal tempat ia dibuat."
+      },
+      {
+        "id": "q3",
+        "question": "Bagaimana cara mengekspor fungsi bernama 'calculate' dari modul?",
+        "options": [
+          "export function calculate() {}",
+          "function calculate() {} export;",
+          "module.export = calculate;",
+          "public calculate() {}"
+        ],
+        "correctAnswer": 0,
+        "explanation": "ES Modules menggunakan sintaks export function nama() {} untuk ekspor bernama."
+      },
+      {
+        "id": "q4",
+        "question": "Apa keuntungan menggunakan async/await dibanding .then()?",
+        "options": [
+          "Lebih cepat dieksekusi",
+          "Kode lebih mudah dibaca dan ditangani seperti synchronous",
+          "Tidak butuh Promise",
+          "Hanya bekerja di browser"
+        ],
+        "correctAnswer": 1,
+        "explanation": "async/await membuat kode asinkron terlihat dan berperilaku seperti kode sinkron, lebih mudah dibaca dan debug."
+      },
+      {
+        "id": "q5",
+        "question": "Apa itu IIFE?",
+        "options": [
+          "Fungsi yang dipanggil berulang",
+          "Immediately Invoked Function Expression",
+          "Fungsi untuk animasi",
+          "Jenis event listener"
+        ],
+        "correctAnswer": 1,
+        "explanation": "IIFE adalah fungsi yang langsung dieksekusi setelah didefinisikan, sering digunakan untuk enkapsulasi variabel."
       }
     ]
   }

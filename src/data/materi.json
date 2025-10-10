@@ -1,159 +1,713 @@
 [
+{
+
+  "id": "pengantar-web-programming",
+  "title": "Pengantar Web Programming: Membangun Dunia Digital Anda",
+  "isLocked": false,
+  "description": "Memahami dasar-dasar web, cara kerja internet, dan fondasi website modern. Ini adalah langkah awal Anda dari pengguna menjadi pencipta!",
+  "icon": "globe-alt",
+  "subContent": [
+    {
+      "id": "fenomena-web-dan-peran-anda",
+      "title": "1. Internet dan Era Digital: Mengapa Ini Penting",
+      "description": "Mengapa menjadi Web Developer sangat relevan dan bernilai tinggi hari ini",
+      "contentDetails": [
+        {
+          "id": "introduksi-dan-data-pengguna",
+          "title": "Internet: Jantung Dunia Modern dan Potensi Tak Terbatas",
+          "explanation": "Anda pasti sangat akrab dengan istilah **Internet**, **Website**, **Halaman Web**, dan **Browser**. Mencari informasi di internet sudah jadi rutinitas harian yang super efektif, mulai dari memesan makanan, belajar, hingga mengelola keuangan. Kita hidup di era di mana hampir setiap layanan penting beralih ke ranah digital. Website modern tidak hanya menampilkan informasi statis, tetapi juga berfungsi sebagai aplikasi canggih, seperti Google Calendar, platform *e-commerce*, atau sistem manajemen data yang membantu kita menjadi lebih produktif dan efisien. Perubahan ini menunjukkan bahwa web adalah infrastruktur fundamental abad ke-21.\n\nFaktanya, penetrasi internet di Indonesia sangat masif, mencapai sekitar **212,9 juta jiwa pada Januari 2023**, dan angka ini terus meroket seiring waktu. Pertumbuhan eksponensial ini secara otomatis menciptakan kebutuhan yang tak terelakkan akan **website yang andal**, **aplikasi yang responsif**, dan **pengalaman pengguna yang luar biasa** (UX/UI). Setiap perusahaan, dari *startup* kecil hingga korporasi multinasional, bergantung pada kehadiran digital yang kuat untuk berkomunikasi, menjual, dan beroperasi.\n\nBagi Anda yang baru memulai perjalanan di dunia *web development*, Anda tidak hanya belajar kode, tetapi Anda sedang naik level dari seorang konsumen informasi menjadi seorang **kreator digital**. Anda adalah orang yang akan membangun dan memelihara infrastruktur digital yang sangat dibutuhkan oleh dunia. Peran Anda sangat krusial, karena sebuah website adalah etalase digital, kantor cabang virtual, dan mesin pemasaran yang beroperasi 24/7 bagi bisnis.\n\nMemahami *web programming* memberikan Anda kekuatan untuk mewujudkan ide, memecahkan masalah dunia nyata, dan berkontribusi langsung pada ekonomi digital. Bayangkan dampak yang bisa Anda ciptakan hanya dengan membangun sebuah platform yang menghubungkan produsen lokal dengan pembeli global. Ini jauh lebih dari sekadar menguasai bahasa pemrograman; ini tentang menguasai medium komunikasi dan bisnis terpenting saat ini.\n\nOleh karena itu, modul ini akan membekali Anda dengan pengetahuan dasar tentang cara kerja web, memungkinkan Anda untuk tidak hanya menggunakan teknologi, tetapi juga untuk **menciptakannya**. Persiapkan diri Anda, karena Anda akan segera mampu mengubah ide abstrak menjadi pengalaman digital yang dapat diakses oleh jutaan orang di seluruh dunia. Selamat datang di dunia di mana Anda adalah arsitek digitalnya.",
+          "images": ["https://i.pcmag.com/imagery/articles/04W3dw9EhlBout7M3oYcC00-2.png"]
+        },
+        {
+          "id": "karir-web-developer",
+          "title": "Peluang Karir Web Developer: Prospek dan Spesialisasi",
+          "explanation": "Profesi Web Developer adalah salah satu karir yang paling dicari dan paling stabil di era digital ini. Dengan transformasi digital yang terjadi di hampir setiap industri, permintaan akan para ahli yang mampu merancang, membangun, dan memelihara aplikasi web terus meningkat. Keahlian ini tidak hanya terbatas pada perusahaan teknologi, tetapi juga dibutuhkan oleh sektor perbankan, kesehatan, pendidikan, dan bahkan pemerintahan, menjadikan peluang karir ini sangat luas dan menjanjikan.\n\nSecara umum, terdapat tiga jalur spesialisasi utama dalam dunia *web development*. Pertama adalah **Frontend Developer**, yang berfokus pada apa yang dilihat dan diinteraksikan langsung oleh pengguna (Client-side). Mereka adalah seniman yang menggunakan HTML untuk struktur, CSS untuk gaya dan tata letak, serta JavaScript untuk membuat interaktivitas yang mulus. Tujuan utama mereka adalah memastikan *User Interface* (UI) menarik dan *User Experience* (UX) optimal.\n\nKedua adalah **Backend Developer**, yang bekerja di balik layar (Server-side). Mereka menangani logika aplikasi, interaksi dengan *database*, otentikasi pengguna, dan memastikan performa server. Mereka bekerja dengan bahasa seperti Python, Java, Node.js, atau PHP, bertanggung jawab atas kecepatan, keamanan, dan skalabilitas seluruh aplikasi web. Mereka adalah otak di balik fungsionalitas rumit yang tidak terlihat oleh mata pengguna.\n\nTerakhir, ada **Full-Stack Developer**, yang menguasai kedua domain (frontend dan backend). Seorang *full-stack developer* memiliki pemahaman holistik tentang bagaimana seluruh sistem bekerja, dari browser pengguna hingga server dan database. Keahlian ini sangat dihargai oleh *startup* dan tim kecil, karena mereka bisa mengambil tanggung jawab penuh atas seluruh siklus pengembangan produk, meski peran ini juga menuntut pengetahuan yang lebih luas dan adaptif.\n\nDari segi kompensasi, data menunjukkan bahwa gaji rata-rata *web developer* di Indonesia berkisar antara **5 hingga 20 juta rupiah per bulan**, bahkan lebih tinggi untuk tingkat *senior* atau spesialisasi yang langka. Angka ini sangat kompetitif dan dipengaruhi oleh tingkat pengalaman, keahlian teknis (*framework* seperti React, Angular, Vue, atau *cloud services*), serta lokasi kerja. Investasi waktu Anda untuk menguasai keterampilan ini adalah investasi yang cerdas untuk masa depan finansial dan karir.\n\nMemilih jalur karir ini berarti Anda akan terus belajar, beradaptasi dengan teknologi baru (seperti AI atau *Serverless Architecture*), dan selalu berada di garis depan inovasi. Ini adalah karir yang menantang sekaligus sangat memuaskan, di mana Anda secara harfiah membangun alat yang digunakan oleh miliaran orang setiap hari.",
+          "video": "https://youtube.com/embed/Cwh2bJBq3hs?si=8XaUGalGawP3P1R1",
+          "images": ["https://arthanugrahacom.b-cdn.net/wp-content/uploads/2021/01/jenjang-karir-dan-gaji-full-stack-web-developer.png", "https://media.licdn.com/dms/image/D4E12AQGqxJYt1nYQHA/article-cover_image-shrink_720_1280/0/1715859593494?e=2147483647&v=beta&t=dmGRt5zsLhIBPcmaul7CBO3XmelMYpFm5_cI6TQi67k"]
+        }
+      ]
+    },
+    {
+      "id": "cara-kerja-internet-detail",
+      "title": "2. Cara Internet Bekerja: Anatomi Permintaan Data",
+      "description": "Membongkar jaringan di balik layar agar website bisa tampil di browser Anda",
+      "contentDetails": [
+        {
+          "id": "analogi-koneksi-dan-request",
+          "title": "Jaringan Komputer dan Siklus Permintaan Data",
+          "explanation": "Bayangkan seluruh internet sebagai sebuah **'jaringan jalan tol raksasa'** yang menghubungkan miliaran komputer di seluruh dunia. Jalan tol ini memungkinkan perangkat Anda, yang disebut sebagai **Client** (misalnya, laptop atau ponsel Anda), untuk mengirimkan permintaan informasi (*request*) dan menerima hasilnya (*response*) dari komputer lain yang disebut **Server**. Server ini adalah komputer bertenaga tinggi yang bertugas menyimpan dan mendistribusikan data website yang Anda ingin akses.\n\nKomunikasi antara Client dan Server tidak terjadi secara ajaib; ia diatur oleh serangkaian aturan yang disebut **protokol**, yang paling utama di web adalah HTTP. Ketika Anda mengetik URL ke browser, Client Anda (Browser) mengirimkan sebuah paket permintaan melalui jaringan ke alamat IP Server tujuan. Server menerima permintaan ini, memprosesnya (mencari file HTML, CSS, atau menjalankan kode backend), dan kemudian mengirimkan kembali Response yang berisi semua data yang dibutuhkan agar halaman web dapat ditampilkan.\n\nSiklus ini—**Client → Request → Server → Response → Client**—adalah fondasi dari semua interaksi di web. Data dikirimkan dalam bentuk paket-paket kecil, yang diibaratkan seperti mobil yang membawa informasi melewati 'jalan tol' internet. Paket-paket ini mungkin mengambil rute yang berbeda-beda, tetapi pada akhirnya akan berkumpul kembali di tujuan (browser Anda) untuk ditampilkan sebagai halaman web yang koheren. Kecepatan dan keandalan proses ini sangat bergantung pada efisiensi jaringan.\n\nSebagai *web developer*, memahami siklus ini sangat penting, karena ini membantu Anda mendiagnosis masalah kinerja (*latency*), memahami di mana letak kode Anda dijalankan (Client-side vs. Server-side), dan memastikan bahwa aplikasi Anda merespons permintaan pengguna dengan cepat. Misalnya, waktu tunggu yang lama bisa jadi disebabkan oleh server yang lambat memproses request atau jaringan yang padat, dan pengetahuan ini memandu Anda dalam optimasi.\n\nDengan memahami *Request-Response Cycle*, Anda mulai melihat web bukan hanya sebagai layar, tetapi sebagai aliran data dan komunikasi yang sangat terstruktur. Setiap klik, setiap pengisian formulir, adalah bagian dari siklus permintaan dan respons yang tak terhitung jumlahnya. Ini adalah arsitektur dasar yang akan Anda bangun di atasnya, menjadikannya konsep pertama yang harus dikuasai.",
+          "video": "",
+          "images": ["https://itbox.id/wp-content/uploads/2023/03/diagram-of-http-communication-process-1024x576.png","https://3.bp.blogspot.com/-NFbX2wh9BHM/Up5NI_1JymI/AAAAAAAAAI4/3The7JYi7hk/s1600/kej+int.png"]
+        },
+        {
+          "id": "interconnection-network-dan-isp",
+          "title": "Internet Service Provider (ISP) dan Jaringan Global",
+          "explanation": "Untuk terhubung dari komputer Anda ke server yang mungkin berada di benua lain, kita membutuhkan perantara dan infrastruktur yang kompleks. Inilah peran utama dari **Internet Service Provider (ISP)**. ISP adalah perusahaan yang menyediakan dan mengelola pintu gerbang Anda menuju 'jalan tol' internet global. Mereka bertanggung jawab atas penyediaan akses internet di rumah atau kantor Anda, biasanya melalui modem atau router yang mereka sediakan.\n\nISP bukan hanya sekadar penyedia kabel; mereka mengelola jaringan *router* berkecepatan tinggi yang saling terhubung satu sama lain. *Router* ini berfungsi seperti polisi lalu lintas yang menentukan rute terbaik bagi paket data Anda untuk mencapai tujuannya. Router ISP Anda akan terhubung ke router ISP lain di dalam negeri, yang kemudian terhubung ke jaringan global melalui kabel serat optik bawah laut yang membentang di seluruh samudra. Inilah yang memungkinkan Anda berkomunikasi dengan server di belahan bumi berbeda dalam hitungan milidetik.\n\nKetika Anda mengirimkan *request*, paket data Anda melakukan perjalanan: dari komputer Anda → ke modem/router rumah → ke router ISP lokal → melalui jaringan backbone nasional → melalui kabel bawah laut/trans-kontinental → dan akhirnya mencapai server tujuan. Proses ini adalah keajaiban rekayasa jaringan yang memungkinkan konektivitas global yang kita nikmati saat ini. Tanpa infrastruktur ini, World Wide Web tidak akan ada.\n\nSelain menyediakan koneksi, ISP juga memainkan peran penting dalam mengelola alamat jaringan. Mereka menetapkan Alamat IP (Internet Protocol) ke perangkat Anda. Alamat IP adalah identitas numerik unik yang dibutuhkan oleh setiap perangkat untuk berkomunikasi di internet, sama seperti alamat rumah yang memungkinkan surat mencapai Anda.\n\nSebagai *developer*, meskipun Anda jarang berinteraksi langsung dengan ISP, memahami perannya memberi perspektif tentang *latency* (keterlambatan) dan reliabilitas koneksi. Masalah pada koneksi *backbone* atau router ISP dapat secara signifikan memengaruhi performa aplikasi web Anda. Oleh karena itu, arsitektur web modern selalu mempertimbangkan kedekatan server dengan pengguna (melalui **CDN** atau *Content Delivery Network*), yang pada dasarnya memanfaatkan jaringan ISP secara strategis.",
+          "video": "",
+          "images": ["https://cdn.educba.com/academy/wp-content/uploads/2023/11/Internet-service-provider.jpg"]
+        },
+        {
+          "id": "protokol-http-https",
+          "title": "Protokol HTTP dan Keharusan Migrasi ke HTTPS",
+          "explanation": "**HTTP** (*HyperText Transfer Protocol*) adalah bahasa atau aturan komunikasi utama yang digunakan oleh *web client* (browser) dan *web server* untuk bertukar data. Ini adalah protokol yang memungkinkan Anda untuk mengambil halaman HTML, gambar, dan aset lain dari server. Ketika Anda mengklik tautan atau mengetik URL, browser Anda mengirimkan **HTTP Request** ke server. Server kemudian merespons dengan **HTTP Response** yang berisi data yang diminta, biasanya kode status (seperti 200 OK atau 404 Not Found) dan *body* data.\n\nHTTP memiliki beberapa **Metode Request** yang mendefinisikan tujuan komunikasi. Yang paling umum adalah **GET**, yang digunakan untuk mengambil data (misalnya, saat Anda membuka sebuah halaman web). Metode lain yang penting adalah **POST**, yang digunakan untuk mengirimkan data ke server (misalnya, saat Anda mengisi formulir pendaftaran), **PUT** untuk memperbarui data yang sudah ada, dan **DELETE** untuk menghapus data. Sebagai *developer*, Anda akan menggunakan metode-metode ini secara ekstensif saat membuat API atau layanan web.\n\nMasalah utama HTTP klasik adalah sifatnya yang *plain text* atau tidak terenkripsi. Semua data yang dikirim, termasuk informasi sensitif seperti *password* dan nomor kartu kredit, dapat disadap dan dibaca oleh pihak ketiga yang berada di jalur transmisi data. Inilah mengapa **HTTPS** (*HyperText Transfer Protocol Secure*) menjadi standar wajib di web modern. HTTPS pada dasarnya adalah HTTP yang dilapisi dengan protokol keamanan **SSL/TLS** (*Secure Sockets Layer/Transport Layer Security*).\n\nEnkripsi SSL/TLS bekerja seperti gembok digital yang mengamankan komunikasi. Sebelum data dikirim, *client* dan *server* melakukan proses **handshake** untuk menetapkan kunci enkripsi. Dengan HTTPS, data yang ditransfer akan terenkripsi, sehingga meskipun paket data disadap, isinya tidak bisa dibaca. Ini sangat penting untuk membangun kepercayaan pengguna dan diakui sebagai faktor penting dalam SEO (Search Engine Optimization) oleh mesin pencari seperti Google.\n\nSingkatnya, **HTTPS bukan lagi pilihan, tetapi kewajiban**. Semua *web developer* saat ini harus memastikan bahwa semua aplikasi mereka, bahkan yang paling sederhana sekalipun, diakses melalui HTTPS untuk menjamin keamanan dan privasi data pengguna. Penggunaan HTTP non-secure akan sering memunculkan peringatan keamanan di browser modern, yang dapat merusak citra profesional aplikasi Anda.",
+          "video": "",
+          "images": ["https://softuni.org/wp-content/uploads/2022/07/HTTP-Request-Methods-e1657276635747.png"]
+        }
+      ]
+    },
+    {
+      "id": "website-server-browser",
+      "title": "3. Web Server, DNS, dan Browser: Aktor Kunci",
+      "description": "Komponen penting yang bekerja sama untuk menyajikan halaman web",
+      "contentDetails": [
+        {
+          "id": "definisi-website-dan-server",
+          "title": "Halaman Web, Website, dan Web Server",
+          "explanation": "Penting untuk membedakan tiga istilah fundamental ini. **Halaman Web** adalah dokumen tunggal yang ditampilkan di browser, berisi teks, gambar, dan elemen multimedia lainnya, yang biasanya direpresentasikan oleh satu file HTML. Sementara itu, **Website** adalah sekumpulan halaman web yang saling terhubung (melalui *hyperlink*) dan dikelola di bawah satu domain yang kohesif. Contohnya, laman *About Us* adalah satu halaman web, dan seluruh domain perusahaan adalah sebuah website. Penemuan **World Wide Web (WWW)** oleh Tim Berners-Lee pada tahun 1989 adalah momen krusial yang memungkinkan Hyperlink dan koneksi antar halaman ini, mengubah internet menjadi medium informasi yang dapat dinavigasi.\n\nWebsite, baik itu aplikasi *e-commerce* yang kompleks maupun blog sederhana, harus disimpan di suatu tempat yang dapat diakses publik. Tempat ini adalah **Web Server**. Secara fisik, *server* adalah komputer bertenaga tinggi yang dirancang untuk beroperasi 24 jam sehari dengan keandalan tinggi. Namun, istilah *Web Server* juga merujuk pada *software* yang berjalan di komputer tersebut, seperti **Apache**, **NGINX**, atau **Microsoft IIS**. Tugas *software* server ini adalah mendengarkan permintaan HTTP dari klien dan mengirimkan kembali konten yang diminta.\n\nKetika *client* (browser Anda) meminta sebuah halaman, *web server* akan mengambil file yang sesuai dari *hard drive*-nya dan mengirimkannya kembali melalui jaringan. Proses ini harus sangat cepat, karena *server* mungkin melayani ratusan hingga ribuan permintaan secara bersamaan. Inilah sebabnya mengapa *web server* dioptimalkan untuk kinerja dan konkurensi, yang merupakan aspek penting dalam *backend development*.\n\nPerkembangan website sangat pesat; ia telah berevolusi dari sekadar dokumen statis menjadi **Aplikasi Web** dinamis yang dapat memproses transaksi, menyimpan data pengguna, dan berinteraksi secara *real-time*. Contohnya, media sosial atau layanan *streaming* adalah contoh aplikasi web yang kompleks, di mana *server* tidak hanya mengirimkan file, tetapi juga menjalankan kode (seperti PHP, Node.js, atau Python) untuk menghasilkan konten secara dinamis sebelum dikirim ke browser.\n\nMemahami perbedaan antara konten statis (file yang selalu sama) dan konten dinamis (konten yang dibuat *on-the-fly* berdasarkan data pengguna atau database) adalah langkah awal untuk menjadi *web developer* yang handal. Modul ini menjadi fondasi untuk pemahaman Anda tentang *hosting*, *deployment*, dan arsitektur aplikasi web secara keseluruhan.",
+          "video": "",
+          "images": ["https://miro.medium.com/v2/resize:fit:796/1*NitXOf49GE0iVVH4x88tVg.png"]
+        },
+        {
+          "id": "web-server-dan-dns",
+          "title": "Web Server dan Sistem Nama Domain (DNS): Peta Jalan Internet",
+          "explanation": "Seperti yang sudah dijelaskan, setiap perangkat yang terhubung ke internet memiliki identitas numerik unik yang disebut **Alamat IP** (Internet Protocol). Server Google mungkin memiliki alamat seperti `172.217.10.142`. Sementara ini adalah cara komputer berkomunikasi, angka-angka ini sangat sulit untuk diingat dan digunakan oleh manusia. Di sinilah peran krusial dari **DNS** (*Domain Name System*) masuk, bertindak sebagai **'buku telepon' raksasa** untuk internet.\n\nTugas utama DNS adalah mengkonversi **Domain Name** yang mudah diingat (seperti `www.google.com` atau `dicoding.com`) menjadi Alamat IP yang dapat dipahami oleh komputer. Ketika Anda mengetikkan nama domain ke browser, browser Anda pertama-tama akan mengirimkan permintaan ke server DNS. Server DNS kemudian akan mencari, melalui serangkaian server, Alamat IP yang sesuai untuk domain tersebut. Proses ini disebut **DNS Lookup**.\n\nSetelah DNS Lookup selesai dan Alamat IP ditemukan (misalnya, `172.217.10.142`), browser Anda kini tahu persis ke mana harus mengirimkan permintaan HTTP. Permintaan ini kemudian diarahkan ke Web Server yang berada di alamat IP tersebut. Jadi, tanpa DNS, Anda harus menghafal semua alamat IP untuk mengakses website—sebuah tugas yang mustahil! DNS adalah salah satu protokol yang paling fundamental dalam membuat internet dapat digunakan oleh publik luas.\n\nDi sisi lain, **Web Server** (perangkat lunak seperti Apache atau NGINX) adalah penjaga gawang yang 'hidup' di alamat IP tersebut. Tugasnya adalah menerima permintaan HTTP dari browser, mencari file atau menjalankan skrip yang diminta, dan mengemas hasilnya ke dalam HTTP Response. Server inilah yang memuat halaman *index.html*, gambar, atau data JSON yang diminta oleh klien. Kecepatan *web server* dalam merespons sangat memengaruhi kecepatan loading website Anda secara keseluruhan.\n\nSebagai *web developer*, Anda akan sering berinteraksi dengan DNS saat proses *deployment* (menghubungkan nama domain baru ke alamat IP server Anda) dan juga mengoptimalkan konfigurasi *web server* Anda. Memastikan konfigurasi DNS yang tepat adalah langkah pertama dan paling penting dalam meluncurkan website ke dunia, dan mengoptimalkan *web server* adalah kunci untuk performa dan keamanan yang solid.",
+          "video": "",
+          "images": ["https://tse1.mm.bing.net/th/id/OIP.bYJlFCLrga_3OkFxmHe_6gHaDg?cb=12&w=768&h=364&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "web-browser",
+          "title": "Web Browser: Pintu Gerbang ke Dunia Web",
+          "explanation": "Web Browser (seperti Chrome, Firefox, Safari, atau Edge) adalah aplikasi yang bertindak sebagai antarmuka utama Anda dan pengguna lainnya ke World Wide Web. Browser adalah *client* yang memulai semua komunikasi, dan pada akhirnya, browser juga yang bertanggung jawab untuk menerjemahkan kode mentah dari server menjadi tampilan visual yang indah dan interaktif di layar Anda. Saat Anda memasukkan **URL** (*Uniform Resource Locator*)—alamat web lengkap—browser memulai serangkaian langkah kompleks.\n\nURL sendiri terdiri dari beberapa bagian penting: **protokol** (`https://`), **domain name** (`dicoding.com`), dan seringkali **file path** (`/academy/`). Setelah DNS Lookup memberikan Alamat IP, browser membuat koneksi dan mengirimkan HTTP Request. Server merespons dengan data, yang biasanya berupa dokumen HTML, *style sheets* CSS, dan skrip JavaScript. Tugas browser kemudian adalah memproses ketiga jenis *code* ini dan menampilkannya kepada pengguna. Ini adalah langkah yang paling penting dari perspektif *Frontend Developer*.\n\nBagian krusial dari browser adalah **Rendering Engine** (atau *Layout Engine*). Mesin ini bertugas menerjemahkan kode menjadi piksel di layar. Setiap browser utama memiliki mesin *rendering* yang berbeda: Chrome menggunakan Blink, Firefox menggunakan Gecko, dan Safari menggunakan WebKit. Meskipun semua mesin ini bertujuan untuk menampilkan halaman web dengan cara yang sama sesuai standar web, ada perbedaan kecil yang terkadang menimbulkan tantangan bagi *developer* (misalnya, *bug* yang hanya muncul di satu browser).\n\nBrowser juga bertanggung jawab untuk menangani interaktivitas yang dibuat oleh JavaScript, menyimpan data lokal (seperti *cookies* atau *local storage*), dan mengelola sesi pengguna. Lebih dari sekadar penampil, browser modern adalah platform aplikasi yang sangat canggih. Sebagai *developer*, Anda akan menghabiskan banyak waktu menggunakan **Developer Tools** yang terintegrasi di browser (seperti Chrome DevTools) untuk menginspeksi elemen, men-debug kode JavaScript, dan menguji performa website Anda.\n\nMemahami bagaimana browser bekerja dan mengoptimalkan kode Anda agar dapat diproses secara efisien oleh *rendering engine* adalah inti dari *frontend development* yang sukses. Ini memastikan bahwa terlepas dari perangkat atau browser yang digunakan pengguna, pengalaman mereka tetap cepat dan menyenangkan.",
+          "video": "",
+          "images": ["https://www.slashgear.com/img/gallery/mozilla-firefox-vs-google-chrome-which-is-the-better-browser-for-android/l-intro-1705587453.jpg"]
+        },
+        {
+          "id": "rendering-engine",
+          "title": "Rendering Engine Browser: Mengubah Kode Menjadi Piksel",
+          "explanation": "Inti dari cara sebuah halaman web ditampilkan adalah **Rendering Engine** browser. Mesin ini adalah pahlawan tak terlihat yang mengambil kode HTML, CSS, dan JavaScript mentah, dan mengubahnya menjadi tampilan visual yang terstruktur. Proses ini terdiri dari beberapa tahapan kritis yang harus dipahami oleh setiap *frontend developer* untuk mengoptimalkan waktu *loading*.\n\nTahap pertama adalah **Parsing HTML**, di mana *rendering engine* membaca kode HTML dan membangun struktur data berbentuk pohon yang disebut **DOM** (*Document Object Model*). DOM adalah representasi logis dari halaman, di mana setiap elemen HTML adalah sebuah *node*. Secara paralel, CSS yang diterima dari server juga di-*parsing* untuk membuat **CSSOM** (*CSS Object Model*), yang menyimpan semua aturan *style*.\n\nKedua, setelah DOM dan CSSOM terbentuk, keduanya digabungkan untuk membentuk **Render Tree** (atau *Layout Tree*). Render Tree hanya berisi elemen yang benar-benar akan ditampilkan di layar (misalnya, elemen dengan *display: none* tidak termasuk). Objek-objek dalam *Render Tree* memiliki informasi tentang konten dan *style* yang akan diterapkan, tetapi belum memiliki posisi dan ukuran final di layar.\n\nKetiga adalah tahap **Layout** (atau *Reflow*). Pada tahap ini, browser mulai menghitung posisi dan ukuran geometris yang tepat untuk setiap elemen di *Render Tree*. Ini adalah proses yang intensif, karena mengubah ukuran atau posisi satu elemen bisa memengaruhi tata letak elemen-elemen di sekitarnya. Optimasi di tahap ini sangat penting untuk mencegah *jank* (stuttering atau lag) pada animasi.\n\nTerakhir adalah tahap **Painting** (atau *Rasterization*). Browser kini menggunakan semua informasi *layout* dan *style* untuk menggambar piksel-piksel aktual di layar. Proses ini mencakup penggambaran teks, warna latar belakang, batas, dan efek visual lainnya. Setelah tahap *Painting* selesai, halaman web Anda siap untuk digunakan. Jika ada interaksi JavaScript yang mengubah DOM atau CSS, siklus *Layout* dan *Painting* mungkin harus diulang, yang disebut *reflow* atau *repaint*. Mengurangi jumlah *reflow* adalah kunci utama untuk performa *frontend* yang cepat dan mulus.",
+          "video": "",
+          "images": ["https://browserstack.wpenginepowered.com/wp-content/uploads/2022/12/Architecture-of-Web-Browsers-700x564.png"]
+        }
+      ]
+    },
+    {
+      "id": "anatomi-website",
+      "title": "4. Anatomi Website: Tiga Pilar Wajib",
+      "description": "Membedah peran HTML, CSS, dan JavaScript",
+      "contentDetails": [
+        {
+          "id": "analogi-tiga-fondasi-detail",
+          "title": "Tiga Pilar Fundamental Web Development",
+          "explanation": "Setiap website modern, terlepas dari kerumitan atau ukurannya, dibangun di atas tiga fondasi teknologi yang wajib dipelajari. Ketiganya bekerja dalam sinergi sempurna untuk menghadirkan pengalaman digital yang lengkap. Memahami peran spesifik dari masing-masing pilar adalah langkah pertama untuk menjadi *web developer* yang efektif. Pilar pertama adalah **HTML** (*HyperText Markup Language*), yang berfungsi sebagai kerangka struktural atau 'tulang' dari halaman web. HTML menyediakan struktur konten: paragraf, judul, daftar, tautan, gambar, dan formulir. HTML hanyalah bahasa *markup*, yang berarti ia hanya mendefinisikan elemen dan hierarki, bukan penampilan visualnya. Tanpa HTML, browser tidak akan tahu apa yang harus ditampilkan.\n\nPilar kedua adalah **CSS** (*Cascading Style Sheets*), yang bertugas sebagai 'kulit, pakaian, dan tata rias' website. CSS mendefinisikan semua aspek visual: warna, jenis dan ukuran *font*, spasi, tata letak (*layout*), dan efek visual seperti bayangan dan animasi. Dengan CSS, Anda dapat mengubah tampilan seluruh website tanpa menyentuh struktur HTML-nya sama sekali. Pemisahan ini sangat penting untuk pemeliharaan dan konsistensi desain, dan merupakan praktik terbaik yang dikenal sebagai **Separation of Concerns**.\n\nTerakhir, pilar ketiga adalah **JavaScript (JS)**, yang merupakan 'otak' atau sistem saraf website. JavaScript adalah satu-satunya bahasa pemrograman yang berjalan secara *native* di browser, dan perannya adalah menambahkan interaktivitas dan dinamika. Mulai dari validasi formulir, animasi kompleks, hingga pembaruan konten secara *real-time* tanpa memuat ulang halaman, semua dimungkinkan oleh JavaScript. JavaScript mengubah halaman web statis menjadi aplikasi web yang *powerful*.\n\nKetiga pilar ini tidak dapat dipisahkan dalam *frontend development*. HTML memberikan kerangka, CSS membuatnya terlihat menarik, dan JavaScript membuatnya *hidup* dan dapat berinteraksi. Kegagalan salah satu akan mengakibatkan pengalaman yang buruk: HTML tanpa CSS akan tampak kuno; HTML dan CSS tanpa JS akan terasa statis. Anda harus menguasai ketiganya untuk membangun website yang fungsional, estetis, dan modern.\n\nSelanjutnya, perkembangan ekosistem telah melahirkan banyak *framework* dan *library* (seperti React, Vue, Angular) yang dibangun di atas fondasi JavaScript, tetapi pada dasarnya, semua hasil akhir yang dilihat browser tetaplah kombinasi dari HTML, CSS, dan JavaScript murni. Jadi, penguasaan dasar-dasar ini adalah kunci untuk memahami teknologi modern yang lebih kompleks.",
+          "video": "",
+          "images": ["https://d2dkqamqz2k831.cloudfront.net/posts/338-1733217432633.jpg","https://i.ytimg.com/vi/OPAQdrfC-6E/maxresdefault.jpg"]
+        },
+        {
+          "id": "separation-of-concerns",
+          "title": "Prinsip Separation of Concerns (SoC) dalam Pengembangan Web",
+          "explanation": "Prinsip **Separation of Concerns (SoC)** adalah konsep desain fundamental dalam *software engineering* yang sangat ditekankan dalam *web development*. Prinsip ini menyatakan bahwa sebuah sistem harus dibagi menjadi bagian-bagian yang berbeda, di mana setiap bagian hanya menangani satu 'kekhawatiran' atau tanggung jawab tertentu. Dalam konteks web, ini berarti setiap teknologi—HTML, CSS, dan JavaScript—harus berpegang teguh pada peran spesifiknya tanpa mencampuri peran yang lain.\n\n**HTML** memiliki kekhawatiran tunggal: **Struktur Konten**. Tugasnya adalah menyediakan *markup* semantik untuk mendefinisikan judul, paragraf, daftar, dan *form input*. HTML tidak boleh (atau setidaknya, harus dihindari) untuk mendefinisikan warna atau posisi elemen. **CSS** memiliki kekhawatiran tunggal: **Presentasi dan Gaya**. Tugasnya adalah mengatur bagaimana konten itu terlihat (warnanya, *layout* Grid/Flexbox-nya, ukuran *font*). CSS tidak seharusnya digunakan untuk menambahkan logika aplikasi yang kompleks.\n\n**JavaScript** memiliki kekhawatiran tunggal: **Behavior dan Interaktivitas**. Tugasnya adalah mengelola bagaimana halaman merespons input pengguna, melakukan validasi, atau memuat data baru secara asinkron. JavaScript tidak boleh digunakan sebagai pengganti HTML untuk struktur konten utama, meskipun *framework* modern membuatnya terlihat terintegrasi.\n\nManfaat terbesar dari mematuhi prinsip SoC adalah **pemeliharaan kode yang jauh lebih mudah**. Bayangkan jika semua *style* dan logika ditulis langsung di dalam file HTML; mengubah tampilan kecil akan memaksa *developer* untuk menyaring ratusan baris kode HTML. Dengan SoC, *developer* dapat dengan cepat mencari file `.css` untuk masalah visual, file `.js` untuk masalah interaksi, dan file `.html` untuk masalah struktur. Ini juga memfasilitasi kolaborasi tim, di mana desainer dapat fokus pada CSS sementara *programmer* aplikasi fokus pada JavaScript.\n\nSelain itu, SoC sangat membantu dalam masalah **Aksesibilitas** dan **SEO**. Mesin pencari dapat mengindeks konten HTML dengan lebih baik jika kontennya 'bersih' dari *style* yang berlebihan. Bagi pengguna dengan kebutuhan aksesibilitas, *Screen Reader* dapat menginterpretasikan struktur dokumen secara akurat. Singkatnya, SoC menciptakan kode yang lebih terstruktur, lebih mudah diskalakan, dan lebih profesional.",
+          "video": "",
+          "images": ["https://media.geeksforgeeks.org/wp-content/uploads/20240212163809/Web-Application-SOC-Layers.webp"]
+        },
+        {
+          "id": "tools-developer",
+          "title": "Tools Wajib Web Developer: Senjata Digital Anda",
+          "explanation": "Untuk memulai perjalanan Anda sebagai *web developer*, Anda tidak memerlukan peralatan mahal atau kompleks; yang Anda butuhkan adalah perangkat lunak yang tepat, yang sebagian besar tersedia secara gratis. *Tools* ini akan menjadi perpanjangan tangan Anda dalam menulis, menguji, dan mengelola kode. Investasi terbaik yang bisa Anda lakukan adalah menguasai *tools* ini sedalam mungkin.\n\n**1. Text Editor / Integrated Development Environment (IDE):** Ini adalah tempat Anda menghabiskan sebagian besar waktu Anda. Rekomendasi utama dan standar industri saat ini adalah **Visual Studio Code (VS Code)** dari Microsoft. VS Code adalah editor yang ringan namun sangat kuat, didukung oleh ribuan ekstensi yang dapat meningkatkan produktivitas, seperti *syntax highlighting*, *autocomplete*, integrasi Git, dan *debugging tools*. Pilihan lain yang populer termasuk Sublime Text atau Atom, tetapi VS Code adalah titik awal terbaik karena komunitas dan dukungannya yang luas.\n\n**2. Web Browser dengan Developer Tools:** Meskipun Anda akan membangun website yang harus berfungsi di semua browser, Anda akan memilih satu browser utama untuk pengembangan, dan ini hampir selalu **Google Chrome** (dengan Chrome DevTools) atau **Mozilla Firefox** (dengan Firefox Developer Tools). DevTools adalah *tools* yang terintegrasi langsung ke browser yang memungkinkan Anda menginspeksi dan memanipulasi DOM, melihat *style* CSS yang diterapkan, men-debug kode JavaScript, memantau *network request*, dan menguji *responsiveness* di berbagai ukuran layar. Menguasai DevTools adalah keterampilan wajib untuk *debugging* yang efisien.\n\n**3. Version Control System (VCS):** Setelah Anda mulai menulis kode, Anda harus memiliki cara untuk melacak perubahan dan berkolaborasi. **Git** adalah VCS yang paling dominan, memungkinkan Anda menyimpan riwayat semua perubahan kode Anda, kembali ke versi sebelumnya, dan bekerja secara paralel dengan *developer* lain. Platform seperti **GitHub** atau GitLab berfungsi sebagai penyimpanan *remote* untuk repositori Git Anda, memfasilitasi *backup* dan kolaborasi tim. Menguasai alur kerja Git (seperti *commit, push, pull, branch*) adalah tanda dari *developer* profesional.\n\n**4. Terminal atau Command Line:** Meskipun banyak tugas bisa dilakukan melalui antarmuka grafis, *web development* modern sangat bergantung pada antarmuka baris perintah (Terminal di macOS/Linux atau Command Prompt/PowerShell di Windows). Anda akan menggunakannya untuk menjalankan server lokal (*local development server*), menginstal *package* dengan **npm** atau **yarn**, menjalankan *build scripts*, dan berinteraksi dengan Git. Keakraban dengan perintah dasar Terminal akan sangat mempercepat alur kerja Anda.\n\nSemua *tools* ini tersedia secara gratis, tetapi kekuatan sejati mereka terletak pada bagaimana Anda memanfaatkannya. Mulailah dengan menginstal VS Code dan membiasakan diri dengan Chrome DevTools, dan Anda sudah siap untuk mulai mengkode!",
+          "video": "https://youtube.com/embed/gUl8MH1p1TM?si=igAL6ExdYk-BjiBh",
+          "images": ["https://blog.webcodegenie.com/Top-10-Software-Development-Tools-in-2022-Inner-1024x827.png"]
+        }
+      ]
+    }
+  ]
+},
+{
+  "id": "html-dasar",
+  "title": "Menjelajah Pertama Kali Dunia HTML: HTML DASAR",
+  "description": "Pembelajaran ini fokus kepada Membangun fondasi website dengan HTML dari nol dengan mempelajari syntax dasar",
+  "icon": "code",
+  "subContent": [
+    {
+      "id": "pengenalan-html",
+      "title": "1. Pengenalan HTML",
+      "description": "Memahami HTML dan cara kerjanya",
+      "contentDetails": [
+        {
+          "id": "apa-itu-html",
+          "title": "Apa Itu HTML?",
+          "explanation": "HTML (HyperText Markup Language) adalah bahasa dasar yang digunakan untuk membuat halaman web. Bayangkan HTML sebagai kerangka atau “tulang” dari sebuah website—tanpa HTML, browser tidak akan tahu bagaimana menampilkan teks, gambar, tombol, atau elemen lainnya. HTML bukanlah bahasa pemrograman seperti Python atau JavaScript; ia adalah bahasa markup, yang berarti fungsinya adalah mendefinisikan struktur dan makna konten, bukan menjalankan logika atau perhitungan.\n\nHTML bekerja dengan menggunakan tag—kata-kata yang diapit tanda kurung sudut seperti <h1>, <p>, atau <img>. Tag-tag ini memberi instruksi kepada browser tentang bagaimana menafsirkan dan menampilkan konten. Misalnya, tag <h1> memberi tahu browser bahwa teks di dalamnya adalah judul utama, sedangkan <p> menandai sebuah paragraf. Struktur ini membuat konten tidak hanya terlihat rapi, tetapi juga dapat dipahami oleh mesin pencari dan teknologi bantu seperti screen reader.\n\nSejarah HTML dimulai pada tahun 1991 oleh Tim Berners-Lee, ilmuwan komputer yang juga menciptakan World Wide Web. Sejak itu, HTML terus berkembang melalui berbagai versi hingga mencapai HTML5 pada tahun 2014—versi terbaru dan paling canggih yang digunakan secara universal hingga hari ini. HTML5 membawa lompatan besar: dukungan native untuk video, audio, grafik 2D/3D (canvas), dan elemen semantik seperti <header>, <nav>, dan <footer> yang membuat struktur dokumen lebih jelas dan bermakna.\n\nMengapa HTML begitu penting? Karena setiap website di dunia dibangun di atas HTML—dari blog sederhana hingga aplikasi web kompleks seperti Gmail atau Netflix. Bahkan jika Anda menggunakan framework modern seperti React atau Vue, pada akhirnya, kode yang dikirim ke browser tetap berupa HTML. Menguasai HTML berarti Anda memahami bahasa dasar web, yang menjadi prasyarat mutlak sebelum belajar CSS (untuk gaya) dan JavaScript (untuk interaktivitas).\n\nBagi Anda yang baru memulai, jangan khawatir jika terasa asing pada awalnya. HTML dirancang untuk mudah dipelajari. Anda bisa menulis kode HTML dalam file teks biasa, menyimpannya dengan ekstensi .html, lalu membukanya di browser—dan voilà! Halaman web Anda langsung muncul. Ini adalah langkah pertama yang ajaib dalam perjalanan menjadi web developer: dari mengetik beberapa baris kode, Anda menciptakan sesuatu yang bisa dilihat oleh jutaan orang di seluruh dunia.",
+          "video": "",
+          "code": "",
+          "images": []
+        },
+        {
+          "id": "cara-kerja-html",
+          "title": "Cara Kerja HTML",
+          "explanation": "HTML bekerja dengan cara yang sangat intuitif: ia menggunakan tag sebagai penanda untuk memberi tahu browser bagaimana menampilkan konten. Setiap tag memiliki fungsi spesifik. Misalnya, <h1> digunakan untuk judul utama, <p> untuk paragraf, dan <img> untuk menampilkan gambar. Tag ini ditulis dalam dokumen teks biasa, dan ketika file tersebut dibuka di browser, browser akan “membaca” tag-tag tersebut dan merender tampilan visual sesuai aturan yang telah ditentukan oleh standar web.\n\nKebanyakan tag HTML terdiri dari dua bagian: tag pembuka dan tag penutup. Contohnya, <p> adalah tag pembuka, dan </p> adalah tag penutup. Konten yang ingin Anda tampilkan ditempatkan di antara keduanya, seperti: <p>Halo, dunia!</p>. Namun, ada juga tag self-closing (atau void tag) yang tidak memerlukan penutup karena tidak memiliki konten di dalamnya—contohnya <img>, <br> (baris baru), dan <hr> (garis horizontal). Tag-tag ini cukup ditulis sekali, seperti <br /> atau <img src=\"foto.jpg\" alt=\"Foto\">.\n\nProses rendering HTML dimulai ketika Anda membuka file .html di browser. Browser membaca file tersebut dari atas ke bawah, membangun DOM (Document Object Model)—sebuah representasi pohon dari struktur halaman. Setiap elemen HTML menjadi node dalam pohon ini. DOM inilah yang nantinya akan dimodifikasi oleh JavaScript dan diberi gaya oleh CSS. Tanpa HTML yang terstruktur dengan baik, proses ini tidak akan berjalan lancar.\n\nSalah satu prinsip penting dalam HTML adalah semantik—menggunakan tag yang sesuai dengan makna kontennya, bukan hanya karena tampilannya. Misalnya, gunakan <h1> untuk judul utama, bukan hanya karena teksnya besar. Ini membantu mesin pencari memahami hierarki konten, meningkatkan SEO, dan membuat website lebih mudah diakses oleh pengguna disabilitas.\n\nTerakhir, HTML sangat fleksibel dan toleran terhadap kesalahan. Browser modern dirancang untuk tetap menampilkan halaman meskipun ada kesalahan sintaks. Namun, sebagai developer yang baik, Anda harus tetap menulis HTML yang valid dan rapi. Ini tidak hanya memudahkan debugging, tetapi juga menunjukkan profesionalisme dan perhatian terhadap kualitas kode.",
+          "video": "",
+          "code": "<p>Ini adalah paragraf</p>\n<h1>Ini adalah heading</h1>\n<img src=\"gambar.jpg\" alt=\"Deskripsi\">",
+          "images": []
+        },
+        {
+          "id": "sejarah-html",
+          "title": "Sejarah dan Evolusi HTML",
+          "explanation": "HTML pertama kali dikembangkan oleh Tim Berners-Lee pada tahun 1991 sebagai bagian dari proyek World Wide Web di CERN. Tujuan awalnya sederhana: memungkinkan ilmuwan berbagi dokumen melalui internet dengan cara yang terstruktur. HTML 1.0 sangat dasar—hanya mendukung teks, hyperlink, dan sedikit format dasar.\n\nPada tahun 1995, HTML 2.0 menjadi standar resmi pertama yang diakui oleh IETF (Internet Engineering Task Force). Versi ini memperkenalkan fitur penting seperti form, yang memungkinkan interaksi dua arah antara pengguna dan server—langkah besar menuju web dinamis.\n\nHTML 3.2 (1997) dan HTML 4.01 (1999) membawa peningkatan besar dalam struktur dan fungsionalitas. HTML 3.2 menambahkan dukungan untuk tabel dan applet Java, sementara HTML 4.01 memperkenalkan prinsip pemisahan struktur dan presentasi—mendorong penggunaan CSS untuk gaya, bukan tag seperti <font> atau <center>.\n\nEra 2000-an melahirkan XHTML, versi HTML yang mengikuti aturan ketat XML. Meski lebih rapi, XHTML terlalu kaku dan sulit diadopsi secara luas. Komunitas web akhirnya kembali ke pendekatan yang lebih fleksibel, yang memuncak dalam HTML5 pada tahun 2014.\n\nHTML5 adalah revolusi nyata. Ia tidak hanya menyederhanakan sintaks (misalnya, <!DOCTYPE html> yang sangat singkat), tetapi juga menambahkan elemen semantik (<article>, <section>, <aside>), dukungan multimedia native (<audio>, <video>), dan API modern seperti Canvas, Geolocation, dan Local Storage. HTML5 bukan sekadar versi baru—ia adalah fondasi web modern yang terus berkembang hingga hari ini.",
+          "video": "https://youtube.com/embed/IKr7WTv9vTc?si=6IB5bTvB0psm_5Ny",
+          "code": "",
+          "images": ["https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220718103358/HTML-Released-year-11.png"]
+        }
+      ]
+    },
+    {
+      "id": "struktur-dokumen-html",
+      "title": "2. Struktur Dokumen HTML",
+      "description": "Anatomi dokumen HTML yang benar",
+      "contentDetails": [
+        {
+          "id": "doctype-html",
+          "title": "DOCTYPE dan Tag HTML",
+          "explanation": "Setiap dokumen HTML yang valid harus dimulai dengan deklarasi DOCTYPE. Ini bukan tag HTML, melainkan instruksi untuk browser tentang versi HTML yang digunakan. Untuk HTML5, sintaksnya sangat sederhana: <!DOCTYPE html>. Meski terlihat sepele, DOCTYPE ini sangat penting—tanpa itu, browser bisa masuk ke mode “quirks”, yang menampilkan halaman dengan cara lama dan tidak konsisten.\n\nSetelah DOCTYPE, elemen <html> adalah akar dari seluruh dokumen. Semua konten HTML lainnya harus berada di dalam tag ini. Atribut lang pada <html> menentukan bahasa utama dokumen—misalnya lang=\"id\" untuk bahasa Indonesia. Ini sangat penting untuk aksesibilitas (screen reader akan membaca dengan aksen yang tepat) dan SEO (mesin pencari tahu konten ditujukan untuk audiens mana).\n\nStruktur dasar HTML5 terdiri dari dua bagian utama: <head> dan <body>. <head> berisi metadata—informasi tentang halaman yang tidak ditampilkan langsung, seperti judul, deskripsi, dan tautan ke file CSS/JS. Sementara itu, <body> berisi semua konten yang terlihat oleh pengguna: teks, gambar, tombol, dll.\n\nMemahami struktur ini adalah langkah pertama untuk menulis HTML yang rapi dan profesional. Browser akan tetap menampilkan halaman tanpa DOCTYPE atau <html>, tetapi hasilnya bisa tidak terduga. Sebagai developer, Anda harus selalu memulai dengan struktur yang benar agar website Anda konsisten di semua perangkat dan browser.\n\nTerakhir, struktur dokumen yang baik juga membantu kolaborasi tim. Ketika kode Anda rapi dan mengikuti standar, developer lain akan lebih mudah memahami dan memeliharanya. Ini adalah praktik dasar yang menunjukkan bahwa Anda serius dalam pengembangan web.",
+          "video": "https://youtube.com/embed/TM12RA6cmOQ?si=ydcStVDJLBPnT5tr",
+          "code": "<!DOCTYPE html>\n<html lang=\"id\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Judul Halaman</title>\n  </head>\n  <body>\n    <!-- Konten website -->\n  </body>\n</html>",
+          "images": []
+        },
+        {
+          "id": "head-section",
+          "title": "Bagian Head: Metadata",
+          "explanation": "Bagian <head> adalah jantung “tersembunyi” dari dokumen HTML. Meski tidak terlihat di halaman, isinya sangat menentukan bagaimana halaman berperilaku, terlihat, dan ditemukan di internet. Di sinilah Anda memberi tahu browser dan mesin pencari tentang identitas dan kebutuhan teknis halaman Anda.\n\nElemen pertama yang wajib ada di <head> adalah <meta charset=\"UTF-8\">. Ini menentukan encoding karakter—standar yang memastikan teks (termasuk huruf beraksen atau emoji) ditampilkan dengan benar. Tanpa ini, teks bisa muncul sebagai simbol aneh seperti “Ã©” atau “â€œ”.\n\nElemen kedua yang krusial adalah <meta name=\"viewport\">. Ini memberi tahu browser mobile cara mengatur skala halaman, memastikan website Anda responsif dan tidak terlihat terlalu kecil atau terpotong di layar kecil. Tanpa viewport, pengguna harus zoom-in manual—pengalaman yang sangat buruk.\n\n<title> menentukan teks yang muncul di tab browser dan hasil pencarian. Ini adalah salah satu faktor SEO paling penting. Sementara itu, <meta name=\"description\"> memberikan ringkasan konten yang sering ditampilkan di hasil pencarian—seperti “iklan gratis” untuk website Anda.\n\nAkhirnya, <head> juga tempat Anda menghubungkan file eksternal seperti CSS (<link rel=\"stylesheet\">) dan JavaScript (<script>). Dengan mengatur semuanya di <head>, Anda memastikan halaman dimuat dengan benar, cepat, dan sesuai standar—sebelum satu piksel pun ditampilkan kepada pengguna.",
+          "video": "",
+          "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"description\" content=\"Deskripsi website\">\n  <meta name=\"keywords\" content=\"html, web, tutorial\">\n  <meta name=\"author\" content=\"Nama Anda\">\n  <title>Judul Halaman - Website</title>\n  <link rel=\"stylesheet\" href=\"style.css\">\n  <link rel=\"icon\" href=\"favicon.ico\">\n</head>",
+          "images": []
+        },
+        {
+          "id": "body-section",
+          "title": "Bagian Body: Konten Visible",
+          "explanation": "Jika <head> adalah otak, maka <body> adalah tubuh dari halaman web Anda. Di sinilah semua konten yang terlihat oleh pengguna ditempatkan: teks, gambar, video, formulir, tombol, dan segala sesuatu yang berinteraksi langsung dengan audiens. Setiap elemen yang Anda lihat di website—dari logo hingga footer—berada di dalam <body>.\n\nStruktur <body> yang baik menggunakan elemen semantik HTML5 seperti <header>, <nav>, <main>, <section>, <article>, <aside>, dan <footer>. Elemen-elemen ini tidak hanya membuat kode lebih mudah dibaca, tetapi juga memberi makna jelas kepada browser dan teknologi bantu. Misalnya, screen reader tahu bahwa <nav> berisi menu navigasi, sehingga pengguna tunanetra bisa langsung melompat ke sana.\n\nPenggunaan elemen semantik juga meningkatkan SEO. Mesin pencari seperti Google menggunakan struktur ini untuk memahami hierarki dan topik konten. Website dengan struktur semantik yang jelas cenderung mendapat peringkat lebih tinggi karena dianggap lebih berkualitas dan mudah dipahami.\n\nSaat menulis konten di <body>, selalu pikirkan pengalaman pengguna. Gunakan heading secara hierarkis (h1 → h2 → h3), kelompokkan paragraf dengan <p>, dan pastikan setiap gambar memiliki teks alt yang deskriptif. Ini bukan hanya soal estetika, tapi juga aksesibilitas dan profesionalisme.\n\nIngat: <body> adalah panggung utama website Anda. Segala sesuatu yang Anda bangun di sini harus jelas, terstruktur, dan bermakna. Dengan struktur yang rapi, Anda tidak hanya membuat website yang indah, tapi juga yang inklusif, mudah dipelihara, dan ramah mesin pencari.",
+          "video": "",
+          "code": "<body>\n  <header>\n    <h1>Selamat Datang</h1>\n    <nav>\n      <a href=\"#home\">Home</a>\n      <a href=\"#about\">Tentang</a>\n      <a href=\"#contact\">Kontak</a>\n    </nav>\n  </header>\n  <main>\n    <p>Konten utama website</p>\n  </main>\n  <footer>\n    <p>&copy; 2024 Website Saya</p>\n  </footer>\n</body>",
+          "images": []
+        },
+        {
+          "id": "komentar-html",
+          "title": "Komentar dalam HTML",
+          "explanation": "Komentar dalam HTML adalah teks yang tidak ditampilkan di browser, tetapi tetap ada di kode sumber. Mereka ditulis di antara <!-- dan -->. Meski “tidak terlihat”, komentar sangat berharga dalam pengembangan web—terutama untuk dokumentasi dan debugging.\n\nSalah satu fungsi utama komentar adalah menjelaskan kode. Saat Anda kembali ke proyek setelah beberapa minggu, atau saat developer lain membaca kode Anda, komentar membantu memahami “mengapa” suatu bagian ditulis dengan cara tertentu. Misalnya, <!-- Bagian ini menangani validasi form --> jauh lebih membantu daripada kode tanpa konteks.\n\nKomentar juga sering digunakan untuk “menonaktifkan” sementara bagian kode tanpa menghapusnya. Ini sangat berguna saat menguji fitur baru atau mencari bug. Anda cukup membungkus blok kode dengan <!-- dan -->, lalu mengaktifkannya kembali nanti jika diperlukan.\n\nNamun, hindari komentar yang berlebihan atau jelas. Misalnya, <!-- Ini adalah paragraf --> di atas <p> tidak perlu—tag <p> sudah cukup jelas. Fokuslah pada komentar yang menjelaskan logika kompleks, keputusan desain, atau catatan untuk masa depan.\n\nTerakhir, komentar tidak memengaruhi performa website karena diabaikan oleh browser. Namun, jangan menyimpan informasi sensitif (seperti password atau API key) di komentar—siapa pun bisa melihat kode sumber halaman Anda. Gunakan komentar dengan bijak: sebagai alat bantu, bukan tempat menyembunyikan rahasia.",
+          "video": "",
+          "code": "<!-- Ini komentar satu baris -->\n<!--\nIni komentar\nmulti baris\n-->\n<p>Paragraf ditampilkan</p>\n<!-- <p>Paragraf ini tidak ditampilkan</p> -->",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "text-formatting",
+      "title": "3. Text Formatting",
+      "description": "Memformat teks dengan berbagai tag",
+      "contentDetails": [
+        {
+          "id": "heading-tags",
+          "title": "Tag Heading (h1-h6)",
+          "explanation": "Heading adalah tulang punggung struktur konten web. HTML menyediakan enam level heading—<h1> hingga <h6>—yang membentuk hierarki logis dari judul utama hingga sub-sub-judul terkecil. <h1> adalah yang paling penting dan biasanya hanya ada satu per halaman, sementara <h6> adalah yang paling tidak penting.\n\nHeading bukan hanya soal ukuran teks. Meski browser secara default menampilkan <h1> lebih besar dari <h2>, tujuan utama heading adalah **semantik**: memberi makna struktural pada konten. Ini membantu mesin pencari memahami topik utama halaman, dan membantu pengguna disabilitas menavigasi konten dengan lebih mudah.\n\nAturan emas dalam penggunaan heading: jangan lompat level. Jika Anda menggunakan <h1>, sub-bagian berikutnya harus <h2>, bukan <h3>. Lompat level membuat struktur konten kacau dan membingungkan bagi teknologi bantu. Bayangkan daftar isi buku yang tiba-tiba melompat dari Bab 1 ke Sub-sub-bab 1.3—tidak masuk akal, bukan?\n\nJangan gunakan heading hanya karena Anda ingin teks terlihat besar. Jika Anda butuh teks besar tapi bukan judul, gunakan CSS. Heading adalah tentang makna, bukan tampilan. Prinsip ini adalah inti dari “separation of concerns”—memisahkan struktur (HTML) dari gaya (CSS).\n\nAkhirnya, heading yang baik meningkatkan SEO secara signifikan. Google menggunakan heading untuk menentukan topik dan relevansi halaman. Judul utama (<h1>) yang deskriptif dan mengandung kata kunci relevan bisa menjadi faktor penentu dalam peringkat pencarian. Jadi, perlakukan heading bukan sebagai elemen desain, tapi sebagai bagian strategis dari konten Anda.",
+          "video": "",
+          "code": "<h1>Judul Utama (H1)</h1>\n<h2>Sub Judul (H2)</h2>\n<h3>Sub-sub Judul (H3)</h3>\n<h4>Heading Level 4</h4>\n<h5>Heading Level 5</h5>\n<h6>Heading Level 6</h6>\n<!-- Contoh benar -->\n<h1>Panduan HTML</h1>\n<h2>Pendahuluan</h2>\n<h3>Apa itu HTML?</h3>\n<h3>Mengapa Belajar HTML?</h3>\n<h2>Dasar HTML</h2>",
+          "images": []
+        },
+        {
+          "id": "paragraph-tag",
+          "title": "Tag Paragraph (p)",
+          "explanation": "Tag <p> adalah blok dasar untuk menulis teks dalam HTML. Setiap paragraf—sekelompok kalimat yang membahas satu ide utama—harus dibungkus dalam tag <p>. Browser secara otomatis memberikan jarak (margin) di atas dan bawah setiap paragraf, membuat teks lebih mudah dibaca.\n\nMengapa paragraf penting? Karena teks tanpa paragraf terlihat seperti dinding teks yang menakutkan. Paragraf memecah konten menjadi bagian-bagian kecil yang mudah dicerna, meningkatkan keterbacaan dan pengalaman pengguna. Ini adalah prinsip dasar dalam penulisan—baik di web maupun di media cetak.\n\nJangan gunakan <br> berulang kali untuk membuat “paragraf palsu”. Ini adalah kesalahan umum pemula. <br> hanya untuk pindah baris dalam konteks yang sama (misalnya alamat), bukan untuk memisahkan ide. Gunakan <p> untuk setiap ide baru—ini lebih semantik dan fleksibel.\n\nParagraf juga berperan dalam SEO. Mesin pencari menganalisis panjang dan struktur paragraf untuk menilai kualitas konten. Paragraf yang terlalu panjang bisa dianggap “padat” dan sulit dipahami, sementara paragraf yang terlalu pendek (satu kalimat) bisa dianggap kurang mendalam.\n\nTerakhir, ingat bahwa <p> adalah elemen blok—ia selalu dimulai di baris baru. Jika Anda perlu menulis teks inline (dalam baris yang sama dengan elemen lain), gunakan elemen inline seperti <span> atau <em>. Pemahaman ini akan sangat membantu saat Anda mulai belajar CSS dan layout halaman.",
+          "video": "",
+          "code": "<p>Ini paragraf pertama. Paragraf mengelompokkan teks dengan satu ide.</p>\n<p>Ini paragraf kedua. Browser otomatis beri jarak antar paragraf.</p>\n<p>Paragraf panjang dengan banyak kalimat. Usahakan tidak terlalu panjang agar tidak melelahkan pembaca.</p>",
+          "images": []
+        },
+        {
+          "id": "text-formatting-tags",
+          "title": "Tag Formatting Teks",
+          "explanation": "HTML menyediakan berbagai tag untuk memformat teks sesuai maknanya—bukan hanya tampilannya. Ini adalah bagian dari prinsip semantik: setiap elemen harus mencerminkan tujuan atau arti kontennya. Misalnya, <strong> berarti “penting”, bukan hanya “tebal”.\n\nTag <strong> dan <em> adalah pengganti modern dari <b> dan <i>. <strong> menunjukkan kepentingan (biasanya ditampilkan tebal), sementara <em> menunjukkan penekanan (biasanya miring). Perbedaannya mungkin kecil secara visual, tapi besar secara makna—terutama untuk aksesibilitas. Screen reader akan memberi penekanan suara pada <em> dan nada lebih keras pada <strong>.\n\nTag <mark> digunakan untuk menyorot teks, seperti highlighter. Ini berguna untuk menarik perhatian pada bagian penting, misalnya hasil pencarian atau kutipan kunci. <del> dan <ins> menunjukkan teks yang dihapus atau disisipkan—sangat berguna untuk revisi dokumen atau perbandingan harga.\n\nUntuk notasi ilmiah atau matematika, HTML menyediakan <sub> (subscript) dan <sup> (superscript). Misalnya, H<sub>2</sub>O untuk air, atau x<sup>2</sup> untuk kuadrat. Ini lebih akurat daripada menurunkan/menaikkan teks dengan CSS.\n\nTerakhir, <small> digunakan untuk teks kecil yang bersifat tambahan—seperti footnote, syarat dan ketentuan, atau hak cipta. Ingat: jangan gunakan tag ini hanya karena Anda ingin teks kecil; gunakan CSS untuk itu. <small> adalah tentang makna, bukan ukuran. Dengan memahami perbedaan ini, Anda menulis HTML yang lebih profesional, inklusif, dan siap masa depan.",
+          "video": "",
+          "code": "<p>Ini <strong>teks penting</strong> yang perlu diperhatikan.</p>\n<p>Ini <em>teks dengan penekanan</em>.</p>\n<p>Harga <del>Rp 100.000</del> sekarang <strong>Rp 75.000</strong></p>\n<p>Ini <mark>teks highlight</mark> untuk menarik perhatian.</p>\n<p><small>Teks kecil untuk footnote.</small></p>\n<p>Rumus: H<sub>2</sub>O</p>\n<p>Pangkat: x<sup>2</sup> + y<sup>2</sup></p>",
+          "images": ["https://elextutorial.com/wp-content/uploads/2019/02/HTML-Text-Formatting.png"]
+        },
+        {
+          "id": "line-breaks",
+          "title": "Line Break dan Horizontal Rule",
+          "explanation": "Tag <br> dan <hr> adalah dua elemen self-closing yang digunakan untuk mengontrol tata letak teks secara langsung. Keduanya memiliki fungsi spesifik dan sebaiknya digunakan hanya dalam konteks yang tepat—bukan sebagai pengganti elemen struktural seperti paragraf.\n\n<br> (line break) memaksa teks berpindah ke baris baru tanpa memulai paragraf baru. Ini berguna untuk alamat, puisi, atau daftar nama di kartu ucapan—situasi di mana baris baru adalah bagian dari konten itu sendiri, bukan pemisahan ide. Jangan gunakan <br> berulang kali untuk “memberi jarak”; itu tugas CSS.\n\n<hr> (horizontal rule) menggambar garis horizontal sebagai pemisah visual antara bagian konten yang berbeda. Misalnya, antara dua artikel blog atau antara bagian utama dan footer. Ini lebih semantik daripada membuat garis dengan CSS, karena <hr> menyiratkan “perubahan topik”.\n\nKeduanya adalah elemen inline, artinya mereka tidak memulai blok baru seperti <p> atau <div>. Namun, browser memberi tampilan khusus: <br> tidak terlihat, sementara <hr> menampilkan garis.\n\nIngat: jangan menyalahgunakan <br> dan <hr> untuk desain. Tujuan utama HTML adalah struktur dan makna, bukan tampilan. Jika Anda merasa perlu banyak <br>, mungkin struktur konten Anda perlu direvisi. Gunakan elemen yang tepat untuk pekerjaan yang tepat—itu kunci HTML yang baik.",
+          "video": "",
+          "code": "<!-- Line Break -->\n<p>\n  Alamat Kantor:<br>\n  Jl. Sudirman No. 123<br>\n  Jakarta Pusat<br>\n  Indonesia 10210\n</p>\n<!-- Horizontal Rule -->\n<h2>Bagian Pertama</h2>\n<p>Konten pertama...</p>\n<hr>\n<h2>Bagian Kedua</h2>\n<p>Konten kedua...</p>",
+          "images": []
+        },
+        {
+          "id": "quote-tags",
+          "title": "Quotation dan Citation",
+          "explanation": "Ketika Anda mengutip orang lain atau merujuk karya, HTML menyediakan tag khusus untuk menandai kutipan dengan benar. Ini bukan hanya soal etika—tapi juga semantik, SEO, dan kredibilitas konten Anda.\n\n<blockquote> digunakan untuk kutipan panjang (biasanya lebih dari satu baris). Secara default, browser akan memberi margin kiri dan kanan, serta tampilan yang berbeda. Anda bisa menambahkan atribut cite untuk menyertakan URL sumber asli—meski tidak ditampilkan, ini membantu mesin pencari.\n\n<q> (quote) digunakan untuk kutipan pendek yang berada dalam baris teks yang sama. Browser biasanya menambahkan tanda kutip otomatis di sekitar teks—jadi Anda tidak perlu mengetik “” secara manual.\n\n<cite> menandai judul karya (buku, film, artikel), bukan nama orang. Ini membantu membedakan antara pengarang dan karyanya. Misalnya: <cite>Harry Potter</cite> oleh J.K. Rowling.\n\n<abbr> digunakan untuk singkatan atau akronim. Atribut title memberikan penjelasan lengkap saat pengguna mengarahkan kursor. Ini sangat membantu pengguna baru yang mungkin belum familiar dengan istilah teknis seperti HTML atau API.\n\nDengan menggunakan tag ini, Anda tidak hanya membuat konten lebih terstruktur, tapi juga lebih dapat dipercaya. Kutipan yang ditandai dengan benar menunjukkan bahwa Anda menghargai sumber, dan membantu pembaca memverifikasi informasi—praktik penting di era misinformasi.",
+          "video": "",
+          "code": "<!-- Blockquote -->\n<blockquote cite=\"https://example.com\">\n  <p>Kesuksesan adalah kunci kebahagiaan.</p>\n  <footer>— <cite>Albert Schweitzer</cite></footer>\n</blockquote>\n<!-- Quote pendek -->\n<p>Pepatah: <q>Belajar adalah harta.</q></p>\n<!-- Citation -->\n<p>Buku <cite>Sapiens</cite> oleh Yuval Noah Harari.</p>\n<!-- Abbreviation -->\n<p><abbr title=\"HyperText Markup Language\">HTML</abbr> adalah bahasa markup.</p>",
+          "images": ["https://youtube.com/embed/LkyYbxjFkeQ?si=HfMoJzUXsnVPnGw6"]
+        },
+        {
+          "id": "preformatted-code",
+          "title": "Preformatted Text dan Code",
+          "explanation": "Saat menulis dokumentasi teknis, tutorial pemrograman, atau menampilkan output sistem, Anda sering perlu mempertahankan spasi, tab, dan baris baru persis seperti aslinya. Di sinilah <pre> (preformatted text) menjadi sangat berguna.\n\n<pre> menjaga semua whitespace dan line break dalam teks—sesuatu yang biasanya diabaikan oleh HTML. Ini sempurna untuk menampilkan kode sumber, log sistem, atau ASCII art. Namun, hindari menulis HTML di dalam <pre> tanpa escape karakter (gunakan < untuk <, dll).\n\nUntuk menandai kode secara inline, gunakan <code>. Misalnya: “Fungsi <code>console.log()</code> digunakan untuk debugging.” Ini memberi tampilan monospace dan makna semantik bahwa teks tersebut adalah kode.\n\n<kbd> digunakan untuk menunjukkan input keyboard—misalnya shortcut seperti <kbd>Ctrl</kbd> + <kbd>C</kbd>. <samp> menandai output sampel dari program, seperti <samp>Error 404</samp>. <var> menandai variabel dalam konteks matematika atau pemrograman.\n\nKombinasi tag ini membuat dokumentasi teknis Anda lebih jelas, profesional, dan mudah dipahami. Pengguna langsung tahu mana yang kode, mana yang input, dan mana yang output—tanpa perlu tebak-tebakan. Ini adalah standar industri yang harus Anda kuasai jika ingin menulis panduan atau tutorial berkualitas.",
+          "video": "",
+          "code": "<!-- Preformatted text -->\n<pre>\nfunction hello() {\n  console.log(\"Hello\");\n}\n</pre>\n<!-- Inline code -->\n<p>Gunakan fungsi <code>console.log()</code> untuk debugging.</p>\n<!-- Keyboard input -->\n<p>Tekan <kbd>Ctrl</kbd> + <kbd>C</kbd> untuk copy.</p>\n<!-- Sample output -->\n<p>Output: <samp>Error 404 Not Found</samp></p>\n<!-- Variable -->\n<p>Nilai <var>x</var> adalah 10.</p>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "links-navigation",
+      "title": "4. Links dan Navigasi",
+      "description": "Membuat hyperlink dan navigasi website",
+      "contentDetails": [
+        {
+          "id": "anchor-tag-basic",
+          "title": "Tag Anchor (a) - Dasar",
+          "explanation": "Tag <a> (anchor) adalah jantung dari World Wide Web. Tanpa hyperlink, internet hanyalah kumpulan dokumen terpisah. Dengan <a>, Anda menghubungkan halaman, situs, email, dan bahkan nomor telepon—menciptakan jaringan informasi global yang kita kenal sekarang.\n\nAtribut wajib dalam tag <a> adalah href (hypertext reference), yang menentukan tujuan tautan. Nilai href bisa berupa URL absolut (https://www.dicoding.com), path relatif (about.html), atau protokol khusus seperti mailto: dan tel:.\n\nLink eksternal mengarah ke domain lain, sementara link internal mengarah ke halaman lain dalam situs yang sama. Path relatif seperti pages/blog.html berarti “masuk ke folder pages, lalu buka blog.html”. Path seperti ../index.html berarti “naik satu folder, lalu buka index.html”.\n\nLink email (<a href=\"mailto:...\">) membuka aplikasi email default pengguna, sementara link telepon (<a href=\"tel:...\">) membuka dialer di perangkat mobile. Ini sangat berguna untuk kontak darurat atau dukungan pelanggan.\n\nIngat: teks link harus deskriptif. Hindari “klik di sini”—ganti dengan “Baca panduan lengkap” atau “Hubungi tim dukungan”. Ini membantu pengguna disabilitas (yang sering mendengarkan daftar link) dan meningkatkan SEO. Link yang baik adalah jembatan yang jelas, bukan teka-teki.",
+          "video": "https://youtube.com/embed/fOGbw_mFovA?si=sMngbkwMQs3Dtg_r",
+          "code": "<!-- Link eksternal -->\n<a href=\"https://www.dicoding.com\">Dicoding</a>\n<!-- Link halaman lain -->\n<a href=\"about.html\">Tentang</a>\n<a href=\"contact.html\">Kontak</a>\n<!-- Link folder berbeda -->\n<a href=\"pages/blog.html\">Blog</a>\n<a href=\"../index.html\">Home</a>\n<!-- Link email -->\n<a href=\"mailto:info@example.com\">Email</a>\n<!-- Link telepon -->\n<a href=\"tel:+6281234567890\">Call</a>",
+          "images": []
+        },
+        {
+          "id": "anchor-tag-advanced",
+          "title": "Tag Anchor (a) - Lanjutan",
+          "explanation": "Selain href, tag <a> memiliki beberapa atribut penting yang meningkatkan fungsionalitas dan keamanan. Yang paling umum adalah target=\"_blank\", yang membuka link di tab baru. Ini berguna untuk link eksternal agar pengguna tidak meninggalkan situs Anda.\n\nNamun, membuka tab baru memiliki risiko keamanan: halaman baru bisa mengakses window asal melalui JavaScript. Untuk mencegah ini, selalu tambahkan rel=\"noopener noreferrer\" saat menggunakan target=\"_blank\". Ini memutus hubungan antara tab lama dan baru, melindungi privasi dan keamanan pengguna.\n\nAtribut title menampilkan tooltip saat pengguna mengarahkan kursor ke link. Ini berguna untuk memberi konteks tambahan, seperti “Lihat portofolio proyek terbaru saya”.\n\nAtribut download memaksa browser mengunduh file alih-alih membukanya. Anda bisa menentukan nama file dengan download=\"nama-baru.ext\". Ini sangat berguna untuk tombol unduh dokumen, gambar, atau file PDF.\n\nTerakhir, kombinasikan atribut dengan bijak. Misalnya, link ke GitHub sebaiknya memiliki target=\"_blank\", rel=\"noopener noreferrer\", dan title=\"Lihat kode di GitHub\". Ini menciptakan pengalaman pengguna yang aman, informatif, dan profesional—tanpa satu baris JavaScript pun.",
+          "video": "",
+          "code": "<!-- Link tab baru (aman) -->\n<a href=\"https://example.com\" target=\"_blank\" rel=\"noopener noreferrer\">Buka Tab Baru</a>\n<!-- Link dengan tooltip -->\n<a href=\"portfolio.html\" title=\"Lihat portfolio\">Portfolio</a>\n<!-- Download file -->\n<a href=\"document.pdf\" download>Download PDF</a>\n<a href=\"image.jpg\" download=\"my-image.jpg\">Download Gambar</a>\n<!-- Multiple attributes -->\n<a href=\"https://github.com\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"GitHub\">GitHub</a>",
+          "images": ["https://static.semrush.com/blog/uploads/media/de/d5/ded5001486d46a289ea48d0c34c5c799/e60e418f0fe8cc50c161722e438a750f/original.png"]
+        },
+        {
+          "id": "internal-links",
+          "title": "Internal Links dan Anchor",
+          "explanation": "Internal links (atau anchor links) memungkinkan Anda melompat ke bagian tertentu dalam halaman yang sama. Ini sangat berguna untuk halaman panjang seperti FAQ, dokumentasi, atau artikel dengan daftar isi.\n\nCara kerjanya sederhana: beri elemen target atribut id (misalnya id=\"pendahuluan\"), lalu buat link dengan href=\"#pendahuluan\". Saat diklik, browser akan menggulir halaman hingga elemen tersebut berada di bagian atas layar.\n\nAnda juga bisa membuat link “kembali ke atas” dengan href=\"#top\"—asalkan ada elemen dengan id=\"top\" di bagian atas halaman (biasanya <body id=\"top\"> atau <header id=\"top\">).\n\nInternal links meningkatkan navigasi dan UX. Pengguna tidak perlu menggulir manual melalui halaman panjang—mereka bisa langsung ke bagian yang relevan. Ini sangat dihargai di perangkat mobile, di mana menggulir bisa melelahkan.\n\nUntuk aksesibilitas, pastikan elemen target memiliki fokus visual saat di-scroll. Beberapa developer menambahkan sedikit padding atas dengan CSS agar heading tidak tertutup navbar. Internal links yang baik adalah tentang kenyamanan, kecepatan, dan kontrol pengguna.",
+          "video": "",
+          "code": "<!-- Navigasi -->\n<nav>\n  <a href=\"#pendahuluan\">Pendahuluan</a>\n  <a href=\"#materi\">Materi</a>\n  <a href=\"#kesimpulan\">Kesimpulan</a>\n</nav>\n<!-- Konten dengan ID -->\n<section id=\"pendahuluan\">\n  <h2>Pendahuluan</h2>\n  <p>Konten...</p>\n</section>\n<section id=\"materi\">\n  <h2>Materi</h2>\n  <p>Konten...</p>\n</section>\n<!-- Link ke atas -->\n<a href=\"#top\">Kembali ke Atas</a>",
+          "images": []
+        },
+        {
+          "id": "navigation-best-practices",
+          "title": "Best Practices Navigasi",
+          "explanation": "Navigasi yang baik adalah tulang punggung pengalaman pengguna (UX) yang baik. HTML5 memperkenalkan elemen semantik <nav> khusus untuk menandai blok navigasi utama—ini memberi makna jelas kepada browser dan teknologi bantu.\n\nGunakan teks link yang deskriptif. Alih-alih “Klik di sini”, tulis “Lihat daftar kursus kami”. Ini membantu pengguna screen reader yang sering menavigasi dengan daftar link, dan meningkatkan SEO karena mesin pencari tahu konteks link tersebut.\n\nKonsistensi adalah kunci. Tempatkan navigasi utama di lokasi yang sama di setiap halaman—biasanya di header. Pengguna tidak perlu menebak di mana menemukan menu di halaman berikutnya.\n\nUntuk situs besar, gunakan breadcrumb (jejak navigasi) seperti Home > Blog > Artikel Ini. Ini membantu pengguna memahami lokasi mereka dalam struktur situs, dan memberikan cara cepat kembali ke level atas.\n\nTerakhir, pastikan navigasi bisa diakses dengan keyboard (tab/enter). Hindari dropdown yang hanya muncul saat hover—mereka tidak ramah mobile dan keyboard. Navigasi yang baik adalah yang inklusif, intuitif, dan membantu pengguna mencapai tujuan mereka secepat mungkin.",
+          "video": "",
+          "code": "<!-- Navigasi semantik -->\n<nav role=\"navigation\" aria-label=\"Main Navigation\">\n  <ul>\n    <li><a href=\"index.html\">Home</a></li>\n    <li><a href=\"about.html\">Tentang</a></li>\n    <li><a href=\"services.html\">Layanan</a></li>\n    <li><a href=\"blog.html\">Blog</a></li>\n    <li><a href=\"contact.html\">Kontak</a></li>\n  </ul>\n</nav>\n<!-- Breadcrumb -->\n<nav aria-label=\"Breadcrumb\">\n  <ol>\n    <li><a href=\"/\">Home</a></li>\n    <li><a href=\"/blog\">Blog</a></li>\n    <li aria-current=\"page\">Artikel</li>\n  </ol>\n</nav>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "lists-html",
+      "title": "5. Lists (Daftar)",
+      "description": "Membuat berbagai jenis daftar",
+      "contentDetails": [
+        {
+          "id": "unordered-list",
+          "title": "Unordered List (ul)",
+          "explanation": "Unordered list (<ul>) digunakan untuk daftar item yang tidak memiliki urutan tertentu—artinya, urutan item tidak memengaruhi maknanya. Contoh klasik: daftar bahan masakan, fitur produk, atau keterampilan yang dipelajari.\n\nSetiap item dalam <ul> harus dibungkus dalam tag <li> (list item). Browser secara default menampilkan bullet point di depan setiap item, tapi tampilan ini bisa diubah dengan CSS.\n\nAnda bisa membuat daftar bersarang (nested list) dengan menempatkan <ul> atau <ol> di dalam <li>. Ini berguna untuk struktur hierarkis seperti daftar kategori dan sub-kategori.\n\nMeski terlihat sederhana, <ul> sangat penting untuk aksesibilitas. Screen reader akan mengumumkan jumlah item dan membaca satu per satu, memberi pengguna gambaran jelas tentang konten daftar.\n\nHindari menggunakan <ul> hanya untuk tata letak (misalnya membuat menu horizontal). Untuk itu, gunakan <nav> dengan <ul> di dalamnya—ini lebih semantik. Ingat: daftar adalah tentang kumpulan item, bukan desain visual.",
+          "video": "",
+          "code": "<!-- Unordered list dasar -->\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ul>\n<!-- Nested list -->\n<ul>\n  <li>Buah\n    <ul>\n      <li>Apel</li>\n      <li>Jeruk</li>\n      <li>Mangga</li>\n    </ul>\n  </li>\n  <li>Sayuran\n    <ul>\n      <li>Brokoli</li>\n      <li>Wortel</li>\n      <li>Bayam</li>\n    </ul>\n  </li>\n</ul>",
+          "images": ["https://tse4.mm.bing.net/th/id/OIP.AKTAproYhz0SGDRWiSbjOQHaEO?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "ordered-list",
+          "title": "Ordered List (ol)",
+          "explanation": "Ordered list (<ol>) digunakan ketika urutan item sangat penting—misalnya langkah-langkah instruksi, peringkat, atau timeline. Browser secara default menampilkan angka di depan setiap item, tapi Anda bisa mengubahnya dengan atribut type.\n\nAtribut type mendukung berbagai format: 1 (angka), A/a (huruf besar/kecil), I/i (angka Romawi). Ini berguna untuk daftar hukum, outline dokumen, atau kuis pilihan ganda.\n\nAtribut start memungkinkan Anda memulai penomoran dari angka tertentu—misalnya melanjutkan daftar dari halaman sebelumnya. Atribut reversed membalik urutan, menampilkan angka menurun (3, 2, 1).\n\nSeperti <ul>, <ol> juga mendukung daftar bersarang. Ini memungkinkan struktur kompleks seperti outline bab buku atau prosedur multi-level.\n\nPenting: jangan gunakan <ol> hanya karena Anda ingin angka. Jika urutan tidak penting, gunakan <ul>. Semantik yang benar membantu mesin pencari dan teknologi bantu memahami konten Anda dengan akurat.",
+          "video": "https://youtube.com/embed/ahukMeW11gg?si=aSRkG7tPanBrImd9",
+          "code": "<!-- Ordered list dasar -->\n<ol>\n  <li>Buka text editor</li>\n  <li>Tulis kode HTML</li>\n  <li>Simpan file .html</li>\n  <li>Buka di browser</li>\n</ol>\n<!-- Type berbeda -->\n<ol type=\"A\">\n  <li>Pilihan A</li>\n  <li>Pilihan B</li>\n  <li>Pilihan C</li>\n</ol>\n<!-- Start dari 5 -->\n<ol start=\"5\">\n  <li>Item kelima</li>\n  <li>Item keenam</li>\n</ol>\n<!-- Reversed -->\n<ol reversed>\n  <li>Perunggu</li>\n  <li>Perak</li>\n  <li>Emas</li>\n</ol>",
+          "images": ["https://tse4.mm.bing.net/th/id/OIP.AKTAproYhz0SGDRWiSbjOQHaEO?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "description-list",
+          "title": "Description List (dl)",
+          "explanation": "Description list (<dl>) adalah jenis daftar yang sering diabaikan, padahal sangat berguna untuk pasangan istilah dan definisi—seperti glossary, FAQ, atau metadata teknis.\n\nStrukturnya terdiri dari <dt> (description term) untuk istilah, dan <dd> (description definition) untuk definisinya. Satu <dt> bisa memiliki beberapa <dd>, dan sebaliknya.\n\nContoh penggunaan: daftar istilah teknis (HTML: HyperText Markup Language), FAQ (Apa itu web dev? → Proses membuat website...), atau spesifikasi produk (Warna: Merah, Hitam).\n\n<dl> lebih semantik daripada menggunakan tabel atau paragraf biasa untuk pasangan kunci-nilai. Screen reader akan membacanya sebagai “istilah: definisi”, memberi konteks yang jelas.\n\nMeski kurang umum, <dl> adalah alat yang ampuh untuk konten terstruktur. Jika Anda membuat dokumentasi, panduan, atau halaman referensi, jangan ragu menggunakannya—ini menunjukkan penguasaan HTML yang mendalam.",
+          "video": "",
+          "code": "<!-- Glossary -->\n<dl>\n  <dt>HTML</dt>\n  <dd>HyperText Markup Language</dd>\n  <dt>CSS</dt>\n  <dd>Cascading Style Sheets</dd>\n  <dt>JavaScript</dt>\n  <dd>Bahasa pemrograman web</dd>\n  <dd>Berjalan di browser</dd>\n</dl>\n<!-- FAQ -->\n<dl>\n  <dt>Apa itu web development?</dt>\n  <dd>Proses membuat website atau aplikasi web.</dd>\n  <dt>Berapa lama belajar web dev?</dt>\n  <dd>3-6 bulan untuk dasar, 1-2 tahun untuk mahir.</dd>\n</dl>",
+          "images": ["https://media.geeksforgeeks.org/wp-content/uploads/20240418145645/Html-description-list.png"]
+        }
+      ]
+    },
+    {
+      "id": "images-media",
+      "title": "6. Images dan Media",
+      "description": "Menampilkan gambar dan media",
+      "contentDetails": [
+        {
+          "id": "img-tag-basic",
+          "title": "Tag Image (img) - Dasar",
+          "explanation": "Tag <img> adalah cara utama menampilkan gambar di web. Ini adalah self-closing tag yang memerlukan dua atribut wajib: src (source) dan alt (alternative text).\n\nsrc menentukan lokasi gambar—bisa berupa path relatif (images/logo.png), absolut (https://example.com/image.jpg), atau root-relative (/assets/img.jpg). Pastikan path benar, atau gambar tidak akan muncul.\n\nalt adalah teks pengganti yang ditampilkan jika gambar gagal dimuat, atau dibaca oleh screen reader. Ini sangat penting untuk aksesibilitas dan SEO. Jangan biarkan alt kosong kecuali gambar murni dekoratif (dan bahkan itu sebaiknya alt=\"\").\n\nAnda bisa menentukan ukuran dengan width dan height. Ini mencegah layout shift—fenomena di mana halaman “melompat” saat gambar dimuat. Browser bisa mengalokasikan ruang sebelum gambar selesai dimuat.\n\nIngat: jangan gunakan gambar untuk teks. Teks dalam gambar tidak bisa dipilih, diterjemahkan, atau diindeks mesin pencari. Gunakan CSS untuk efek visual, dan simpan teks dalam HTML.",
+          "video": "https://youtube.com/embed/M_ZlrjV0chU?si=kZ6AfSugnSRqEckQ",
+          "code": "<!-- Gambar dasar -->\n<img src=\"gambar.jpg\" alt=\"Deskripsi gambar\">\n<!-- Dari folder -->\n<img src=\"images/foto.png\" alt=\"Foto profil\">\n<img src=\"../assets/logo.svg\" alt=\"Logo\">\n<!-- URL eksternal -->\n<img src=\"https://example.com/image.jpg\" alt=\"Gambar\">\n<!-- Dengan ukuran -->\n<img src=\"banner.jpg\" alt=\"Banner\" width=\"800\" height=\"400\">",
+          "images": []
+        },
+        {
+          "id": "img-tag-advanced",
+          "title": "Tag Image (img) - Lanjutan",
+          "explanation": "Untuk website modern, optimasi gambar sangat penting. Atribut loading=\"lazy\" menunda pemuatan gambar yang tidak terlihat di layar pertama—menghemat bandwidth dan mempercepat loading halaman.\n\nAtribut title menampilkan tooltip saat hover, tapi jangan mengandalkannya untuk informasi penting—banyak pengguna mobile tidak bisa melihatnya.\n\nsrcset dan sizes memungkinkan responsive images: browser memilih gambar yang paling sesuai berdasarkan ukuran layar dan resolusi perangkat. Ini menghemat data pengguna mobile tanpa mengorbankan kualitas di desktop.\n\nWidth dan height tidak hanya untuk tampilan—mereka mencegah Cumulative Layout Shift (CLS), metrik kinerja inti Google. Tanpa ukuran eksplisit, browser tidak tahu berapa ruang yang dialokasikan, sehingga konten di bawahnya bisa “melompat” saat gambar dimuat.\n\nTerakhir, hindari menampilkan gambar sensitif atau berhak cipta tanpa izin. Selalu kompres gambar sebelum upload—gunakan format modern seperti WebP jika didukung. Gambar yang dioptimalkan = pengalaman pengguna yang lebih cepat dan lancar.",
+          "video": "",
+          "code": "<!-- Lazy loading -->\n<img src=\"large.jpg\" alt=\"Gambar besar\" loading=\"lazy\" width=\"1200\" height=\"800\">\n<!-- Dengan title -->\n<img src=\"icon.png\" alt=\"Icon\" title=\"Klik perbesar\" width=\"50\" height=\"50\">\n<!-- Responsive srcset -->\n<img \n  src=\"image-800.jpg\" \n  srcset=\"image-400.jpg 400w, image-800.jpg 800w, image-1200.jpg 1200w\"\n  sizes=\"(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px\"\n  alt=\"Responsive image\">\n<!-- Image link -->\n<a href=\"portfolio.html\">\n  <img src=\"thumbnail.jpg\" alt=\"Portfolio\">\n</a>",
+          "images": []
+        },
+        {
+          "id": "figure-figcaption",
+          "title": "Figure dan Figcaption",
+          "explanation": "Elemen <figure> dan <figcaption> digunakan untuk mengelompokkan gambar (atau konten lain) dengan caption-nya. Ini lebih semantik daripada menempatkan teks di bawah gambar dengan <p> biasa.\n\n<figure> bisa berisi gambar, diagram, cuplikan kode, kutipan, atau video. <figcaption> memberikan deskripsi, judul, atau kredit—dan bisa ditempatkan di atas atau bawah konten utama.\n\nKeuntungan utama: <figure> bersifat independen dari alur utama dokumen. Artinya, jika Anda memindahkan atau menghapus <figure>, alur teks utama tetap utuh. Ini sempurna untuk ilustrasi, diagram, atau contoh kode.\n\nScreen reader akan membaca <figcaption> sebagai bagian dari <figure>, memberi konteks yang jelas. Ini jauh lebih baik daripada teks terpisah yang tidak terkait secara semantik.\n\nGunakan <figure> setiap kali Anda memiliki konten yang bisa “berdiri sendiri” dengan caption-nya. Ini menunjukkan penguasaan HTML semantik yang baik, dan membuat konten Anda lebih terstruktur dan profesional.",
+          "video": "",
+          "code": "<!-- Figure dengan gambar -->\n<figure>\n  <img src=\"sunset.jpg\" alt=\"Sunset\" width=\"600\" height=\"400\">\n  <figcaption>Sunset di Pantai Kuta, Bali</figcaption>\n</figure>\n<!-- Multiple images -->\n<figure>\n  <img src=\"before.jpg\" alt=\"Sebelum\" width=\"300\">\n  <img src=\"after.jpg\" alt=\"Sesudah\" width=\"300\">\n  <figcaption>Sebelum dan sesudah renovasi</figcaption>\n</figure>\n<!-- Figure dengan code -->\n<figure>\n  <pre><code>function hello() {\n  console.log(\"Hello\");\n}</code></pre>\n  <figcaption>Fungsi JavaScript sederhana</figcaption>\n</figure>",
+          "images": ["https://cdn.hashnode.com/res/hashnode/image/upload/v1617205103270/JsL4K-Q9P.jpeg?auto=compress,format&format=webp"]
+        },
+        {
+          "id": "picture-element",
+          "title": "Picture Element",
+          "explanation": "Tag <picture> memberikan kontrol penuh atas pemilihan gambar berdasarkan kondisi tertentu—seperti ukuran layar (art direction) atau format file (WebP vs JPEG).\n\nDi dalam <picture>, Anda menempatkan beberapa <source> dengan atribut media (untuk kondisi layar) atau type (untuk format). Browser akan memilih <source> pertama yang cocok, lalu fallback ke <img> jika tidak ada yang cocok.\n\nArt direction berguna ketika Anda ingin crop berbeda untuk mobile vs desktop—misalnya potret penuh di desktop, tapi hanya wajah di mobile. Format modern seperti WebP memberikan kualitas tinggi dengan ukuran file lebih kecil, tapi tidak didukung semua browser—jadi Anda perlu fallback ke JPEG/PNG.\n\n<picture> lebih kompleks daripada <img> biasa, tapi sangat berharga untuk performa dan pengalaman pengguna. Ini adalah standar industri untuk website profesional.\n\nIngat: jangan gunakan <picture> hanya untuk ukuran berbeda—untuk itu, cukup gunakan srcset pada <img>. Gunakan <picture> hanya ketika Anda benar-benar butuh kontrol atas konten gambar (crop berbeda) atau format (WebP).",
+          "video": "",
+          "code": "<!-- Art direction -->\n<picture>\n  <source media=\"(max-width: 600px)\" srcset=\"mobile.jpg\">\n  <source media=\"(min-width: 601px)\" srcset=\"desktop.jpg\">\n  <img src=\"default.jpg\" alt=\"Responsive\">\n</picture>\n<!-- Format modern -->\n<picture>\n  <source srcset=\"image.webp\" type=\"image/webp\">\n  <source srcset=\"image.jpg\" type=\"image/jpeg\">\n  <img src=\"image.jpg\" alt=\"Modern format\">\n</picture>\n<!-- Kombinasi -->\n<picture>\n  <source media=\"(max-width: 600px)\" srcset=\"mobile.webp\" type=\"image/webp\">\n  <source media=\"(max-width: 600px)\" srcset=\"mobile.jpg\">\n  <source srcset=\"desktop.webp\" type=\"image/webp\">\n  <source srcset=\"desktop.jpg\">\n  <img src=\"desktop.jpg\" alt=\"Fully responsive\">\n</picture>",
+          "images": []
+        },
+        {
+          "id": "audio-video",
+          "title": "Audio dan Video",
+          "explanation": "HTML5 menghadirkan dukungan native untuk audio dan video tanpa plugin seperti Flash. Ini membuat multimedia lebih aman, cepat, dan kompatibel di semua perangkat modern.\n\n<audio> dan <video> bekerja dengan cara yang sama: Anda menyediakan beberapa <source> dengan format berbeda (MP3/OGG untuk audio, MP4/WebM untuk video), dan browser akan memilih yang didukung.\n\nAtribut controls menampilkan tombol play/pause/volume. Hindari autoplay—ini mengganggu pengguna dan sering diblokir browser. Jika harus autoplay, tambahkan muted.\n\n<video> memiliki atribut tambahan seperti poster (thumbnail sebelum diputar) dan width/height. Anda juga bisa menambahkan subtitle dengan <track>—sangat penting untuk aksesibilitas.\n\nIsi fallback (teks di dalam <audio> atau <video>) akan ditampilkan jika browser tidak mendukung elemen tersebut—meski sangat jarang terjadi di era modern. Ini adalah praktik baik untuk kompatibilitas maksimal.",
+          "video": "https://youtube.com/embed/AYfI3EVsrSc?si=RVYgC0y65aS-qzm6",
+          "code": "<!-- Audio -->\n<audio controls>\n  <source src=\"audio.mp3\" type=\"audio/mpeg\">\n  <source src=\"audio.ogg\" type=\"audio/ogg\">\n  Browser Anda tidak mendukung audio.\n</audio>\n<!-- Video -->\n<video controls width=\"640\" height=\"360\" poster=\"thumbnail.jpg\">\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  <source src=\"video.webm\" type=\"video/webm\">\n  <track src=\"subtitles.vtt\" kind=\"subtitles\" srclang=\"id\" label=\"Indonesian\">\n  Browser Anda tidak mendukung video.\n</video>\n<!-- Video dengan atribut -->\n<video controls loop muted width=\"100%\">\n  <source src=\"video.mp4\" type=\"video/mp4\">\n</video>",
+          "images": []
+        },
+        {
+          "id": "iframe-embed",
+          "title": "Iframe dan Embed",
+          "explanation": "<iframe> (inline frame) memungkinkan Anda menyematkan konten dari situs lain—seperti video YouTube, peta Google Maps, atau widget media sosial—langsung di halaman Anda.\n\nAtribut src menentukan URL konten yang disematkan. width dan height mengatur ukurannya. frameborder=\"0\" menghilangkan border default. allow dan allowfullscreen mengizinkan fitur tertentu (seperti fullscreen untuk video).\n\nHati-hati dengan keamanan: konten iframe bisa berisi skrip berbahaya. Gunakan atribut sandbox untuk membatasi kemampuannya—misalnya sandbox=\"allow-scripts\" hanya mengizinkan JavaScript, tapi tidak mengizinkan form submission atau pop-up.\n\n<embed> mirip dengan <iframe>, tapi lebih sederhana dan kurang fleksibel. Ia sering digunakan untuk plugin lama (Flash), tapi sekarang jarang dipakai karena HTML5 menggantikan kebutuhan tersebut.\n\nTerakhir, jangan menyalahgunakan iframe. Terlalu banyak iframe bisa memperlambat halaman dan membingungkan pengguna. Gunakan hanya untuk konten eksternal yang benar-benar diperlukan—dan pastikan sumbernya tepercaya.",
+          "video": "",
+          "code": "<!-- YouTube embed -->\n<iframe \n  width=\"560\" \n  height=\"315\" \n  src=\"https://www.youtube.com/embed/VIDEO_ID\" \n  frameborder=\"0\" \n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n  allowfullscreen>\n</iframe>\n<!-- Google Maps -->\n<iframe \n  src=\"https://www.google.com/maps/embed?pb=...\" \n  width=\"600\" \n  height=\"450\" \n  style=\"border:0;\" \n  allowfullscreen=\"\" \n  loading=\"lazy\">\n</iframe>\n<!-- Iframe dengan sandbox -->\n<iframe \n  src=\"external.html\" \n  sandbox=\"allow-scripts allow-same-origin\" \n  width=\"100%\" \n  height=\"400\">\n</iframe>",
+          "images": ["https://scaler.com/topics/images/iframe-remove-border.webp"]
+        }
+      ]
+    }
+  ]
+},
   {
-    "id": "html-dasar",
-    "title": "HTML Dasar",
-    "description": "Pelajari dasar-dasar HTML untuk membangun struktur web",
-    "icon": "code",
+    "id": "html-menengah",
+    "title": "HTML Menengah",
+    "isLocked": true,
+    "description": "Semantic HTML, forms, tables, dan struktur website yang lebih kompleks",
+    "icon": "code-bracket",
     "subContent": [
       {
-        "id": "struktur-dokumen",
-        "title": "Struktur Dokumen HTML",
-        "description": "Memahami struktur dasar dokumen HTML",
+        "id": "semantic-html",
+        "title": "1. Semantic HTML5",
+        "description": "Tag semantik untuk struktur yang lebih baik",
         "contentDetails": [
           {
-            "id": "doctype-html",
-            "title": "DOCTYPE dan Tag HTML",
-            "explanation": "DOCTYPE mendefinisikan versi HTML yang digunakan. Tag <html> adalah root element yang membungkus seluruh konten halaman.",
-            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Judul Halaman</title>\n  </head>\n  <body>\n    <!-- Konten halaman di sini -->\n  </body>\n</html>",
-            "video": ""
+            "id": "apa-itu-semantic",
+            "title": "Apa Itu Semantic HTML?",
+            "explanation": "Semantic HTML adalah penggunaan tag yang memberikan makna pada struktur konten, bukan hanya presentasi visual. Tag semantik menjelaskan tujuan konten.\nContoh: <header>, <nav>, <article>, <section>, <footer> lebih jelas daripada <div>.\nKeuntungan:\n- SEO lebih baik\n- Accessibility meningkat\n- Kode lebih mudah dibaca dan di-maintain\n- Browser dan screen reader memahami struktur",
+            "video": "",
+            "code": "<!-- Non-semantic (kurang baik) -->\n<div id=\"header\">...</div>\n<div id=\"nav\">...</div>\n<div class=\"article\">...</div>\n<div id=\"footer\">...</div>\n<!-- Semantic (baik!) -->\n<header>...</header>\n<nav>...</nav>\n<article>...</article>\n<footer>...</footer>",
+            "images": []
           },
           {
-            "id": "head-tag",
-            "title": "Tag Head",
-            "explanation": "Tag <head> berisi metadata, link ke CSS, JavaScript, dan informasi lain yang tidak ditampilkan langsung di halaman.",
-            "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Judul Halaman</title>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>",
-            "video": ""
+            "id": "header-nav-footer",
+            "title": "Header, Nav, dan Footer",
+            "explanation": "<header>: Kepala halaman atau section. Biasanya berisi logo, judul, navigasi.\n<nav>: Navigasi utama website. Untuk link navigasi yang penting.\n<footer>: Kaki halaman atau section. Biasanya copyright, kontak, link tambahan.\nBisa digunakan di level halaman atau di dalam section/article.",
+            "video": "",
+            "code": "<!-- Header halaman -->\n<header>\n  <img src=\"logo.png\" alt=\"Logo\">\n  <h1>Website Saya</h1>\n  <nav>\n    <ul>\n      <li><a href=\"/\">Home</a></li>\n      <li><a href=\"/about\">About</a></li>\n      <li><a href=\"/contact\">Contact</a></li>\n    </ul>\n  </nav>\n</header>\n<!-- Footer halaman -->\n<footer>\n  <p>&copy; 2024 Website Saya. All rights reserved.</p>\n  <nav>\n    <a href=\"/privacy\">Privacy</a>\n    <a href=\"/terms\">Terms</a>\n  </nav>\n</footer>",
+            "images": []
+          },
+          {
+            "id": "main-section-article",
+            "title": "Main, Section, dan Article",
+            "explanation": "<main>: Konten utama halaman. Hanya satu per halaman. Tidak di dalam header, footer, nav, aside.\n<section>: Pengelompokan konten bertema. Biasanya punya heading.\n<article>: Konten independen yang bisa berdiri sendiri (blog post, berita, komentar). Bisa di-syndicate atau di-distribute sendiri.",
+            "video": "",
+            "code": "<main>\n  <section>\n    <h2>Berita Terkini</h2>\n    <article>\n      <h3>Judul Berita 1</h3>\n      <p>Konten berita...</p>\n      <footer>\n        <p>Ditulis oleh John Doe - 10 Jan 2024</p>\n      </footer>\n    </article>\n    <article>\n      <h3>Judul Berita 2</h3>\n      <p>Konten berita...</p>\n    </article>\n  </section>\n  <section>\n    <h2>Tentang Kami</h2>\n    <p>Deskripsi tentang kami...</p>\n  </section>\n</main>",
+            "images": []
+          },
+          {
+            "id": "aside-details-summary",
+            "title": "Aside, Details, dan Summary",
+            "explanation": "<aside>: Konten sampingan yang terkait tapi bisa dipisah dari konten utama (sidebar, callout, quotes).\n<details>: Konten yang bisa dibuka/tutup (disclosure widget).\n<summary>: Judul/ringkasan untuk <details>. Yang terlihat sebelum dibuka.\nInteraktif tanpa JavaScript!",
+            "video": "",
+            "code": "<!-- Aside sidebar -->\n<main>\n  <article>\n    <h1>Artikel Utama</h1>\n    <p>Konten artikel...</p>\n  </article>\n  <aside>\n    <h3>Artikel Terkait</h3>\n    <ul>\n      <li><a href=\"#\">Artikel 1</a></li>\n      <li><a href=\"#\">Artikel 2</a></li>\n    </ul>\n  </aside>\n</main>\n<!-- Details dan Summary -->\n<details>\n  <summary>Lihat Detail</summary>\n  <p>Konten detail yang tersembunyi sampai diklik...</p>\n</details>\n<details open>\n  <summary>FAQ: Apa itu HTML?</summary>\n  <p>HTML adalah HyperText Markup Language...</p>\n</details>",
+            "images": []
+          },
+          {
+            "id": "time-mark-address",
+            "title": "Time, Mark, dan Address",
+            "explanation": "<time>: Waktu atau tanggal yang machine-readable. Atribut datetime untuk format standar.\n<mark>: Highlight atau tandai teks yang relevan/penting dalam konteks tertentu.\n<address>: Informasi kontak untuk author atau owner. Tidak harus alamat fisik.",
+            "video": "",
+            "code": "<!-- Time -->\n<article>\n  <h2>Judul Artikel</h2>\n  <p>Dipublikasikan: <time datetime=\"2024-01-10\">10 Januari 2024</time></p>\n  <p>Event dimulai: <time datetime=\"2024-02-14T19:00\">14 Feb 2024, 7:00 PM</time></p>\n</article>\n<!-- Mark -->\n<p>Hasil pencarian untuk: <mark>HTML tutorial</mark></p>\n<p>Harga spesial: <mark>Diskon 50%</mark> hari ini!</p>\n<!-- Address -->\n<address>\n  <p>Hubungi penulis:</p>\n  <a href=\"mailto:john@example.com\">john@example.com</a><br>\n  <a href=\"tel:+6281234567890\">+62 812 3456 7890</a>\n</address>",
+            "images": []
+          },
+          {
+            "id": "semantic-layout-complete",
+            "title": "Semantic Layout Lengkap",
+            "explanation": "Contoh struktur halaman lengkap dengan semantic HTML5. Ini adalah best practice untuk website modern.\nPerhatikan hierarki dan penggunaan setiap tag. Struktur ini membantu SEO, accessibility, dan maintainability.",
+            "video": "",
+            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Website Semantic</title>\n</head>\n<body>\n  <header>\n    <h1>Website Saya</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#home\">Home</a></li>\n        <li><a href=\"#about\">About</a></li>\n        <li><a href=\"#blog\">Blog</a></li>\n        <li><a href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section id=\"hero\">\n      <h2>Selamat Datang</h2>\n      <p>Deskripsi singkat...</p>\n    </section>\n    <section id=\"blog\">\n      <h2>Blog Terbaru</h2>\n      <article>\n        <header>\n          <h3>Judul Post</h3>\n          <p><time datetime=\"2024-01-10\">10 Jan 2024</time></p>\n        </header>\n        <p>Konten blog...</p>\n        <footer>\n          <p>Tags: <a href=\"#\">HTML</a>, <a href=\"#\">Tutorial</a></p>\n        </footer>\n      </article>\n    </section>\n    <aside>\n      <h3>Sidebar</h3>\n      <p>Konten sampingan...</p>\n    </aside>\n  </main>\n  <footer>\n    <p>&copy; 2024 Website Saya</p>\n    <address>\n      <a href=\"mailto:info@example.com\">Email Us</a>\n    </address>\n  </footer>\n</body>\n</html>",
+            "images": []
           }
         ]
       },
       {
-        "id": "body-html",
-        "title": "Body HTML",
-        "description": "Elemen-elemen yang ditampilkan di halaman web",
+        "id": "html-tables",
+        "title": "2. Tables",
+        "description": "Membuat tabel data yang terstruktur",
         "contentDetails": [
           {
-            "id": "tag-p",
-            "title": "Tag Paragraph (p)",
-            "explanation": "Tag <p> digunakan untuk membuat paragraf teks. Browser otomatis menambahkan margin di atas dan bawah paragraf.",
-            "code": "<p>Ini adalah paragraf pertama.</p>\n<p>Ini adalah paragraf kedua.</p>",
-            "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            "id": "table-basics",
+            "title": "Dasar-dasar Table",
+            "explanation": "Table untuk menampilkan data tabular (baris dan kolom). Jangan gunakan untuk layout!\nTag dasar:\n- <table>: Container table\n- <tr>: Table row (baris)\n- <td>: Table data (cell data)\n- <th>: Table header (cell header)\n<th> untuk header kolom/baris, otomatis bold dan center.",
+            "video": "",
+            "code": "<!-- Table sederhana -->\n<table>\n  <tr>\n    <th>Nama</th>\n    <th>Email</th>\n    <th>Umur</th>\n  </tr>\n  <tr>\n    <td>John Doe</td>\n    <td>john@example.com</td>\n    <td>25</td>\n  </tr>\n  <tr>\n    <td>Jane Smith</td>\n    <td>jane@example.com</td>\n    <td>30</td>\n  </tr>\n</table>",
+            "images": []
           },
           {
-            "id": "tag-heading",
-            "title": "Tag Heading (h1-h6)",
-            "explanation": "Tag heading digunakan untuk membuat judul dengan 6 tingkat prioritas, h1 yang paling penting hingga h6.",
-            "code": "<h1>Judul Utama</h1>\n<h2>Sub Judul</h2>\n<h3>Sub Sub Judul</h3>",
-            "video": ""
+            "id": "table-structure",
+            "title": "Struktur Table Lengkap",
+            "explanation": "Struktur table yang proper menggunakan:\n- <thead>: Header table\n- <tbody>: Body table (data utama)\n- <tfoot>: Footer table (summary, total)\n- <caption>: Judul table\n- <colgroup> & <col>: Styling kolom\nStruktur ini meningkatkan accessibility dan memudahkan styling.",
+            "video": "",
+            "code": "<table>\n  <caption>Data Penjualan Q1 2024</caption>\n  <thead>\n    <tr>\n      <th>Bulan</th>\n      <th>Penjualan</th>\n      <th>Target</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Januari</td>\n      <td>Rp 10.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Februari</td>\n      <td>Rp 15.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Maret</td>\n      <td>Rp 13.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <th>Total</th>\n      <td>Rp 38.000.000</td>\n      <td>Rp 36.000.000</td>\n    </tr>\n  </tfoot>\n</table>",
+            "images": []
           },
           {
-            "id": "tag-img",
-            "title": "Tag Image (img)",
-            "explanation": "Tag <img> digunakan untuk menampilkan gambar. Atribut src menentukan lokasi file gambar, dan alt memberikan teks alternatif.",
-            "code": "<img src=\"gambar.jpg\" alt=\"Deskripsi gambar\" width=\"300\">",
-            "video": ""
+            "id": "table-spanning",
+            "title": "Colspan dan Rowspan",
+            "explanation": "Atribut untuk menggabungkan cells:\n- colspan: Gabung kolom horizontal\n- rowspan: Gabung baris vertikal\nBerguna untuk table kompleks dengan header multi-level atau data yang perlu digabung.",
+            "video": "",
+            "code": "<!-- Colspan -->\n<table>\n  <tr>\n    <th colspan=\"3\">Header Gabungan (3 kolom)</th>\n  </tr>\n  <tr>\n    <td>Data 1</td>\n    <td>Data 2</td>\n    <td>Data 3</td>\n  </tr>\n</table>\n<!-- Rowspan -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Kategori</th>\n    <th>Product</th>\n    <th>Harga</th>\n  </tr>\n  <tr>\n    <td>Laptop</td>\n    <td>Rp 10.000.000</td>\n  </tr>\n  <tr>\n    <td>Mouse</td>\n    <td>Rp 200.000</td>\n  </tr>\n</table>\n<!-- Kombinasi -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Nama</th>\n    <th colspan=\"2\">Nilai</th>\n  </tr>\n  <tr>\n    <th>UTS</th>\n    <th>UAS</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>85</td>\n    <td>90</td>\n  </tr>\n</table>",
+            "images": []
+          },
+          {
+            "id": "table-accessibility",
+            "title": "Table Accessibility",
+            "explanation": "Membuat table accessible untuk screen reader:\n- Gunakan <th> dengan scope attribute\n- scope=\"col\" untuk header kolom\n- scope=\"row\" untuk header baris\n- Gunakan <caption> untuk deskripsi table\n- id dan headers attribute untuk table kompleks\nAccessibility penting untuk pengguna dengan disabilitas!",
+            "video": "",
+            "code": "<!-- Table dengan scope -->\n<table>\n  <caption>Jadwal Pelajaran Kelas 10A</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\">Hari</th>\n      <th scope=\"col\">Jam 1</th>\n      <th scope=\"col\">Jam 2</th>\n      <th scope=\"col\">Jam 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">Senin</th>\n      <td>Matematika</td>\n      <td>Bahasa Indonesia</td>\n      <td>Fisika</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">Selasa</th>\n      <td>Kimia</td>\n      <td>Sejarah</td>\n      <td>Bahasa Inggris</td>\n    </tr>\n  </tbody>\n</table>",
+            "images": []
+          },
+          {
+            "id": "responsive-tables",
+            "title": "Responsive Tables",
+            "explanation": "Table bisa sulit di mobile karena lebar terbatas. Teknik membuat table responsive:\n1. Wrapper dengan overflow\n2. Transform ke layout card di mobile (butuh CSS)\n3. Sembunyikan kolom tidak penting di mobile\nContoh wrapper sederhana yang paling umum digunakan.",
+            "video": "",
+            "code": "<!-- Wrapper untuk horizontal scroll -->\n<div style=\"overflow-x: auto;\">\n  <table>\n    <thead>\n      <tr>\n        <th>Nama</th>\n        <th>Email</th>\n        <th>Telepon</th>\n        <th>Alamat</th>\n        <th>Kota</th>\n        <th>Negara</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>John Doe</td>\n        <td>john@example.com</td>\n        <td>+62 812 3456 7890</td>\n        <td>Jl. Sudirman No. 123</td>\n        <td>Jakarta</td>\n        <td>Indonesia</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "html-forms",
+        "title": "3. Forms",
+        "description": "Membuat form interaktif untuk input user",
+        "contentDetails": [
+          {
+            "id": "form-basics",
+            "title": "Dasar-dasar Form",
+            "explanation": "<form> untuk mengumpulkan input user. Atribut penting:\n- action: URL tujuan submit\n- method: GET atau POST\n- name: Nama form\n<input> untuk berbagai jenis input. Atribut:\n- type: Jenis input\n- name: Nama field (key untuk data)\n- value: Nilai default\n- placeholder: Teks hint\n- required: Wajib diisi",
+            "video": "",
+            "code": "<!-- Form sederhana -->\n<form action=\"/submit\" method=\"POST\">\n  <label for=\"name\">Nama:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required>\n  <button type=\"submit\">Kirim</button>\n</form>",
+            "images": []
+          },
+          {
+            "id": "input-types",
+            "title": "Berbagai Tipe Input",
+            "explanation": "HTML5 punya banyak tipe input dengan validasi built-in:\n- text: Teks biasa\n- email: Email (validasi format)\n- password: Password (karakter tersembunyi)\n- number: Angka\n- tel: Nomor telepon\n- url: URL (validasi format)\n- date: Tanggal (date picker)\n- time: Waktu\n- color: Color picker\n- range: Slider\n- search: Search field\n- file: Upload file\nValidasi otomatis oleh browser!",
+            "video": "",
+            "code": "<form>\n  <label>Text: <input type=\"text\" name=\"text\"></label><br>\n  <label>Email: <input type=\"email\" name=\"email\"></label><br>\n  <label>Password: <input type=\"password\" name=\"pass\"></label><br>\n  <label>Number: <input type=\"number\" min=\"0\" max=\"100\" name=\"num\"></label><br>\n  <label>Date: <input type=\"date\" name=\"date\"></label><br>\n  <label>Time: <input type=\"time\" name=\"time\"></label><br>\n  <label>Color: <input type=\"color\" name=\"color\"></label><br>\n  <label>Range: <input type=\"range\" min=\"0\" max=\"100\" name=\"range\"></label><br>\n  <label>File: <input type=\"file\" name=\"file\"></label><br>\n  <label>Search: <input type=\"search\" name=\"search\"></label><br>\n  <label>URL: <input type=\"url\" name=\"url\"></label><br>\n  <label>Tel: <input type=\"tel\" name=\"tel\"></label><br>\n</form>",
+            "images": []
+          },
+          {
+            "id": "checkboxes-radio",
+            "title": "Checkbox dan Radio Button",
+            "explanation": "Checkbox untuk pilihan multiple:\n- type=\"checkbox\"\n- Bisa pilih beberapa\n- checked untuk default\nRadio untuk pilihan tunggal:\n- type=\"radio\"\n- Same name untuk grup\n- Hanya satu bisa dipilih per grup\nSelalu gunakan <label> untuk accessibility!",
+            "video": "",
+            "code": "<!-- Checkboxes -->\n<fieldset>\n  <legend>Hobi (pilih semua yang sesuai):</legend>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"coding\">\n    Coding\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"reading\">\n    Reading\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"gaming\" checked>\n    Gaming\n  </label>\n</fieldset>\n<!-- Radio buttons -->\n<fieldset>\n  <legend>Jenis Kelamin:</legend>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"male\" required>\n    Laki-laki\n  </label>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"female\">\n    Perempuan\n  </label>\n</fieldset>",
+            "images": []
+          },
+          {
+            "id": "select-textarea",
+            "title": "Select dan Textarea",
+            "explanation": "<select> untuk dropdown menu:\n- <option> untuk setiap pilihan\n- value attribute untuk data yang dikirim\n- selected untuk default\n- multiple untuk pilihan ganda\n<textarea> untuk teks multi-baris:\n- rows dan cols untuk ukuran\n- Tidak ada value attribute, konten di antara tag",
+            "video": "",
+            "code": "<!-- Select dropdown -->\n<label for=\"country\">Negara:</label>\n<select id=\"country\" name=\"country\" required>\n  <option value=\"\">-- Pilih Negara --</option>\n  <option value=\"id\">Indonesia</option>\n  <option value=\"my\">Malaysia</option>\n  <option value=\"sg\" selected>Singapore</option>\n  <option value=\"th\">Thailand</option>\n</select>\n<!-- Multiple select -->\n<label for=\"skills\">Skills (Ctrl+Click untuk multiple):</label>\n<select id=\"skills\" name=\"skills\" multiple>\n  <option value=\"html\">HTML</option>\n  <option value=\"css\">CSS</option>\n  <option value=\"js\">JavaScript</option>\n  <option value=\"php\">PHP</option>\n</select>\n<!-- Textarea -->\n<label for=\"message\">Pesan:</label>\n<textarea id=\"message\" name=\"message\" rows=\"5\" cols=\"40\" placeholder=\"Tulis pesan Anda...\"></textarea>",
+            "images": []
+          },
+          {
+            "id": "form-attributes",
+            "title": "Atribut Validasi Form",
+            "explanation": "HTML5 punya validasi built-in dengan atribut:\n- required: Wajib diisi\n- min, max: Nilai minimum/maksimum (number, date)\n- minlength, maxlength: Panjang karakter\n- pattern: Regex pattern\n- disabled: Nonaktifkan input\n- readonly: Baca saja (tidak bisa edit)\nBrowser akan validasi sebelum submit!",
+            "video": "",
+            "code": "<form>\n  <!-- Required -->\n  <input type=\"text\" name=\"username\" required>\n  <!-- Min/Max length -->\n  <input type=\"password\" name=\"pass\" minlength=\"8\" maxlength=\"20\" required>\n  <!-- Min/Max value -->\n  <input type=\"number\" name=\"age\" min=\"18\" max=\"100\" required>\n  <!-- Pattern (regex) -->\n  <input type=\"text\" name=\"phone\" pattern=\"[0-9]{10,12}\" placeholder=\"08123456789\">\n  <!-- Readonly -->\n  <input type=\"text\" name=\"username\" value=\"johndoe\" readonly>\n  <!-- Disabled -->\n  <input type=\"text\" name=\"field\" value=\"Tidak aktif\" disabled>\n  <button type=\"submit\">Submit</button>\n</form>",
+            "images": []
+          },
+          {
+            "id": "fieldset-legend",
+            "title": "Fieldset, Legend, dan Label",
+            "explanation": "<fieldset> untuk mengelompokkan input terkait. Border otomatis.\n<legend> untuk judul fieldset.\n<label> untuk label input. Dua cara:\n1. Wrap input\n2. Gunakan for=\"id\" ke id input\nLabel penting untuk accessibility! Screen reader membacanya.",
+            "video": "",
+            "code": "<!-- Fieldset dengan legend -->\n<fieldset>\n  <legend>Informasi Pribadi</legend>\n  <!-- Label dengan for -->\n  <label for=\"fname\">Nama Depan:</label>\n  <input type=\"text\" id=\"fname\" name=\"fname\"><br>\n  <label for=\"lname\">Nama Belakang:</label>\n  <input type=\"text\" id=\"lname\" name=\"lname\"><br>\n</fieldset>\n<fieldset>\n  <legend>Alamat</legend>\n  <!-- Label wrap input -->\n  <label>\n    Jalan:\n    <input type=\"text\" name=\"street\">\n  </label><br>\n  <label>\n    Kota:\n    <input type=\"text\" name=\"city\">\n  </label><br>\n  <label>\n    Kode Pos:\n    <input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}\">\n  </label>\n</fieldset>",
+            "images": []
+          },
+          {
+            "id": "form-complete-example",
+            "title": "Form Lengkap",
+            "explanation": "Contoh form lengkap dengan berbagai elemen dan best practices:\n- Semantic grouping dengan fieldset\n- Label accessible\n- Validasi appropriate\n- Button types yang benar\n- Placeholder dan hint text\nIni template yang bisa Anda gunakan dan modifikasi.",
+            "video": "",
+            "code": "<form action=\"/register\" method=\"POST\">\n  <h2>Form Registrasi</h2>\n  <fieldset>\n    <legend>Informasi Akun</legend>\n    <label for=\"username\">Username:</label>\n    <input type=\"text\" id=\"username\" name=\"username\" minlength=\"3\" required><br>\n    <label for=\"email\">Email:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required><br>\n    <label for=\"password\">Password:</label>\n    <input type=\"password\" id=\"password\" name=\"password\" minlength=\"8\" required><br>\n    <label for=\"confirm\">Konfirmasi Password:</label>\n    <input type=\"password\" id=\"confirm\" name=\"confirm\" minlength=\"8\" required><br>\n  </fieldset>\n  <fieldset>\n    <legend>Informasi Pribadi</legend>\n    <label for=\"fullname\">Nama Lengkap:</label>\n    <input type=\"text\" id=\"fullname\" name=\"fullname\" required><br>\n    <label for=\"dob\">Tanggal Lahir:</label>\n    <input type=\"date\" id=\"dob\" name=\"dob\" required><br>\n    <label>Jenis Kelamin:</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"male\" required> Laki-laki</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"female\"> Perempuan</label><br>\n    <label for=\"country\">Negara:</label>\n    <select id=\"country\" name=\"country\" required>\n      <option value=\"\">-- Pilih --</option>\n      <option value=\"id\">Indonesia</option>\n      <option value=\"my\">Malaysia</option>\n    </select><br>\n  </fieldset>\n  <fieldset>\n    <legend>Preferensi</legend>\n    <label><input type=\"checkbox\" name=\"newsletter\"> Subscribe newsletter</label><br>\n    <label><input type=\"checkbox\" name=\"terms\" required> Setuju dengan syarat dan ketentuan</label><br>\n  </fieldset>\n  <button type=\"submit\">Daftar</button>\n  <button type=\"reset\">Reset</button>\n</form>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "html-metadata",
+        "title": "4. Metadata dan SEO",
+        "description": "Optimasi website untuk search engine",
+        "contentDetails": [
+          {
+            "id": "meta-tags-seo",
+            "title": "Meta Tags untuk SEO",
+            "explanation": "Meta tags penting untuk SEO dan social media:\n- description: Deskripsi di search results\n- keywords: Keywords (kurang penting sekarang)\n- author: Penulis\n- viewport: Responsive design (wajib!)\n- robots: Instruksi untuk crawler\nSearch engine menggunakan ini untuk indexing dan ranking.",
+            "video": "",
+            "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <!-- SEO Meta Tags -->\n  <title>Belajar HTML - Tutorial Lengkap untuk Pemula</title>\n  <meta name=\"description\" content=\"Tutorial HTML lengkap dari dasar hingga mahir. Pelajari HTML5, semantic tags, forms, dan best practices web development.\">\n  <meta name=\"keywords\" content=\"html, tutorial html, belajar html, html5, web development\">\n  <meta name=\"author\" content=\"Nama Anda\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <!-- Canonical URL (hindari duplicate content) -->\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "open-graph",
+            "title": "Open Graph untuk Social Media",
+            "explanation": "Open Graph protocol untuk preview link di social media (Facebook, LinkedIn, dll).\nAtribut penting:\n- og:title: Judul\n- og:description: Deskripsi\n- og:image: Gambar preview\n- og:url: URL canonical\n- og:type: Tipe konten\nTanpa ini, preview link di social media akan buruk!",
+            "video": "",
+            "code": "<head>\n  <!-- Open Graph Meta Tags -->\n  <meta property=\"og:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir dengan contoh kode lengkap.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <meta property=\"og:site_name\" content=\"WebDev Academy\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta name=\"twitter:creator\" content=\"@yourusername\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "favicon-icons",
+            "title": "Favicon dan Icons",
+            "explanation": "Favicon adalah icon kecil di tab browser. Modern website perlu berbagai ukuran untuk device berbeda.\nIcon sizes:\n- 16x16, 32x32: Browser tab\n- 180x180: Apple Touch Icon\n- 192x192, 512x512: Android\nGunakan favicon generator online untuk semua ukuran!",
+            "video": "",
+            "code": "<head>\n  <!-- Favicon -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n  <!-- Apple Touch Icon -->\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Android Chrome -->\n  <link rel=\"manifest\" href=\"/site.webmanifest\">\n  <!-- Safari Pinned Tab -->\n  <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <!-- Theme Color -->\n  <meta name=\"theme-color\" content=\"#ffffff\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "structured-data",
+            "title": "Structured Data (Schema.org)",
+            "explanation": "Structured data membantu search engine memahami konten website. Menggunakan JSON-LD format.\nSchema.org types:\n- Article: Artikel/blog post\n- Person: Profil orang\n- Organization: Perusahaan\n- Product: Produk e-commerce\n- Recipe: Resep masakan\n- Event: Acara/event\nRich snippets di search results!",
+            "video": "",
+            "code": "<head>\n  <!-- Structured Data untuk Article -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap untuk Pemula\",\n    \"image\": \"https://www.example.com/images/html-tutorial.jpg\",\n    \"author\": {\n      \"@type\": \"Person\",\n      \"name\": \"John Doe\"\n    },\n    \"publisher\": {\n      \"@type\": \"Organization\",\n      \"name\": \"WebDev Academy\",\n      \"logo\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://www.example.com/logo.png\"\n      }\n    },\n    \"datePublished\": \"2024-01-10\",\n    \"dateModified\": \"2024-01-15\",\n    \"description\": \"Tutorial HTML dari dasar hingga mahir.\"\n  }\n  </script>\n</head>",
+            "images": []
+          },
+          {
+            "id": "complete-head-example",
+            "title": "Complete Head Section",
+            "explanation": "Contoh <head> lengkap dengan semua best practices:\n- Encoding dan viewport\n- Title dan meta description\n- Open Graph dan Twitter Card\n- Favicon\n- Canonical URL\n- Structured data\n- CSS dan fonts\nTemplate ini siap digunakan untuk project Anda!",
+            "video": "",
+            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <!-- Essential Meta Tags -->\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <!-- SEO Meta Tags -->\n  <title>Tutorial HTML Lengkap - WebDev Academy</title>\n  <meta name=\"description\" content=\"Pelajari HTML dari dasar hingga mahir. Tutorial lengkap dengan contoh kode dan best practices web development modern.\">\n  <meta name=\"keywords\" content=\"html, tutorial, web development, html5\">\n  <meta name=\"author\" content=\"WebDev Academy\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n  <!-- Open Graph -->\n  <meta property=\"og:title\" content=\"Tutorial HTML Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/og-image.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Tutorial HTML Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/twitter-image.jpg\">\n  <!-- Favicons -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Stylesheets -->\n  <link rel=\"stylesheet\" href=\"/css/style.css\">\n  <!-- Fonts -->\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n  <!-- Structured Data -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap\",\n    \"datePublished\": \"2024-01-10\"\n  }\n  </script>\n</head>\n<body>\n  <!-- Content here -->\n</body>\n</html>",
+            "images": []
           }
         ]
       }
     ]
   },
   {
-    "id": "css-dasar",
-    "title": "CSS Dasar",
-    "description": "Belajar styling dan layout dengan CSS",
-    "icon": "palette",
+    "id": "html-advanced",
+    "title": "HTML Advanced",
+        "isLocked": true,
+    "description": "Teknik lanjutan: Web Components, API integrasi, performance, dan best practices profesional",
+    "icon": "code-bracket-square",
     "subContent": [
       {
-        "id": "selector-css",
-        "title": "Selector CSS",
-        "description": "Cara memilih elemen HTML untuk di-styling",
+        "id": "web-components",
+        "title": "1. Web Components",
+        "description": "Membuat komponen UI reusable dengan standar web",
         "contentDetails": [
           {
-            "id": "selector-element",
-            "title": "Element Selector",
-            "explanation": "Selector element memilih semua elemen dengan tag tertentu.",
-            "code": "/* Memilih semua tag p */\np {\n  color: blue;\n  font-size: 16px;\n}",
-            "video": ""
+            "id": "custom-elements",
+            "title": "Custom Elements",
+            "explanation": "Buat elemen HTML sendiri dengan JavaScript. Contoh: <my-button>, <user-card>.\nGunakan class yang extends HTMLElement dan daftarkan dengan customElements.define().",
+            "video": "",
+            "code": "class MyButton extends HTMLElement {\n  constructor() {\n    super();\n    this.innerHTML = `<button style=\"color: blue;\">${this.getAttribute('label')}</button>`;\n  }\n}\ncustomElements.define('my-button', MyButton);\n\n<!-- Penggunaan -->\n<my-button label=\"Klik Saya\"></my-button>",
+            "images": []
           },
           {
-            "id": "selector-class",
-            "title": "Class Selector",
-            "explanation": "Class selector menggunakan titik (.) dan memilih elemen dengan class tertentu. Satu elemen bisa memiliki banyak class.",
-            "code": "/* CSS */\n.highlight {\n  background-color: yellow;\n}\n\n/* HTML */\n<p class=\"highlight\">Teks ini di-highlight</p>",
-            "video": ""
+            "id": "shadow-dom",
+            "title": "Shadow DOM",
+            "explanation": "Isolasi styling dan markup komponen dari dokumen utama. Hindari konflik CSS.",
+            "video": "",
+            "code": "class UserCard extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({mode: 'open'});\n    shadow.innerHTML = `\n      <style>h3 { color: green; }</style>\n      <h3>${this.getAttribute('name')}</h3>\n    `;\n  }\n}\ncustomElements.define('user-card', UserCard);",
+            "images": []
           },
           {
-            "id": "selector-id",
-            "title": "ID Selector",
-            "explanation": "ID selector menggunakan tanda pagar (#) dan memilih elemen dengan ID unik. Setiap ID hanya boleh digunakan sekali per halaman.",
-            "code": "/* CSS */\n#header {\n  font-size: 24px;\n  font-weight: bold;\n}\n\n/* HTML */\n<div id=\"header\">Header Utama</div>",
-            "video": ""
+            "id": "html-templates",
+            "title": "HTML Templates",
+            "explanation": "Gunakan <template> untuk menyimpan markup yang tidak dirender sampai dibutuhkan.",
+            "video": "",
+            "code": "<template id=\"card-template\">\n  <div class=\"card\">\n    <h3></h3>\n    <p></p>\n  </div>\n</template>\n\n<script>\n  const template = document.getElementById('card-template');\n  const clone = template.content.cloneNode(true);\n  clone.querySelector('h3').textContent = 'Judul';\n  document.body.appendChild(clone);\n</script>",
+            "images": []
           }
         ]
       },
       {
-        "id": "box-model",
-        "title": "Box Model",
-        "description": "Memahami margin, border, padding, dan content",
+        "id": "accessibility-advanced",
+        "title": "2. Accessibility Lanjutan",
+        "description": "Membuat website yang benar-benar inklusif",
         "contentDetails": [
           {
-            "id": "margin-padding",
-            "title": "Margin dan Padding",
-            "explanation": "Margin adalah ruang di luar border, sedangkan padding adalah ruang di dalam border antara border dan konten.",
-            "code": ".box {\n  margin: 20px;        /* Ruang luar */\n  padding: 15px;       /* Ruang dalam */\n  border: 2px solid black;\n}",
-            "video": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "javascript-dasar",
-    "title": "JavaScript Dasar",
-    "description": "Membuat website interaktif dengan JavaScript",
-    "icon": "zap",
-    "subContent": [
-      {
-        "id": "variable-js",
-        "title": "Variable JavaScript",
-        "description": "Cara menyimpan data dalam variable",
-        "contentDetails": [
-          {
-            "id": "let-const",
-            "title": "let dan const",
-            "explanation": "let digunakan untuk variable yang nilainya bisa diubah, const untuk variable yang nilainya tetap.",
-            "code": "let nama = \"Budi\";\nnama = \"Andi\";  // Boleh diubah\n\nconst PI = 3.14;\n// PI = 3.15;  // Error! Tidak bisa diubah",
-            "video": ""
+            "id": "aria-landmarks",
+            "title": "ARIA Landmarks",
+            "explanation": "Gunakan role dan ARIA attributes untuk membantu screen reader:\n- role=\"banner\", \"main\", \"navigation\", \"complementary\", \"contentinfo\"\n- aria-label, aria-labelledby, aria-describedby",
+            "video": "",
+            "code": "<header role=\"banner\">...</header>\n<nav role=\"navigation\" aria-label=\"Primary\">...</nav>\n<main role=\"main\">...</main>\n<aside role=\"complementary\">...</aside>\n<footer role=\"contentinfo\">...</footer>",
+            "images": []
           },
           {
-            "id": "tipe-data",
-            "title": "Tipe Data",
-            "explanation": "JavaScript memiliki berbagai tipe data: string (teks), number (angka), boolean (true/false), array, object, dll.",
-            "code": "let teks = \"Hello\";        // String\nlet angka = 42;             // Number\nlet benar = true;           // Boolean\nlet daftar = [1, 2, 3];     // Array\nlet objek = {nama: \"Budi\"}; // Object",
-            "video": ""
+            "id": "keyboard-navigation",
+            "title": "Keyboard Navigation",
+            "explanation": "Pastikan semua interaksi bisa dilakukan dengan keyboard (tab, enter, space). Gunakan tabindex, focus management.",
+            "video": "",
+            "code": "<button tabindex=\"0\">Fokus dengan Tab</button>\n<div tabindex=\"0\" role=\"button\" onclick=\"doSomething()\">Div sebagai tombol</div>",
+            "images": []
           }
         ]
       },
       {
-        "id": "function-js",
-        "title": "Function JavaScript",
-        "description": "Membuat dan menggunakan function",
+        "id": "performance-html",
+        "title": "3. Performance Optimization",
+        "description": "Optimasi kecepatan dan efisiensi HTML",
         "contentDetails": [
           {
-            "id": "function-declaration",
-            "title": "Function Declaration",
-            "explanation": "Function adalah blok kode yang dapat digunakan berulang kali. Gunakan keyword 'function' untuk membuat function.",
-            "code": "function sapa(nama) {\n  return \"Halo, \" + nama + \"!\";\n}\n\nconsole.log(sapa(\"Budi\"));  // Output: Halo, Budi!",
-            "video": ""
+            "id": "critical-rendering-path",
+            "title": "Critical Rendering Path",
+            "explanation": "Minimalkan blocking render: letakkan CSS di <head>, JS di akhir <body> atau gunakan async/defer.",
+            "video": "",
+            "code": "<head>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <!-- Konten -->\n  <script src=\"script.js\" defer></script>\n</body>",
+            "images": []
           },
           {
-            "id": "arrow-function",
-            "title": "Arrow Function",
-            "explanation": "Arrow function adalah cara singkat menulis function dengan sintaks yang lebih modern.",
-            "code": "const tambah = (a, b) => a + b;\n\nconsole.log(tambah(5, 3));  // Output: 8",
-            "video": ""
+            "id": "preload-prefetch",
+            "title": "Resource Hints",
+            "explanation": "Gunakan <link rel=\"preload\">, <link rel=\"prefetch\"> untuk memuat aset lebih cepat.",
+            "video": "",
+            "code": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>\n<link rel=\"prefetch\" href=\"next-page.html\">",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "security-html",
+        "title": "4. Keamanan HTML",
+        "description": "Mencegah serangan umum di frontend",
+        "contentDetails": [
+          {
+            "id": "xss-prevention",
+            "title": "Mencegah XSS",
+            "explanation": "Jangan pernah memasukkan input user langsung ke DOM. Gunakan textContent, bukan innerHTML.",
+            "video": "",
+            "code": "// Aman\nel.textContent = userInput;\n// Berbahaya\nel.innerHTML = userInput;",
+            "images": []
+          },
+          {
+            "id": "csp-basics",
+            "title": "Content Security Policy (CSP)",
+            "explanation": "Atur kebijakan keamanan melalui header HTTP atau meta tag untuk membatasi sumber daya yang diizinkan.",
+            "video": "",
+            "code": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' https://trusted.cdn.com\">",
+            "images": []
           }
         ]
       }
     ]
   }
+
+
 ]

@@ -1,24 +1,11 @@
 [
-  {
-    "id": "project-1",
-    "title": "Membuat Landing Page Sederhana",
-    "description": "Buat landing page untuk cafe menggunakan HTML dan CSS dasar. Latihan struktur HTML dan styling dengan CSS.",
-    "level": "Beginner",
-    "locked": false,
-    "requiredMaterials": [],
-    "tasks": [
-      "Buat struktur HTML dengan header, hero section, dan footer",
-      "Tambahkan styling dengan CSS",
-      "Gunakan flexbox untuk layout",
-      "Buat responsive dengan media query"
-    ]
-  },
+
   {
     "id": "project-2",
     "title": "Portfolio Personal",
     "description": "Buat website portfolio pribadi dengan section About, Skills, Projects, dan Contact.",
     "level": "Beginner",
-    "locked": false,
+    "locked": true,
     "requiredMaterials": ["html-dasar", "css-dasar"],
     "tasks": [
       "Design layout portfolio dengan Figma/wireframe",

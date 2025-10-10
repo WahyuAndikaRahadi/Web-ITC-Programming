@@ -1,3 +1,4 @@
+// Home.tsx (Versi Final dengan Glassmorphism dan Animasi Teks)
 import { motion } from 'framer-motion';
 import {
   BookOpen,
@@ -9,6 +10,8 @@ import {
 } from 'lucide-react';
 import Card from '../components/Card';
 import updateData from '../data/update.json';
+import TextType from '../components/TextType';
+import SplitText from '../components/splitText';
 
 interface HomeProps {
   darkMode: boolean;
@@ -61,40 +64,67 @@ const Home = ({ darkMode, onNavigate }: HomeProps) => {
         return darkMode ? 'bg-gray-700 text-gray-300' : 'bg-gray-100 text-gray-600';
     }
   };
+  
+  const h1Text = "ITC Programming Learning Portal";
+  const descriptionText = [
+    "Platform pembelajaran internal untuk anggota ITC Programming.", 
+    "Belajar web development dari dasar hingga mahir!"
+  ];
+
+  // Kelas Glassmorphism untuk Card dan Pengumuman
+  const glassmorphismClasses = darkMode
+    ? 'bg-gray-700/30 border border-gray-600/50 shadow-lg hover:shadow-cyan-500/30' 
+    : 'bg-white/50 border border-gray-200/50 shadow-lg hover:shadow-blue-500/30';
+
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
-          <h1
-            className={`text-5xl md:text-6xl font-bold mb-6 ${
-              darkMode ? 'text-white' : 'text-gray-900'
-            }`}
-          >
-            ITC Programming
-            <br />
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              Learning Portal
-            </span>
+        <div className="text-center mb-16">
+          
+          {/* JUDUL H1 MENGGUNAKAN SPLITTEXT */}
+          <h1 className={`text-5xl md:text-6xl font-bold mb-6 ${
+            darkMode ? 'text-white' : 'text-gray-900'
+          }`}>
+            <SplitText
+              // Teks dibagi menjadi dua baris agar gradient pada "Learning Portal" bisa ditangani
+              // Catatan: Jika SplitText tidak mendukung gradient, warna akan solid.
+              text={h1Text}
+              tag="span" // Menggunakan span agar bisa diatur block/inline-block
+              className="text-center block"
+              delay={50}
+              duration={0.7}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 30 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            />
           </h1>
+          
+          {/* DESKRIPSI MENGGUNAKAN TEXTTYPE */}
           <p
             className={`text-xl md:text-2xl ${
               darkMode ? 'text-gray-400' : 'text-gray-600'
-            } max-w-3xl mx-auto`}
+            } max-w-3xl mx-auto min-h-[4rem]`}
           >
-            Platform pembelajaran internal untuk anggota ITC Programming. Belajar web
-            development dari dasar hingga mahir!
+            <TextType
+              text={descriptionText}
+              typingSpeed={50}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </p>
-        </motion.div>
+        </div>
 
+        {/* FEATURE CARDS (Gunakan Card.tsx, diasumsikan sudah mendukung Glassmorphism) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.8 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
         >
           {features.map((feature, index) => (
@@ -102,7 +132,7 @@ const Home = ({ darkMode, onNavigate }: HomeProps) => {
               key={feature.page}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index }}
+              transition={{ delay: 0.1 * index + 1.0 }}
             >
               <Card
                 title={feature.title}
@@ -110,20 +140,26 @@ const Home = ({ darkMode, onNavigate }: HomeProps) => {
                 icon={feature.icon}
                 onClick={() => onNavigate(feature.page)}
                 darkMode={darkMode}
+                // Tambahkan kelas Glassmorphism di sini, asumsi Card.tsx menerimanya
+                className={`backdrop-blur-md ${glassmorphismClasses} rounded-xl`} 
               >
-                <div className="flex items-center text-blue-500 hover:text-blue-600 transition-colors">
+                <motion.div 
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors cursor-pointer"
+                  whileHover={{ x: 3 }}
+                >
                   <span className="text-sm font-medium">Mulai</span>
                   <ChevronRight className="w-4 h-4 ml-1" />
-                </div>
+                </motion.div>
               </Card>
             </motion.div>
           ))}
         </motion.div>
 
+        {/* PENGUMUMAN TERBARU (Menerapkan Glassmorphism langsung) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: features.length * 0.1 + 1.2 }}
           className="mb-8"
         >
           <div className="flex items-center mb-6">
@@ -145,10 +181,12 @@ const Home = ({ darkMode, onNavigate }: HomeProps) => {
                 key={update.id}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5 + index * 0.1 }}
-                className={`${
-                  darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
-                } border rounded-xl p-6 hover:shadow-lg transition-shadow`}
+                transition={{ delay: features.length * 0.1 + 1.4 + index * 0.1 }}
+                // Kelas GLASSMORPHISM diterapkan di sini
+                className={`
+                  backdrop-blur-md rounded-xl p-6 transition-all duration-300 hover:shadow-2xl cursor-pointer
+                  ${glassmorphismClasses}
+                `}
               >
                 <div className="flex items-start justify-between mb-2">
                   <h3

@@ -1,0 +1,975 @@
+[
+      {
+    "id": "html-dasar",
+    "title": "HTML Dasar",
+    "description": "Membangun fondasi website dengan HTML dari nol hingga mahir dasar",
+    "icon": "code",
+    "subContent": [
+      {
+        "id": "pengenalan-html",
+        "title": "1. Pengenalan HTML",
+        "description": "Memahami HTML dan cara kerjanya",
+        "contentDetails": [
+          {
+            "id": "apa-itu-html",
+            "title": "Apa Itu HTML?",
+            "explanation": "HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. HTML bukan bahasa pemrograman, melainkan bahasa markup yang menggunakan tag untuk menandai konten.\nHTML pertama kali dibuat Tim Berners-Lee pada 1991. Versi terbaru adalah HTML5 (2014) dengan fitur baru: video, audio, canvas, dan elemen semantik.\nSetiap halaman web dibangun dengan HTML, dari yang sederhana hingga kompleks.",
+            "video": "",
+            "code": "",
+            "images": []
+          },
+          {
+            "id": "cara-kerja-html",
+            "title": "Cara Kerja HTML",
+            "explanation": "HTML bekerja dengan tag (penanda) yang memberi tahu browser cara menampilkan konten. Tag ditulis dalam kurung sudut: <p> untuk paragraf, <h1> untuk heading.\nKebanyakan tag memiliki pembuka dan penutup:\n<p>Konten</p>\nBeberapa tag self-closing: <img>, <br>, <hr>",
+            "video": "",
+            "code": "<p>Ini adalah paragraf</p>\n<h1>Ini adalah heading</h1>\n<img src=\"gambar.jpg\" alt=\"Deskripsi\">",
+            "images": []
+          },
+          {
+            "id": "sejarah-html",
+            "title": "Sejarah dan Evolusi HTML",
+            "explanation": "Evolusi HTML:\n- HTML 1.0 (1991): Versi pertama, sangat sederhana\n- HTML 2.0 (1995): Standar pertama\n- HTML 3.2 (1997): Menambahkan tabel, applet\n- HTML 4.01 (1999): Memisahkan struktur dan presentasi\n- XHTML (2000): HTML dengan aturan XML yang ketat\n- HTML5 (2014): Revolusi besar dengan fitur multimedia native\nHTML5 adalah standar saat ini dan terus berkembang.",
+            "video": "",
+            "code": "",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "struktur-dokumen-html",
+        "title": "2. Struktur Dokumen HTML",
+        "description": "Anatomi dokumen HTML yang benar",
+        "contentDetails": [
+          {
+            "id": "doctype-html",
+            "title": "DOCTYPE dan Tag HTML",
+            "explanation": "Setiap dokumen HTML dimulai dengan DOCTYPE yang memberi tahu browser versi HTML yang digunakan. Untuk HTML5, gunakan <!DOCTYPE html> yang simpel.\nTag <html> adalah root element yang membungkus seluruh konten. Atribut lang menentukan bahasa dokumen, penting untuk SEO dan accessibility.",
+            "video": "",
+            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Judul Halaman</title>\n  </head>\n  <body>\n    <!-- Konten website -->\n  </body>\n</html>",
+            "images": []
+          },
+          {
+            "id": "head-section",
+            "title": "Bagian Head: Metadata",
+            "explanation": "Tag <head> berisi metadata yang tidak ditampilkan tapi penting untuk browser dan search engine.\nElemen penting:\n- <meta charset=\"UTF-8\">: Encoding karakter\n- <meta name=\"viewport\">: Responsive design\n- <title>: Judul di tab browser\n- <meta name=\"description\">: Deskripsi untuk SEO\n- <link>: CSS eksternal\n- <script>: JavaScript",
+            "video": "",
+            "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"description\" content=\"Deskripsi website\">\n  <meta name=\"keywords\" content=\"html, web, tutorial\">\n  <meta name=\"author\" content=\"Nama Anda\">\n  <title>Judul Halaman - Website</title>\n  <link rel=\"stylesheet\" href=\"style.css\">\n  <link rel=\"icon\" href=\"favicon.ico\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "body-section",
+            "title": "Bagian Body: Konten Visible",
+            "explanation": "Tag <body> berisi semua konten yang ditampilkan: teks, gambar, video, link, dll. Semua yang terlihat di website ada di dalam <body>.\nGunakan berbagai tag HTML untuk menyusun konten dengan struktur semantik yang jelas.",
+            "video": "",
+            "code": "<body>\n  <header>\n    <h1>Selamat Datang</h1>\n    <nav>\n      <a href=\"#home\">Home</a>\n      <a href=\"#about\">Tentang</a>\n      <a href=\"#contact\">Kontak</a>\n    </nav>\n  </header>\n  <main>\n    <p>Konten utama website</p>\n  </main>\n  <footer>\n    <p>&copy; 2024 Website Saya</p>\n  </footer>\n</body>",
+            "images": []
+          },
+          {
+            "id": "komentar-html",
+            "title": "Komentar dalam HTML",
+            "explanation": "Komentar tidak ditampilkan di browser. Berguna untuk:\n- Menjelaskan kode\n- Menonaktifkan kode sementara\n- Membuat catatan\nSintaks: <!-- komentar -->",
+            "video": "",
+            "code": "<!-- Ini komentar satu baris -->\n<!--\nIni komentar\nmulti baris\n-->\n<p>Paragraf ditampilkan</p>\n<!-- <p>Paragraf ini tidak ditampilkan</p> -->",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "text-formatting",
+        "title": "3. Text Formatting",
+        "description": "Memformat teks dengan berbagai tag",
+        "contentDetails": [
+          {
+            "id": "heading-tags",
+            "title": "Tag Heading (h1-h6)",
+            "explanation": "Heading untuk judul dan sub-judul. HTML punya 6 level dari h1 (paling penting) hingga h6.\nPenting untuk SEO:\n- Satu halaman = satu <h1>\n- Gunakan hierarkis (jangan lompat h1 ke h3)\n- Jangan gunakan heading hanya untuk ukuran teks\nHeading membantu search engine memahami struktur konten.",
+            "video": "",
+            "code": "<h1>Judul Utama (H1)</h1>\n<h2>Sub Judul (H2)</h2>\n<h3>Sub-sub Judul (H3)</h3>\n<h4>Heading Level 4</h4>\n<h5>Heading Level 5</h5>\n<h6>Heading Level 6</h6>\n<!-- Contoh benar -->\n<h1>Panduan HTML</h1>\n<h2>Pendahuluan</h2>\n<h3>Apa itu HTML?</h3>\n<h3>Mengapa Belajar HTML?</h3>\n<h2>Dasar HTML</h2>",
+            "images": []
+          },
+          {
+            "id": "paragraph-tag",
+            "title": "Tag Paragraph (p)",
+            "explanation": "Tag <p> untuk paragraf teks. Browser otomatis menambahkan jarak (margin) di atas dan bawah paragraf.\nParagraf adalah blok teks paling umum. Struktur konten dalam paragraf yang jelas meningkatkan readability.",
+            "video": "",
+            "code": "<p>Ini paragraf pertama. Paragraf mengelompokkan teks dengan satu ide.</p>\n<p>Ini paragraf kedua. Browser otomatis beri jarak antar paragraf.</p>\n<p>Paragraf panjang dengan banyak kalimat. Usahakan tidak terlalu panjang agar tidak melelahkan pembaca.</p>",
+            "images": []
+          },
+          {
+            "id": "text-formatting-tags",
+            "title": "Tag Formatting Teks",
+            "explanation": "Tag untuk memformat teks:\n- <strong>: Teks penting (bold)\n- <em>: Penekanan (italic)\n- <mark>: Highlight\n- <small>: Teks kecil\n- <del>: Teks dihapus (coret)\n- <ins>: Teks disisipkan (underline)\n- <sub>: Subscript\n- <sup>: Superscript\nGunakan tag semantik untuk aksesibilitas lebih baik.",
+            "video": "",
+            "code": "<p>Ini <strong>teks penting</strong> yang perlu diperhatikan.</p>\n<p>Ini <em>teks dengan penekanan</em>.</p>\n<p>Harga <del>Rp 100.000</del> sekarang <strong>Rp 75.000</strong></p>\n<p>Ini <mark>teks highlight</mark> untuk menarik perhatian.</p>\n<p><small>Teks kecil untuk footnote.</small></p>\n<p>Rumus: H<sub>2</sub>O</p>\n<p>Pangkat: x<sup>2</sup> + y<sup>2</sup></p>",
+            "images": []
+          },
+          {
+            "id": "line-breaks",
+            "title": "Line Break dan Horizontal Rule",
+            "explanation": "Untuk mengatur tampilan:\n- <br>: Line break (pindah baris) tanpa paragraf baru\n- <hr>: Horizontal rule (garis horizontal) pemisah\nKeduanya self-closing tag. Gunakan <br> dengan hati-hati.",
+            "video": "",
+            "code": "<!-- Line Break -->\n<p>\n  Alamat Kantor:<br>\n  Jl. Sudirman No. 123<br>\n  Jakarta Pusat<br>\n  Indonesia 10210\n</p>\n<!-- Horizontal Rule -->\n<h2>Bagian Pertama</h2>\n<p>Konten pertama...</p>\n<hr>\n<h2>Bagian Kedua</h2>\n<p>Konten kedua...</p>",
+            "images": []
+          },
+          {
+            "id": "quote-tags",
+            "title": "Quotation dan Citation",
+            "explanation": "Untuk kutipan dan referensi:\n- <blockquote>: Kutipan panjang\n- <q>: Kutipan pendek (inline)\n- <cite>: Judul karya\n- <abbr>: Singkatan/akronim\nPenting untuk kredibilitas konten.",
+            "video": "",
+            "code": "<!-- Blockquote -->\n<blockquote cite=\"https://example.com\">\n  <p>Kesuksesan adalah kunci kebahagiaan.</p>\n  <footer>— <cite>Albert Schweitzer</cite></footer>\n</blockquote>\n<!-- Quote pendek -->\n<p>Pepatah: <q>Belajar adalah harta.</q></p>\n<!-- Citation -->\n<p>Buku <cite>Sapiens</cite> oleh Yuval Noah Harari.</p>\n<!-- Abbreviation -->\n<p><abbr title=\"HyperText Markup Language\">HTML</abbr> adalah bahasa markup.</p>",
+            "images": []
+          },
+          {
+            "id": "preformatted-code",
+            "title": "Preformatted Text dan Code",
+            "explanation": "Tag khusus untuk teks terformat:\n- <pre>: Preformatted text (jaga spasi dan baris)\n- <code>: Inline code\n- <kbd>: Keyboard input\n- <samp>: Sample output\n- <var>: Variable\nSangat berguna untuk dokumentasi teknis dan tutorial programming.",
+            "video": "",
+            "code": "<!-- Preformatted text -->\n<pre>\nfunction hello() {\n  console.log(\"Hello\");\n}\n</pre>\n<!-- Inline code -->\n<p>Gunakan fungsi <code>console.log()</code> untuk debugging.</p>\n<!-- Keyboard input -->\n<p>Tekan <kbd>Ctrl</kbd> + <kbd>C</kbd> untuk copy.</p>\n<!-- Sample output -->\n<p>Output: <samp>Error 404 Not Found</samp></p>\n<!-- Variable -->\n<p>Nilai <var>x</var> adalah 10.</p>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "links-navigation",
+        "title": "4. Links dan Navigasi",
+        "description": "Membuat hyperlink dan navigasi website",
+        "contentDetails": [
+          {
+            "id": "anchor-tag-basic",
+            "title": "Tag Anchor (a) - Dasar",
+            "explanation": "Tag <a> (anchor) untuk membuat hyperlink yang menghubungkan halaman.\nAtribut href (hypertext reference) wajib untuk menentukan tujuan link. Link adalah tulang punggung web.",
+            "video": "",
+            "code": "<!-- Link eksternal -->\n<a href=\"https://www.dicoding.com\">Dicoding</a>\n<!-- Link halaman lain -->\n<a href=\"about.html\">Tentang</a>\n<a href=\"contact.html\">Kontak</a>\n<!-- Link folder berbeda -->\n<a href=\"pages/blog.html\">Blog</a>\n<a href=\"../index.html\">Home</a>\n<!-- Link email -->\n<a href=\"mailto:info@example.com\">Email</a>\n<!-- Link telepon -->\n<a href=\"tel:+6281234567890\">Call</a>",
+            "images": []
+          },
+          {
+            "id": "anchor-tag-advanced",
+            "title": "Tag Anchor (a) - Lanjutan",
+            "explanation": "Atribut tambahan:\n- target=\"_blank\": Buka di tab baru\n- rel=\"noopener noreferrer\": Keamanan untuk target blank\n- title: Tooltip saat hover\n- download: Download file\nSelalu gunakan rel untuk keamanan!",
+            "video": "",
+            "code": "<!-- Link tab baru (aman) -->\n<a href=\"https://example.com\" target=\"_blank\" rel=\"noopener noreferrer\">Buka Tab Baru</a>\n<!-- Link dengan tooltip -->\n<a href=\"portfolio.html\" title=\"Lihat portfolio\">Portfolio</a>\n<!-- Download file -->\n<a href=\"document.pdf\" download>Download PDF</a>\n<a href=\"image.jpg\" download=\"my-image.jpg\">Download Gambar</a>\n<!-- Multiple attributes -->\n<a href=\"https://github.com\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"GitHub\">GitHub</a>",
+            "images": []
+          },
+          {
+            "id": "internal-links",
+            "title": "Internal Links dan Anchor",
+            "explanation": "Link ke bagian tertentu dalam halaman sama menggunakan ID. Berguna untuk table of contents atau navigasi cepat.\nCara:\n1. Beri ID pada elemen target\n2. Gunakan # + ID sebagai href",
+            "video": "",
+            "code": "<!-- Navigasi -->\n<nav>\n  <a href=\"#pendahuluan\">Pendahuluan</a>\n  <a href=\"#materi\">Materi</a>\n  <a href=\"#kesimpulan\">Kesimpulan</a>\n</nav>\n<!-- Konten dengan ID -->\n<section id=\"pendahuluan\">\n  <h2>Pendahuluan</h2>\n  <p>Konten...</p>\n</section>\n<section id=\"materi\">\n  <h2>Materi</h2>\n  <p>Konten...</p>\n</section>\n<!-- Link ke atas -->\n<a href=\"#top\">Kembali ke Atas</a>",
+            "images": []
+          },
+          {
+            "id": "navigation-best-practices",
+            "title": "Best Practices Navigasi",
+            "explanation": "Tips navigasi yang baik:\n1. Gunakan <nav> untuk semantic markup\n2. Link deskriptif (hindari \"klik di sini\")\n3. Konsisten dalam penempatan\n4. Gunakan breadcrumb untuk website besar\n5. Pastikan accessible (keyboard)\nNavigasi baik = UX baik + SEO baik.",
+            "video": "",
+            "code": "<!-- Navigasi semantik -->\n<nav role=\"navigation\" aria-label=\"Main Navigation\">\n  <ul>\n    <li><a href=\"index.html\">Home</a></li>\n    <li><a href=\"about.html\">Tentang</a></li>\n    <li><a href=\"services.html\">Layanan</a></li>\n    <li><a href=\"blog.html\">Blog</a></li>\n    <li><a href=\"contact.html\">Kontak</a></li>\n  </ul>\n</nav>\n<!-- Breadcrumb -->\n<nav aria-label=\"Breadcrumb\">\n  <ol>\n    <li><a href=\"/\">Home</a></li>\n    <li><a href=\"/blog\">Blog</a></li>\n    <li aria-current=\"page\">Artikel</li>\n  </ol>\n</nav>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "lists-html",
+        "title": "5. Lists (Daftar)",
+        "description": "Membuat berbagai jenis daftar",
+        "contentDetails": [
+          {
+            "id": "unordered-list",
+            "title": "Unordered List (ul)",
+            "explanation": "Unordered list untuk daftar tanpa urutan. Default dengan bullet point.\nTag:\n- <ul>: Container unordered list\n- <li>: List item\nGunakan ketika urutan tidak penting.",
+            "video": "",
+            "code": "<!-- Unordered list dasar -->\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JavaScript</li>\n</ul>\n<!-- Nested list -->\n<ul>\n  <li>Buah\n    <ul>\n      <li>Apel</li>\n      <li>Jeruk</li>\n      <li>Mangga</li>\n    </ul>\n  </li>\n  <li>Sayuran\n    <ul>\n      <li>Brokoli</li>\n      <li>Wortel</li>\n      <li>Bayam</li>\n    </ul>\n  </li>\n</ul>",
+            "images": []
+          },
+          {
+            "id": "ordered-list",
+            "title": "Ordered List (ol)",
+            "explanation": "Ordered list untuk daftar dengan urutan. Default dengan angka.\nAtribut:\n- type: Jenis penomoran (1, A, a, I, i)\n- start: Mulai dari angka tertentu\n- reversed: Urutan terbalik\nGunakan ketika urutan penting (langkah, ranking).",
+            "video": "",
+            "code": "<!-- Ordered list dasar -->\n<ol>\n  <li>Buka text editor</li>\n  <li>Tulis kode HTML</li>\n  <li>Simpan file .html</li>\n  <li>Buka di browser</li>\n</ol>\n<!-- Type berbeda -->\n<ol type=\"A\">\n  <li>Pilihan A</li>\n  <li>Pilihan B</li>\n  <li>Pilihan C</li>\n</ol>\n<!-- Start dari 5 -->\n<ol start=\"5\">\n  <li>Item kelima</li>\n  <li>Item keenam</li>\n</ol>\n<!-- Reversed -->\n<ol reversed>\n  <li>Perunggu</li>\n  <li>Perak</li>\n  <li>Emas</li>\n</ol>",
+            "images": []
+          },
+          {
+            "id": "description-list",
+            "title": "Description List (dl)",
+            "explanation": "Description list untuk daftar istilah dan deskripsi. Cocok untuk glossary, FAQ, metadata.\nTag:\n- <dl>: Container\n- <dt>: Description term (istilah)\n- <dd>: Description definition (definisi)\nSatu term bisa punya beberapa definition.",
+            "video": "",
+            "code": "<!-- Glossary -->\n<dl>\n  <dt>HTML</dt>\n  <dd>HyperText Markup Language</dd>\n  <dt>CSS</dt>\n  <dd>Cascading Style Sheets</dd>\n  <dt>JavaScript</dt>\n  <dd>Bahasa pemrograman web</dd>\n  <dd>Berjalan di browser</dd>\n</dl>\n<!-- FAQ -->\n<dl>\n  <dt>Apa itu web development?</dt>\n  <dd>Proses membuat website atau aplikasi web.</dd>\n  <dt>Berapa lama belajar web dev?</dt>\n  <dd>3-6 bulan untuk dasar, 1-2 tahun untuk mahir.</dd>\n</dl>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "images-media",
+        "title": "6. Images dan Media",
+        "description": "Menampilkan gambar dan media",
+        "contentDetails": [
+          {
+            "id": "img-tag-basic",
+            "title": "Tag Image (img) - Dasar",
+            "explanation": "Tag <img> untuk menampilkan gambar. Self-closing tag dengan atribut wajib:\n- src: Sumber gambar (path)\n- alt: Teks alternatif\nAtribut alt penting untuk accessibility dan SEO.",
+            "video": "",
+            "code": "<!-- Gambar dasar -->\n<img src=\"gambar.jpg\" alt=\"Deskripsi gambar\">\n<!-- Dari folder -->\n<img src=\"images/foto.png\" alt=\"Foto profil\">\n<img src=\"../assets/logo.svg\" alt=\"Logo\">\n<!-- URL eksternal -->\n<img src=\"https://example.com/image.jpg\" alt=\"Gambar\">\n<!-- Dengan ukuran -->\n<img src=\"banner.jpg\" alt=\"Banner\" width=\"800\" height=\"400\">",
+            "images": []
+          },
+          {
+            "id": "img-tag-advanced",
+            "title": "Tag Image (img) - Lanjutan",
+            "explanation": "Atribut tambahan untuk optimasi:\n- width & height: Ukuran (cegah layout shift)\n- loading=\"lazy\": Lazy loading performa\n- title: Tooltip hover\n- srcset: Responsive images\nWidth/height penting untuk Cumulative Layout Shift (CLS).",
+            "video": "",
+            "code": "<!-- Lazy loading -->\n<img src=\"large.jpg\" alt=\"Gambar besar\" loading=\"lazy\" width=\"1200\" height=\"800\">\n<!-- Dengan title -->\n<img src=\"icon.png\" alt=\"Icon\" title=\"Klik perbesar\" width=\"50\" height=\"50\">\n<!-- Responsive srcset -->\n<img \n  src=\"image-800.jpg\" \n  srcset=\"image-400.jpg 400w, image-800.jpg 800w, image-1200.jpg 1200w\"\n  sizes=\"(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px\"\n  alt=\"Responsive image\">\n<!-- Image link -->\n<a href=\"portfolio.html\">\n  <img src=\"thumbnail.jpg\" alt=\"Portfolio\">\n</a>",
+            "images": []
+          },
+          {
+            "id": "figure-figcaption",
+            "title": "Figure dan Figcaption",
+            "explanation": "Tag <figure> dan <figcaption> untuk mengelompokkan gambar dengan caption. Semantic markup lebih baik.\n<figure> bisa berisi:\n- Gambar\n- Diagram\n- Code snippet\n- Quote\n<figcaption> memberikan caption/deskripsi.",
+            "video": "",
+            "code": "<!-- Figure dengan gambar -->\n<figure>\n  <img src=\"sunset.jpg\" alt=\"Sunset\" width=\"600\" height=\"400\">\n  <figcaption>Sunset di Pantai Kuta, Bali</figcaption>\n</figure>\n<!-- Multiple images -->\n<figure>\n  <img src=\"before.jpg\" alt=\"Sebelum\" width=\"300\">\n  <img src=\"after.jpg\" alt=\"Sesudah\" width=\"300\">\n  <figcaption>Sebelum dan sesudah renovasi</figcaption>\n</figure>\n<!-- Figure dengan code -->\n<figure>\n  <pre><code>function hello() {\n  console.log(\"Hello\");\n}</code></pre>\n  <figcaption>Fungsi JavaScript sederhana</figcaption>\n</figure>",
+            "images": []
+          },
+          {
+            "id": "picture-element",
+            "title": "Picture Element",
+            "explanation": "Tag <picture> untuk kontrol lebih pada responsive images dan art direction. Tampilkan gambar berbeda berdasarkan kondisi.\n<picture> berisi:\n- Beberapa <source> dengan kondisi\n- Satu <img> sebagai fallback\nBerguna untuk:\n- Crop berbeda mobile vs desktop\n- Format modern (WebP) dengan fallback",
+            "video": "",
+            "code": "<!-- Art direction -->\n<picture>\n  <source media=\"(max-width: 600px)\" srcset=\"mobile.jpg\">\n  <source media=\"(min-width: 601px)\" srcset=\"desktop.jpg\">\n  <img src=\"default.jpg\" alt=\"Responsive\">\n</picture>\n<!-- Format modern -->\n<picture>\n  <source srcset=\"image.webp\" type=\"image/webp\">\n  <source srcset=\"image.jpg\" type=\"image/jpeg\">\n  <img src=\"image.jpg\" alt=\"Modern format\">\n</picture>\n<!-- Kombinasi -->\n<picture>\n  <source media=\"(max-width: 600px)\" srcset=\"mobile.webp\" type=\"image/webp\">\n  <source media=\"(max-width: 600px)\" srcset=\"mobile.jpg\">\n  <source srcset=\"desktop.webp\" type=\"image/webp\">\n  <source srcset=\"desktop.jpg\">\n  <img src=\"desktop.jpg\" alt=\"Fully responsive\">\n</picture>",
+            "images": []
+          },
+          {
+            "id": "audio-video",
+            "title": "Audio dan Video",
+            "explanation": "HTML5 mendukung audio dan video native tanpa plugin.\n<audio> untuk file audio:\n- controls: Tampilkan kontrol\n- autoplay: Auto play (hindari!)\n- loop: Loop playback\n- muted: Mute default\n<video> untuk file video dengan atribut sama + poster (thumbnail).",
+            "video": "",
+            "code": "<!-- Audio -->\n<audio controls>\n  <source src=\"audio.mp3\" type=\"audio/mpeg\">\n  <source src=\"audio.ogg\" type=\"audio/ogg\">\n  Browser Anda tidak mendukung audio.\n</audio>\n<!-- Video -->\n<video controls width=\"640\" height=\"360\" poster=\"thumbnail.jpg\">\n  <source src=\"video.mp4\" type=\"video/mp4\">\n  <source src=\"video.webm\" type=\"video/webm\">\n  <track src=\"subtitles.vtt\" kind=\"subtitles\" srclang=\"id\" label=\"Indonesian\">\n  Browser Anda tidak mendukung video.\n</video>\n<!-- Video dengan atribut -->\n<video controls loop muted width=\"100%\">\n  <source src=\"video.mp4\" type=\"video/mp4\">\n</video>",
+            "images": []
+          },
+          {
+            "id": "iframe-embed",
+            "title": "Iframe dan Embed",
+            "explanation": "<iframe> untuk embed konten dari website lain (YouTube, Google Maps, dll).\n<embed> untuk plugin eksternal (lebih jarang digunakan).\nHati-hati dengan iframe untuk keamanan. Gunakan sandbox attribute jika perlu.",
+            "video": "",
+            "code": "<!-- YouTube embed -->\n<iframe \n  width=\"560\" \n  height=\"315\" \n  src=\"https://www.youtube.com/embed/VIDEO_ID\" \n  frameborder=\"0\" \n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" \n  allowfullscreen>\n</iframe>\n<!-- Google Maps -->\n<iframe \n  src=\"https://www.google.com/maps/embed?pb=...\" \n  width=\"600\" \n  height=\"450\" \n  style=\"border:0;\" \n  allowfullscreen=\"\" \n  loading=\"lazy\">\n</iframe>\n<!-- Iframe dengan sandbox -->\n<iframe \n  src=\"external.html\" \n  sandbox=\"allow-scripts allow-same-origin\" \n  width=\"100%\" \n  height=\"400\">\n</iframe>",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-menengah",
+    "title": "HTML Menengah",
+    "description": "Semantic HTML, forms, tables, dan struktur website yang lebih kompleks",
+    "icon": "code-bracket",
+    "subContent": [
+      {
+        "id": "semantic-html",
+        "title": "1. Semantic HTML5",
+        "description": "Tag semantik untuk struktur yang lebih baik",
+        "contentDetails": [
+          {
+            "id": "apa-itu-semantic",
+            "title": "Apa Itu Semantic HTML?",
+            "explanation": "Semantic HTML adalah penggunaan tag yang memberikan makna pada struktur konten, bukan hanya presentasi visual. Tag semantik menjelaskan tujuan konten.\nContoh: <header>, <nav>, <article>, <section>, <footer> lebih jelas daripada <div>.\nKeuntungan:\n- SEO lebih baik\n- Accessibility meningkat\n- Kode lebih mudah dibaca dan di-maintain\n- Browser dan screen reader memahami struktur",
+            "video": "",
+            "code": "<!-- Non-semantic (kurang baik) -->\n<div id=\"header\">...</div>\n<div id=\"nav\">...</div>\n<div class=\"article\">...</div>\n<div id=\"footer\">...</div>\n<!-- Semantic (baik!) -->\n<header>...</header>\n<nav>...</nav>\n<article>...</article>\n<footer>...</footer>",
+            "images": []
+          },
+          {
+            "id": "header-nav-footer",
+            "title": "Header, Nav, dan Footer",
+            "explanation": "<header>: Kepala halaman atau section. Biasanya berisi logo, judul, navigasi.\n<nav>: Navigasi utama website. Untuk link navigasi yang penting.\n<footer>: Kaki halaman atau section. Biasanya copyright, kontak, link tambahan.\nBisa digunakan di level halaman atau di dalam section/article.",
+            "video": "",
+            "code": "<!-- Header halaman -->\n<header>\n  <img src=\"logo.png\" alt=\"Logo\">\n  <h1>Website Saya</h1>\n  <nav>\n    <ul>\n      <li><a href=\"/\">Home</a></li>\n      <li><a href=\"/about\">About</a></li>\n      <li><a href=\"/contact\">Contact</a></li>\n    </ul>\n  </nav>\n</header>\n<!-- Footer halaman -->\n<footer>\n  <p>&copy; 2024 Website Saya. All rights reserved.</p>\n  <nav>\n    <a href=\"/privacy\">Privacy</a>\n    <a href=\"/terms\">Terms</a>\n  </nav>\n</footer>",
+            "images": []
+          },
+          {
+            "id": "main-section-article",
+            "title": "Main, Section, dan Article",
+            "explanation": "<main>: Konten utama halaman. Hanya satu per halaman. Tidak di dalam header, footer, nav, aside.\n<section>: Pengelompokan konten bertema. Biasanya punya heading.\n<article>: Konten independen yang bisa berdiri sendiri (blog post, berita, komentar). Bisa di-syndicate atau di-distribute sendiri.",
+            "video": "",
+            "code": "<main>\n  <section>\n    <h2>Berita Terkini</h2>\n    <article>\n      <h3>Judul Berita 1</h3>\n      <p>Konten berita...</p>\n      <footer>\n        <p>Ditulis oleh John Doe - 10 Jan 2024</p>\n      </footer>\n    </article>\n    <article>\n      <h3>Judul Berita 2</h3>\n      <p>Konten berita...</p>\n    </article>\n  </section>\n  <section>\n    <h2>Tentang Kami</h2>\n    <p>Deskripsi tentang kami...</p>\n  </section>\n</main>",
+            "images": []
+          },
+          {
+            "id": "aside-details-summary",
+            "title": "Aside, Details, dan Summary",
+            "explanation": "<aside>: Konten sampingan yang terkait tapi bisa dipisah dari konten utama (sidebar, callout, quotes).\n<details>: Konten yang bisa dibuka/tutup (disclosure widget).\n<summary>: Judul/ringkasan untuk <details>. Yang terlihat sebelum dibuka.\nInteraktif tanpa JavaScript!",
+            "video": "",
+            "code": "<!-- Aside sidebar -->\n<main>\n  <article>\n    <h1>Artikel Utama</h1>\n    <p>Konten artikel...</p>\n  </article>\n  <aside>\n    <h3>Artikel Terkait</h3>\n    <ul>\n      <li><a href=\"#\">Artikel 1</a></li>\n      <li><a href=\"#\">Artikel 2</a></li>\n    </ul>\n  </aside>\n</main>\n<!-- Details dan Summary -->\n<details>\n  <summary>Lihat Detail</summary>\n  <p>Konten detail yang tersembunyi sampai diklik...</p>\n</details>\n<details open>\n  <summary>FAQ: Apa itu HTML?</summary>\n  <p>HTML adalah HyperText Markup Language...</p>\n</details>",
+            "images": []
+          },
+          {
+            "id": "time-mark-address",
+            "title": "Time, Mark, dan Address",
+            "explanation": "<time>: Waktu atau tanggal yang machine-readable. Atribut datetime untuk format standar.\n<mark>: Highlight atau tandai teks yang relevan/penting dalam konteks tertentu.\n<address>: Informasi kontak untuk author atau owner. Tidak harus alamat fisik.",
+            "video": "",
+            "code": "<!-- Time -->\n<article>\n  <h2>Judul Artikel</h2>\n  <p>Dipublikasikan: <time datetime=\"2024-01-10\">10 Januari 2024</time></p>\n  <p>Event dimulai: <time datetime=\"2024-02-14T19:00\">14 Feb 2024, 7:00 PM</time></p>\n</article>\n<!-- Mark -->\n<p>Hasil pencarian untuk: <mark>HTML tutorial</mark></p>\n<p>Harga spesial: <mark>Diskon 50%</mark> hari ini!</p>\n<!-- Address -->\n<address>\n  <p>Hubungi penulis:</p>\n  <a href=\"mailto:john@example.com\">john@example.com</a><br>\n  <a href=\"tel:+6281234567890\">+62 812 3456 7890</a>\n</address>",
+            "images": []
+          },
+          {
+            "id": "semantic-layout-complete",
+            "title": "Semantic Layout Lengkap",
+            "explanation": "Contoh struktur halaman lengkap dengan semantic HTML5. Ini adalah best practice untuk website modern.\nPerhatikan hierarki dan penggunaan setiap tag. Struktur ini membantu SEO, accessibility, dan maintainability.",
+            "video": "",
+            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Website Semantic</title>\n</head>\n<body>\n  <header>\n    <h1>Website Saya</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#home\">Home</a></li>\n        <li><a href=\"#about\">About</a></li>\n        <li><a href=\"#blog\">Blog</a></li>\n        <li><a href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section id=\"hero\">\n      <h2>Selamat Datang</h2>\n      <p>Deskripsi singkat...</p>\n    </section>\n    <section id=\"blog\">\n      <h2>Blog Terbaru</h2>\n      <article>\n        <header>\n          <h3>Judul Post</h3>\n          <p><time datetime=\"2024-01-10\">10 Jan 2024</time></p>\n        </header>\n        <p>Konten blog...</p>\n        <footer>\n          <p>Tags: <a href=\"#\">HTML</a>, <a href=\"#\">Tutorial</a></p>\n        </footer>\n      </article>\n    </section>\n    <aside>\n      <h3>Sidebar</h3>\n      <p>Konten sampingan...</p>\n    </aside>\n  </main>\n  <footer>\n    <p>&copy; 2024 Website Saya</p>\n    <address>\n      <a href=\"mailto:info@example.com\">Email Us</a>\n    </address>\n  </footer>\n</body>\n</html>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "html-tables",
+        "title": "2. Tables",
+        "description": "Membuat tabel data yang terstruktur",
+        "contentDetails": [
+          {
+            "id": "table-basics",
+            "title": "Dasar-dasar Table",
+            "explanation": "Table untuk menampilkan data tabular (baris dan kolom). Jangan gunakan untuk layout!\nTag dasar:\n- <table>: Container table\n- <tr>: Table row (baris)\n- <td>: Table data (cell data)\n- <th>: Table header (cell header)\n<th> untuk header kolom/baris, otomatis bold dan center.",
+            "video": "",
+            "code": "<!-- Table sederhana -->\n<table>\n  <tr>\n    <th>Nama</th>\n    <th>Email</th>\n    <th>Umur</th>\n  </tr>\n  <tr>\n    <td>John Doe</td>\n    <td>john@example.com</td>\n    <td>25</td>\n  </tr>\n  <tr>\n    <td>Jane Smith</td>\n    <td>jane@example.com</td>\n    <td>30</td>\n  </tr>\n</table>",
+            "images": []
+          },
+          {
+            "id": "table-structure",
+            "title": "Struktur Table Lengkap",
+            "explanation": "Struktur table yang proper menggunakan:\n- <thead>: Header table\n- <tbody>: Body table (data utama)\n- <tfoot>: Footer table (summary, total)\n- <caption>: Judul table\n- <colgroup> & <col>: Styling kolom\nStruktur ini meningkatkan accessibility dan memudahkan styling.",
+            "video": "",
+            "code": "<table>\n  <caption>Data Penjualan Q1 2024</caption>\n  <thead>\n    <tr>\n      <th>Bulan</th>\n      <th>Penjualan</th>\n      <th>Target</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Januari</td>\n      <td>Rp 10.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Februari</td>\n      <td>Rp 15.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Maret</td>\n      <td>Rp 13.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <th>Total</th>\n      <td>Rp 38.000.000</td>\n      <td>Rp 36.000.000</td>\n    </tr>\n  </tfoot>\n</table>",
+            "images": []
+          },
+          {
+            "id": "table-spanning",
+            "title": "Colspan dan Rowspan",
+            "explanation": "Atribut untuk menggabungkan cells:\n- colspan: Gabung kolom horizontal\n- rowspan: Gabung baris vertikal\nBerguna untuk table kompleks dengan header multi-level atau data yang perlu digabung.",
+            "video": "",
+            "code": "<!-- Colspan -->\n<table>\n  <tr>\n    <th colspan=\"3\">Header Gabungan (3 kolom)</th>\n  </tr>\n  <tr>\n    <td>Data 1</td>\n    <td>Data 2</td>\n    <td>Data 3</td>\n  </tr>\n</table>\n<!-- Rowspan -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Kategori</th>\n    <th>Product</th>\n    <th>Harga</th>\n  </tr>\n  <tr>\n    <td>Laptop</td>\n    <td>Rp 10.000.000</td>\n  </tr>\n  <tr>\n    <td>Mouse</td>\n    <td>Rp 200.000</td>\n  </tr>\n</table>\n<!-- Kombinasi -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Nama</th>\n    <th colspan=\"2\">Nilai</th>\n  </tr>\n  <tr>\n    <th>UTS</th>\n    <th>UAS</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>85</td>\n    <td>90</td>\n  </tr>\n</table>",
+            "images": []
+          },
+          {
+            "id": "table-accessibility",
+            "title": "Table Accessibility",
+            "explanation": "Membuat table accessible untuk screen reader:\n- Gunakan <th> dengan scope attribute\n- scope=\"col\" untuk header kolom\n- scope=\"row\" untuk header baris\n- Gunakan <caption> untuk deskripsi table\n- id dan headers attribute untuk table kompleks\nAccessibility penting untuk pengguna dengan disabilitas!",
+            "video": "",
+            "code": "<!-- Table dengan scope -->\n<table>\n  <caption>Jadwal Pelajaran Kelas 10A</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\">Hari</th>\n      <th scope=\"col\">Jam 1</th>\n      <th scope=\"col\">Jam 2</th>\n      <th scope=\"col\">Jam 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">Senin</th>\n      <td>Matematika</td>\n      <td>Bahasa Indonesia</td>\n      <td>Fisika</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">Selasa</th>\n      <td>Kimia</td>\n      <td>Sejarah</td>\n      <td>Bahasa Inggris</td>\n    </tr>\n  </tbody>\n</table>",
+            "images": []
+          },
+          {
+            "id": "responsive-tables",
+            "title": "Responsive Tables",
+            "explanation": "Table bisa sulit di mobile karena lebar terbatas. Teknik membuat table responsive:\n1. Wrapper dengan overflow\n2. Transform ke layout card di mobile (butuh CSS)\n3. Sembunyikan kolom tidak penting di mobile\nContoh wrapper sederhana yang paling umum digunakan.",
+            "video": "",
+            "code": "<!-- Wrapper untuk horizontal scroll -->\n<div style=\"overflow-x: auto;\">\n  <table>\n    <thead>\n      <tr>\n        <th>Nama</th>\n        <th>Email</th>\n        <th>Telepon</th>\n        <th>Alamat</th>\n        <th>Kota</th>\n        <th>Negara</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>John Doe</td>\n        <td>john@example.com</td>\n        <td>+62 812 3456 7890</td>\n        <td>Jl. Sudirman No. 123</td>\n        <td>Jakarta</td>\n        <td>Indonesia</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "html-forms",
+        "title": "3. Forms",
+        "description": "Membuat form interaktif untuk input user",
+        "contentDetails": [
+          {
+            "id": "form-basics",
+            "title": "Dasar-dasar Form",
+            "explanation": "<form> untuk mengumpulkan input user. Atribut penting:\n- action: URL tujuan submit\n- method: GET atau POST\n- name: Nama form\n<input> untuk berbagai jenis input. Atribut:\n- type: Jenis input\n- name: Nama field (key untuk data)\n- value: Nilai default\n- placeholder: Teks hint\n- required: Wajib diisi",
+            "video": "",
+            "code": "<!-- Form sederhana -->\n<form action=\"/submit\" method=\"POST\">\n  <label for=\"name\">Nama:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required>\n  <button type=\"submit\">Kirim</button>\n</form>",
+            "images": []
+          },
+          {
+            "id": "input-types",
+            "title": "Berbagai Tipe Input",
+            "explanation": "HTML5 punya banyak tipe input dengan validasi built-in:\n- text: Teks biasa\n- email: Email (validasi format)\n- password: Password (karakter tersembunyi)\n- number: Angka\n- tel: Nomor telepon\n- url: URL (validasi format)\n- date: Tanggal (date picker)\n- time: Waktu\n- color: Color picker\n- range: Slider\n- search: Search field\n- file: Upload file\nValidasi otomatis oleh browser!",
+            "video": "",
+            "code": "<form>\n  <label>Text: <input type=\"text\" name=\"text\"></label><br>\n  <label>Email: <input type=\"email\" name=\"email\"></label><br>\n  <label>Password: <input type=\"password\" name=\"pass\"></label><br>\n  <label>Number: <input type=\"number\" min=\"0\" max=\"100\" name=\"num\"></label><br>\n  <label>Date: <input type=\"date\" name=\"date\"></label><br>\n  <label>Time: <input type=\"time\" name=\"time\"></label><br>\n  <label>Color: <input type=\"color\" name=\"color\"></label><br>\n  <label>Range: <input type=\"range\" min=\"0\" max=\"100\" name=\"range\"></label><br>\n  <label>File: <input type=\"file\" name=\"file\"></label><br>\n  <label>Search: <input type=\"search\" name=\"search\"></label><br>\n  <label>URL: <input type=\"url\" name=\"url\"></label><br>\n  <label>Tel: <input type=\"tel\" name=\"tel\"></label><br>\n</form>",
+            "images": []
+          },
+          {
+            "id": "checkboxes-radio",
+            "title": "Checkbox dan Radio Button",
+            "explanation": "Checkbox untuk pilihan multiple:\n- type=\"checkbox\"\n- Bisa pilih beberapa\n- checked untuk default\nRadio untuk pilihan tunggal:\n- type=\"radio\"\n- Same name untuk grup\n- Hanya satu bisa dipilih per grup\nSelalu gunakan <label> untuk accessibility!",
+            "video": "",
+            "code": "<!-- Checkboxes -->\n<fieldset>\n  <legend>Hobi (pilih semua yang sesuai):</legend>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"coding\">\n    Coding\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"reading\">\n    Reading\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"gaming\" checked>\n    Gaming\n  </label>\n</fieldset>\n<!-- Radio buttons -->\n<fieldset>\n  <legend>Jenis Kelamin:</legend>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"male\" required>\n    Laki-laki\n  </label>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"female\">\n    Perempuan\n  </label>\n</fieldset>",
+            "images": []
+          },
+          {
+            "id": "select-textarea",
+            "title": "Select dan Textarea",
+            "explanation": "<select> untuk dropdown menu:\n- <option> untuk setiap pilihan\n- value attribute untuk data yang dikirim\n- selected untuk default\n- multiple untuk pilihan ganda\n<textarea> untuk teks multi-baris:\n- rows dan cols untuk ukuran\n- Tidak ada value attribute, konten di antara tag",
+            "video": "",
+            "code": "<!-- Select dropdown -->\n<label for=\"country\">Negara:</label>\n<select id=\"country\" name=\"country\" required>\n  <option value=\"\">-- Pilih Negara --</option>\n  <option value=\"id\">Indonesia</option>\n  <option value=\"my\">Malaysia</option>\n  <option value=\"sg\" selected>Singapore</option>\n  <option value=\"th\">Thailand</option>\n</select>\n<!-- Multiple select -->\n<label for=\"skills\">Skills (Ctrl+Click untuk multiple):</label>\n<select id=\"skills\" name=\"skills\" multiple>\n  <option value=\"html\">HTML</option>\n  <option value=\"css\">CSS</option>\n  <option value=\"js\">JavaScript</option>\n  <option value=\"php\">PHP</option>\n</select>\n<!-- Textarea -->\n<label for=\"message\">Pesan:</label>\n<textarea id=\"message\" name=\"message\" rows=\"5\" cols=\"40\" placeholder=\"Tulis pesan Anda...\"></textarea>",
+            "images": []
+          },
+          {
+            "id": "form-attributes",
+            "title": "Atribut Validasi Form",
+            "explanation": "HTML5 punya validasi built-in dengan atribut:\n- required: Wajib diisi\n- min, max: Nilai minimum/maksimum (number, date)\n- minlength, maxlength: Panjang karakter\n- pattern: Regex pattern\n- disabled: Nonaktifkan input\n- readonly: Baca saja (tidak bisa edit)\nBrowser akan validasi sebelum submit!",
+            "video": "",
+            "code": "<form>\n  <!-- Required -->\n  <input type=\"text\" name=\"username\" required>\n  <!-- Min/Max length -->\n  <input type=\"password\" name=\"pass\" minlength=\"8\" maxlength=\"20\" required>\n  <!-- Min/Max value -->\n  <input type=\"number\" name=\"age\" min=\"18\" max=\"100\" required>\n  <!-- Pattern (regex) -->\n  <input type=\"text\" name=\"phone\" pattern=\"[0-9]{10,12}\" placeholder=\"08123456789\">\n  <!-- Readonly -->\n  <input type=\"text\" name=\"username\" value=\"johndoe\" readonly>\n  <!-- Disabled -->\n  <input type=\"text\" name=\"field\" value=\"Tidak aktif\" disabled>\n  <button type=\"submit\">Submit</button>\n</form>",
+            "images": []
+          },
+          {
+            "id": "fieldset-legend",
+            "title": "Fieldset, Legend, dan Label",
+            "explanation": "<fieldset> untuk mengelompokkan input terkait. Border otomatis.\n<legend> untuk judul fieldset.\n<label> untuk label input. Dua cara:\n1. Wrap input\n2. Gunakan for=\"id\" ke id input\nLabel penting untuk accessibility! Screen reader membacanya.",
+            "video": "",
+            "code": "<!-- Fieldset dengan legend -->\n<fieldset>\n  <legend>Informasi Pribadi</legend>\n  <!-- Label dengan for -->\n  <label for=\"fname\">Nama Depan:</label>\n  <input type=\"text\" id=\"fname\" name=\"fname\"><br>\n  <label for=\"lname\">Nama Belakang:</label>\n  <input type=\"text\" id=\"lname\" name=\"lname\"><br>\n</fieldset>\n<fieldset>\n  <legend>Alamat</legend>\n  <!-- Label wrap input -->\n  <label>\n    Jalan:\n    <input type=\"text\" name=\"street\">\n  </label><br>\n  <label>\n    Kota:\n    <input type=\"text\" name=\"city\">\n  </label><br>\n  <label>\n    Kode Pos:\n    <input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}\">\n  </label>\n</fieldset>",
+            "images": []
+          },
+          {
+            "id": "form-complete-example",
+            "title": "Form Lengkap",
+            "explanation": "Contoh form lengkap dengan berbagai elemen dan best practices:\n- Semantic grouping dengan fieldset\n- Label accessible\n- Validasi appropriate\n- Button types yang benar\n- Placeholder dan hint text\nIni template yang bisa Anda gunakan dan modifikasi.",
+            "video": "",
+            "code": "<form action=\"/register\" method=\"POST\">\n  <h2>Form Registrasi</h2>\n  <fieldset>\n    <legend>Informasi Akun</legend>\n    <label for=\"username\">Username:</label>\n    <input type=\"text\" id=\"username\" name=\"username\" minlength=\"3\" required><br>\n    <label for=\"email\">Email:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required><br>\n    <label for=\"password\">Password:</label>\n    <input type=\"password\" id=\"password\" name=\"password\" minlength=\"8\" required><br>\n    <label for=\"confirm\">Konfirmasi Password:</label>\n    <input type=\"password\" id=\"confirm\" name=\"confirm\" minlength=\"8\" required><br>\n  </fieldset>\n  <fieldset>\n    <legend>Informasi Pribadi</legend>\n    <label for=\"fullname\">Nama Lengkap:</label>\n    <input type=\"text\" id=\"fullname\" name=\"fullname\" required><br>\n    <label for=\"dob\">Tanggal Lahir:</label>\n    <input type=\"date\" id=\"dob\" name=\"dob\" required><br>\n    <label>Jenis Kelamin:</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"male\" required> Laki-laki</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"female\"> Perempuan</label><br>\n    <label for=\"country\">Negara:</label>\n    <select id=\"country\" name=\"country\" required>\n      <option value=\"\">-- Pilih --</option>\n      <option value=\"id\">Indonesia</option>\n      <option value=\"my\">Malaysia</option>\n    </select><br>\n  </fieldset>\n  <fieldset>\n    <legend>Preferensi</legend>\n    <label><input type=\"checkbox\" name=\"newsletter\"> Subscribe newsletter</label><br>\n    <label><input type=\"checkbox\" name=\"terms\" required> Setuju dengan syarat dan ketentuan</label><br>\n  </fieldset>\n  <button type=\"submit\">Daftar</button>\n  <button type=\"reset\">Reset</button>\n</form>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "html-metadata",
+        "title": "4. Metadata dan SEO",
+        "description": "Optimasi website untuk search engine",
+        "contentDetails": [
+          {
+            "id": "meta-tags-seo",
+            "title": "Meta Tags untuk SEO",
+            "explanation": "Meta tags penting untuk SEO dan social media:\n- description: Deskripsi di search results\n- keywords: Keywords (kurang penting sekarang)\n- author: Penulis\n- viewport: Responsive design (wajib!)\n- robots: Instruksi untuk crawler\nSearch engine menggunakan ini untuk indexing dan ranking.",
+            "video": "",
+            "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <!-- SEO Meta Tags -->\n  <title>Belajar HTML - Tutorial Lengkap untuk Pemula</title>\n  <meta name=\"description\" content=\"Tutorial HTML lengkap dari dasar hingga mahir. Pelajari HTML5, semantic tags, forms, dan best practices web development.\">\n  <meta name=\"keywords\" content=\"html, tutorial html, belajar html, html5, web development\">\n  <meta name=\"author\" content=\"Nama Anda\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <!-- Canonical URL (hindari duplicate content) -->\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "open-graph",
+            "title": "Open Graph untuk Social Media",
+            "explanation": "Open Graph protocol untuk preview link di social media (Facebook, LinkedIn, dll).\nAtribut penting:\n- og:title: Judul\n- og:description: Deskripsi\n- og:image: Gambar preview\n- og:url: URL canonical\n- og:type: Tipe konten\nTanpa ini, preview link di social media akan buruk!",
+            "video": "",
+            "code": "<head>\n  <!-- Open Graph Meta Tags -->\n  <meta property=\"og:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir dengan contoh kode lengkap.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <meta property=\"og:site_name\" content=\"WebDev Academy\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta name=\"twitter:creator\" content=\"@yourusername\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "favicon-icons",
+            "title": "Favicon dan Icons",
+            "explanation": "Favicon adalah icon kecil di tab browser. Modern website perlu berbagai ukuran untuk device berbeda.\nIcon sizes:\n- 16x16, 32x32: Browser tab\n- 180x180: Apple Touch Icon\n- 192x192, 512x512: Android\nGunakan favicon generator online untuk semua ukuran!",
+            "video": "",
+            "code": "<head>\n  <!-- Favicon -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n  <!-- Apple Touch Icon -->\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Android Chrome -->\n  <link rel=\"manifest\" href=\"/site.webmanifest\">\n  <!-- Safari Pinned Tab -->\n  <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <!-- Theme Color -->\n  <meta name=\"theme-color\" content=\"#ffffff\">\n</head>",
+            "images": []
+          },
+          {
+            "id": "structured-data",
+            "title": "Structured Data (Schema.org)",
+            "explanation": "Structured data membantu search engine memahami konten website. Menggunakan JSON-LD format.\nSchema.org types:\n- Article: Artikel/blog post\n- Person: Profil orang\n- Organization: Perusahaan\n- Product: Produk e-commerce\n- Recipe: Resep masakan\n- Event: Acara/event\nRich snippets di search results!",
+            "video": "",
+            "code": "<head>\n  <!-- Structured Data untuk Article -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap untuk Pemula\",\n    \"image\": \"https://www.example.com/images/html-tutorial.jpg\",\n    \"author\": {\n      \"@type\": \"Person\",\n      \"name\": \"John Doe\"\n    },\n    \"publisher\": {\n      \"@type\": \"Organization\",\n      \"name\": \"WebDev Academy\",\n      \"logo\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://www.example.com/logo.png\"\n      }\n    },\n    \"datePublished\": \"2024-01-10\",\n    \"dateModified\": \"2024-01-15\",\n    \"description\": \"Tutorial HTML dari dasar hingga mahir.\"\n  }\n  </script>\n</head>",
+            "images": []
+          },
+          {
+            "id": "complete-head-example",
+            "title": "Complete Head Section",
+            "explanation": "Contoh <head> lengkap dengan semua best practices:\n- Encoding dan viewport\n- Title dan meta description\n- Open Graph dan Twitter Card\n- Favicon\n- Canonical URL\n- Structured data\n- CSS dan fonts\nTemplate ini siap digunakan untuk project Anda!",
+            "video": "",
+            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <!-- Essential Meta Tags -->\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <!-- SEO Meta Tags -->\n  <title>Tutorial HTML Lengkap - WebDev Academy</title>\n  <meta name=\"description\" content=\"Pelajari HTML dari dasar hingga mahir. Tutorial lengkap dengan contoh kode dan best practices web development modern.\">\n  <meta name=\"keywords\" content=\"html, tutorial, web development, html5\">\n  <meta name=\"author\" content=\"WebDev Academy\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n  <!-- Open Graph -->\n  <meta property=\"og:title\" content=\"Tutorial HTML Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/og-image.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Tutorial HTML Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/twitter-image.jpg\">\n  <!-- Favicons -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Stylesheets -->\n  <link rel=\"stylesheet\" href=\"/css/style.css\">\n  <!-- Fonts -->\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n  <!-- Structured Data -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap\",\n    \"datePublished\": \"2024-01-10\"\n  }\n  </script>\n</head>\n<body>\n  <!-- Content here -->\n</body>\n</html>",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "html-advanced",
+    "title": "HTML Advanced",
+    "description": "Teknik lanjutan: Web Components, API integrasi, performance, dan best practices profesional",
+    "icon": "code-bracket-square",
+    "subContent": [
+      {
+        "id": "web-components",
+        "title": "1. Web Components",
+        "description": "Membuat komponen UI reusable dengan standar web",
+        "contentDetails": [
+          {
+            "id": "custom-elements",
+            "title": "Custom Elements",
+            "explanation": "Buat elemen HTML sendiri dengan JavaScript. Contoh: <my-button>, <user-card>.\nGunakan class yang extends HTMLElement dan daftarkan dengan customElements.define().",
+            "video": "",
+            "code": "class MyButton extends HTMLElement {\n  constructor() {\n    super();\n    this.innerHTML = `<button style=\"color: blue;\">${this.getAttribute('label')}</button>`;\n  }\n}\ncustomElements.define('my-button', MyButton);\n\n<!-- Penggunaan -->\n<my-button label=\"Klik Saya\"></my-button>",
+            "images": []
+          },
+          {
+            "id": "shadow-dom",
+            "title": "Shadow DOM",
+            "explanation": "Isolasi styling dan markup komponen dari dokumen utama. Hindari konflik CSS.",
+            "video": "",
+            "code": "class UserCard extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({mode: 'open'});\n    shadow.innerHTML = `\n      <style>h3 { color: green; }</style>\n      <h3>${this.getAttribute('name')}</h3>\n    `;\n  }\n}\ncustomElements.define('user-card', UserCard);",
+            "images": []
+          },
+          {
+            "id": "html-templates",
+            "title": "HTML Templates",
+            "explanation": "Gunakan <template> untuk menyimpan markup yang tidak dirender sampai dibutuhkan.",
+            "video": "",
+            "code": "<template id=\"card-template\">\n  <div class=\"card\">\n    <h3></h3>\n    <p></p>\n  </div>\n</template>\n\n<script>\n  const template = document.getElementById('card-template');\n  const clone = template.content.cloneNode(true);\n  clone.querySelector('h3').textContent = 'Judul';\n  document.body.appendChild(clone);\n</script>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "accessibility-advanced",
+        "title": "2. Accessibility Lanjutan",
+        "description": "Membuat website yang benar-benar inklusif",
+        "contentDetails": [
+          {
+            "id": "aria-landmarks",
+            "title": "ARIA Landmarks",
+            "explanation": "Gunakan role dan ARIA attributes untuk membantu screen reader:\n- role=\"banner\", \"main\", \"navigation\", \"complementary\", \"contentinfo\"\n- aria-label, aria-labelledby, aria-describedby",
+            "video": "",
+            "code": "<header role=\"banner\">...</header>\n<nav role=\"navigation\" aria-label=\"Primary\">...</nav>\n<main role=\"main\">...</main>\n<aside role=\"complementary\">...</aside>\n<footer role=\"contentinfo\">...</footer>",
+            "images": []
+          },
+          {
+            "id": "keyboard-navigation",
+            "title": "Keyboard Navigation",
+            "explanation": "Pastikan semua interaksi bisa dilakukan dengan keyboard (tab, enter, space). Gunakan tabindex, focus management.",
+            "video": "",
+            "code": "<button tabindex=\"0\">Fokus dengan Tab</button>\n<div tabindex=\"0\" role=\"button\" onclick=\"doSomething()\">Div sebagai tombol</div>",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "performance-html",
+        "title": "3. Performance Optimization",
+        "description": "Optimasi kecepatan dan efisiensi HTML",
+        "contentDetails": [
+          {
+            "id": "critical-rendering-path",
+            "title": "Critical Rendering Path",
+            "explanation": "Minimalkan blocking render: letakkan CSS di <head>, JS di akhir <body> atau gunakan async/defer.",
+            "video": "",
+            "code": "<head>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <!-- Konten -->\n  <script src=\"script.js\" defer></script>\n</body>",
+            "images": []
+          },
+          {
+            "id": "preload-prefetch",
+            "title": "Resource Hints",
+            "explanation": "Gunakan <link rel=\"preload\">, <link rel=\"prefetch\"> untuk memuat aset lebih cepat.",
+            "video": "",
+            "code": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>\n<link rel=\"prefetch\" href=\"next-page.html\">",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "security-html",
+        "title": "4. Keamanan HTML",
+        "description": "Mencegah serangan umum di frontend",
+        "contentDetails": [
+          {
+            "id": "xss-prevention",
+            "title": "Mencegah XSS",
+            "explanation": "Jangan pernah memasukkan input user langsung ke DOM. Gunakan textContent, bukan innerHTML.",
+            "video": "",
+            "code": "// Aman\nel.textContent = userInput;\n// Berbahaya\nel.innerHTML = userInput;",
+            "images": []
+          },
+          {
+            "id": "csp-basics",
+            "title": "Content Security Policy (CSP)",
+            "explanation": "Atur kebijakan keamanan melalui header HTTP atau meta tag untuk membatasi sumber daya yang diizinkan.",
+            "video": "",
+            "code": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' https://trusted.cdn.com\">",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-dasar",
+    "title": "CSS Dasar",
+    "description": "Memahami dasar styling website dengan CSS",
+    "icon": "paint-brush",
+    "subContent": [
+      {
+        "id": "pengenalan-css",
+        "title": "1. Pengenalan CSS",
+        "description": "Apa itu CSS dan bagaimana cara kerjanya",
+        "contentDetails": [
+          {
+            "id": "apa-itu-css",
+            "title": "Apa Itu CSS?",
+            "explanation": "CSS (Cascading Style Sheets) adalah bahasa untuk mengatur tampilan HTML. Memisahkan konten dari presentasi.",
+            "video": "",
+            "code": "/* Contoh CSS sederhana */\nh1 {\n  color: blue;\n  font-size: 24px;\n}",
+            "images": []
+          },
+          {
+            "id": "cara-menyisipkan-css",
+            "title": "Cara Menyisipkan CSS",
+            "explanation": "Tiga cara: inline, internal (style tag), eksternal (file .css). Rekomendasi: eksternal.",
+            "video": "",
+            "code": "<!-- Inline -->\n<p style=\"color: red;\">Teks merah</p>\n\n<!-- Internal -->\n<style>\n  p { color: red; }\n</style>\n\n<!-- Eksternal -->\n<link rel=\"stylesheet\" href=\"style.css\">",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "selector-dasar",
+        "title": "2. Selector Dasar",
+        "description": "Memilih elemen HTML untuk diberi gaya",
+        "contentDetails": [
+          {
+            "id": "element-id-class",
+            "title": "Element, ID, dan Class Selector",
+            "explanation": "p { ... } → semua paragraf\n#header { ... } → elemen dengan id=\"header\"\n.intro { ... } → semua elemen dengan class=\"intro\"",
+            "video": "",
+            "code": "p { color: black; }\n#header { background: white; }\n.intro { font-size: 18px; }",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "properti-css-dasar",
+        "title": "3. Properti CSS Dasar",
+        "description": "Warna, font, ukuran, margin, padding",
+        "contentDetails": [
+          {
+            "id": "color-font",
+            "title": "Color dan Font",
+            "explanation": "color, background-color, font-family, font-size, font-weight",
+            "video": "",
+            "code": "body {\n  color: #333;\n  background-color: #f9f9f9;\n  font-family: Arial, sans-serif;\n  font-size: 16px;\n}",
+            "images": []
+          },
+          {
+            "id": "box-model",
+            "title": "Box Model",
+            "explanation": "Setiap elemen adalah kotak: content + padding + border + margin.",
+            "video": "",
+            "code": ".box {\n  width: 200px;\n  padding: 20px;\n  border: 1px solid #ccc;\n  margin: 10px;\n}",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-menengah",
+    "title": "CSS Menengah",
+    "description": "Layout, responsif, dan fitur CSS modern",
+    "icon": "rectangle-group",
+    "subContent": [
+      {
+        "id": "flexbox",
+        "title": "1. Flexbox",
+        "description": "Layout satu dimensi yang fleksibel",
+        "contentDetails": [
+          {
+            "id": "flex-container",
+            "title": "Flex Container",
+            "explanation": "display: flex; justify-content; align-items; flex-direction",
+            "video": "",
+            "code": ".container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: row;\n}",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "grid",
+        "title": "2. CSS Grid",
+        "description": "Layout dua dimensi yang powerful",
+        "contentDetails": [
+          {
+            "id": "grid-basics",
+            "title": "Grid Dasar",
+            "explanation": "display: grid; grid-template-columns; grid-gap",
+            "video": "",
+            "code": ".grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 16px;\n}",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "responsive-design",
+        "title": "3. Responsive Design",
+        "description": "Website yang responsif di semua perangkat",
+        "contentDetails": [
+          {
+            "id": "media-queries",
+            "title": "Media Queries",
+            "explanation": "@media (max-width: 768px) { ... }",
+            "video": "",
+            "code": "@media (max-width: 768px) {\n  .container {\n    flex-direction: column;\n  }\n}",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "css-advanced",
+    "title": "CSS Advanced",
+    "description": "Animasi, preprocessors, architecture, dan best practices profesional",
+    "icon": "sparkles",
+    "subContent": [
+      {
+        "id": "css-animations",
+        "title": "1. Animasi dan Transisi",
+        "description": "Membuat UI hidup dengan animasi",
+        "contentDetails": [
+          {
+            "id": "transitions",
+            "title": "Transisi",
+            "explanation": "transition: property duration timing-function",
+            "video": "",
+            "code": ".btn {\n  background: blue;\n  transition: background 0.3s ease;\n}\n.btn:hover {\n  background: darkblue;\n}",
+            "images": []
+          },
+          {
+            "id": "keyframes",
+            "title": "Keyframes",
+            "explanation": "@keyframes untuk animasi kompleks",
+            "video": "",
+            "code": "@keyframes bounce {\n  0%, 100% { transform: translateY(0); }\n  50% { transform: translateY(-20px); }\n}\n.bounce {\n  animation: bounce 1s infinite;\n}",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "preprocessors",
+        "title": "2. CSS Preprocessors",
+        "description": "Sass/SCSS untuk CSS yang lebih powerful",
+        "contentDetails": [
+          {
+            "id": "sass-basics",
+            "title": "Variabel, Nesting, Mixins",
+            "explanation": "$primary: #3498db;\n.button {\n  color: $primary;\n  &:hover { ... }\n}",
+            "video": "",
+            "code": "$primary-color: #3498db;\n\n.button {\n  background: $primary-color;\n  &:hover {\n    background: darken($primary-color, 10%);\n  }\n}",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "css-architecture",
+        "title": "3. Arsitektur CSS",
+        "description": "SMACSS, BEM, ITCSS untuk proyek besar",
+        "contentDetails": [
+          {
+            "id": "bem-methodology",
+            "title": "BEM (Block Element Modifier)",
+            "explanation": ".card {}\n.card__title {}\n.card--featured {}",
+            "video": "",
+            "code": ".card { /* block */ }\n.card__image { /* element */ }\n.card--dark { /* modifier */ }",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "javascript-dasar",
+    "title": "JavaScript Dasar",
+    "description": "Memahami dasar pemrograman JavaScript",
+    "icon": "square-2-stack",
+    "subContent": [
+      {
+        "id": "pengenalan-js",
+        "title": "1. Pengenalan JavaScript",
+        "description": "Apa itu JavaScript dan perannya di web",
+        "contentDetails": [
+          {
+            "id": "apa-itu-js",
+            "title": "Apa Itu JavaScript?",
+            "explanation": "Bahasa pemrograman client-side untuk membuat website interaktif.",
+            "video": "",
+            "code": "console.log(\"Hello, World!\");",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "variabel-tipe-data",
+        "title": "2. Variabel dan Tipe Data",
+        "description": "let, const, string, number, boolean, null, undefined",
+        "contentDetails": [
+          {
+            "id": "deklarasi-variabel",
+            "title": "Deklarasi Variabel",
+            "explanation": "let name = \"John\";\nconst PI = 3.14;",
+            "video": "",
+            "code": "let age = 25;\nconst isStudent = true;",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "operator-dan-kontrol",
+        "title": "3. Operator dan Struktur Kontrol",
+        "description": "if, else, switch, for, while",
+        "contentDetails": [
+          {
+            "id": "kondisi-perulangan",
+            "title": "Kondisi dan Perulangan",
+            "explanation": "if (age >= 18) { ... }\nfor (let i = 0; i < 5; i++) { ... }",
+            "video": "",
+            "code": "if (score >= 75) {\n  console.log(\"Lulus\");\n} else {\n  console.log(\"Tidak lulus\");\n}",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "function-dasar",
+        "title": "4. Fungsi",
+        "description": "Membuat dan memanggil fungsi",
+        "contentDetails": [
+          {
+            "id": "deklarasi-fungsi",
+            "title": "Deklarasi dan Ekspresi Fungsi",
+            "explanation": "function greet() { return \"Hi\"; }\nconst greet = () => \"Hi\";",
+            "video": "",
+            "code": "function add(a, b) {\n  return a + b;\n}\nconsole.log(add(2, 3)); // 5",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "javascript-menengah",
+    "title": "JavaScript Menengah",
+    "description": "DOM, event, array methods, dan async dasar",
+    "icon": "cursor-arrow-rays",
+    "subContent": [
+      {
+        "id": "dom-manipulation",
+        "title": "1. DOM Manipulation",
+        "description": "Mengakses dan mengubah elemen HTML",
+        "contentDetails": [
+          {
+            "id": "selecting-elements",
+            "title": "Memilih Elemen",
+            "explanation": "document.getElementById(), querySelector(), querySelectorAll()",
+            "video": "",
+            "code": "const button = document.querySelector(\"#myButton\");\nbutton.style.color = \"red\";",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "event-handling",
+        "title": "2. Event Handling",
+        "description": "Menangani klik, input, dan interaksi user",
+        "contentDetails": [
+          {
+            "id": "event-listeners",
+            "title": "Event Listeners",
+            "explanation": "element.addEventListener(\"click\", handler);",
+            "video": "",
+            "code": "button.addEventListener(\"click\", () => {\n  alert(\"Tombol diklik!\");\n});",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "array-methods",
+        "title": "3. Array Methods",
+        "description": "map, filter, reduce, forEach",
+        "contentDetails": [
+          {
+            "id": "functional-array",
+            "title": "Metode Fungsional",
+            "explanation": "const doubled = numbers.map(n => n * 2);",
+            "video": "",
+            "code": "const numbers = [1, 2, 3];\nconst doubled = numbers.map(x => x * 2); // [2, 4, 6]",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "async-basics",
+        "title": "4. Async JavaScript Dasar",
+        "description": "Callback, Promise, async/await",
+        "contentDetails": [
+          {
+            "id": "promises",
+            "title": "Promises",
+            "explanation": "fetch(url).then(res => res.json()).then(data => ...)",
+            "video": "",
+            "code": "fetch(\"https://api.example.com/data\")\n  .then(response => response.json())\n  .then(data => console.log(data));",
+            "images": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "javascript-advanced",
+    "title": "JavaScript Advanced",
+    "description": "ES6+, modul, closure, design patterns, dan best practices",
+    "icon": "cpu-chip",
+    "subContent": [
+      {
+        "id": "es6-features",
+        "title": "1. Fitur ES6+",
+        "description": "Destructuring, spread, template literals, modules",
+        "contentDetails": [
+          {
+            "id": "modern-js",
+            "title": "JavaScript Modern",
+            "explanation": "const { name, age } = user;\nconst arr = [...old, newItem];",
+            "video": "",
+            "code": "const user = { name: \"John\", age: 30 };\nconst { name, age } = user;\nconsole.log(`${name} is ${age}`);",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "modules",
+        "title": "2. Modul JavaScript",
+        "description": "Import dan export modul",
+        "contentDetails": [
+          {
+            "id": "es-modules",
+            "title": "ES Modules",
+            "explanation": "export const PI = 3.14;\nimport { PI } from './math.js';",
+            "video": "",
+            "code": "// math.js\nexport const add = (a, b) => a + b;\n\n// main.js\nimport { add } from './math.js';",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "closure-scope",
+        "title": "3. Closure dan Scope",
+        "description": "Memahami lexical scope dan closure",
+        "contentDetails": [
+          {
+            "id": "closure-example",
+            "title": "Contoh Closure",
+            "explanation": "Fungsi dalam mengakses variabel luar meski sudah return.",
+            "video": "",
+            "code": "function createCounter() {\n  let count = 0;\n  return () => ++count;\n}\nconst counter = createCounter();\nconsole.log(counter()); // 1",
+            "images": []
+          }
+        ]
+      },
+      {
+        "id": "design-patterns",
+        "title": "4. Design Patterns",
+        "description": "Module, Observer, Factory, Singleton",
+        "contentDetails": [
+          {
+            "id": "module-pattern",
+            "title": "Module Pattern",
+            "explanation": "Enkapsulasi fungsi dan variabel privat.",
+            "video": "",
+            "code": "const Calculator = (function() {\n  let result = 0;\n  return {\n    add: (x) => result += x,\n    getResult: () => result\n  };\n})();",
+            "images": []
+          }
+        ]
+      }
+    ]
+  }
+]

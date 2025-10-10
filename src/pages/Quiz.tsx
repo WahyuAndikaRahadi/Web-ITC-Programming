@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Lock, ArrowRight, RotateCcw, Trophy, CheckCircle } from 'lucide-react';
 import Card from '../components/Card';
-import QuizCard from '../components/QuizCard';
+import QuizCard from '../components/QuizCard'; // Asumsi komponen ini ada
 import quizData from '../data/quiz.json';
 import materiData from '../data/materi.json';
 
@@ -36,6 +36,11 @@ const Quiz = ({ darkMode }: QuizProps) => {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [completedMaterials, setCompletedMaterials] = useState<Set<string>>(new Set());
   const [quizScores, setQuizScores] = useState<Record<string, number>>({});
+
+  // GLASSMORPHISM BASE CLASSES
+  const glassmorphismBase = darkMode
+    ? 'bg-gray-800/50 backdrop-blur-lg border border-gray-700/50' 
+    : 'bg-white/50 backdrop-blur-lg border border-gray-200/50';
 
   useEffect(() => {
     const savedMaterials = localStorage.getItem('itc-completed-materials');
@@ -125,6 +130,7 @@ const Quiz = ({ darkMode }: QuizProps) => {
     return 'Tetap Semangat! 💪';
   };
 
+  // Tampilan saat Quiz Sedang Berjalan
   if (selectedQuiz && !quizCompleted) {
     const currentQ = selectedQuiz.questions[currentQuestion];
 
@@ -148,6 +154,7 @@ const Quiz = ({ darkMode }: QuizProps) => {
             </button>
           </motion.div>
 
+          {/* Quiz Card - Menggunakan komponen QuizCard */}
           <QuizCard
             question={currentQ.question}
             options={currentQ.options}
@@ -160,13 +167,14 @@ const Quiz = ({ darkMode }: QuizProps) => {
             totalQuestions={selectedQuiz.questions.length}
           />
 
+          {/* Penjelasan Jawaban (Glassmorphism Added) */}
           {showResults && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`mt-6 ${
-                darkMode ? 'bg-blue-900/20 border-blue-700' : 'bg-blue-50 border-blue-200'
-              } border rounded-xl p-6`}
+              className={`mt-6 rounded-xl p-6 ${glassmorphismBase} ${
+                darkMode ? 'shadow-xl shadow-blue-900/20' : 'shadow-lg shadow-blue-100/50'
+              }`}
             >
               <h4
                 className={`font-semibold mb-2 ${
@@ -181,6 +189,7 @@ const Quiz = ({ darkMode }: QuizProps) => {
             </motion.div>
           )}
 
+          {/* Tombol Navigasi */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -223,6 +232,7 @@ const Quiz = ({ darkMode }: QuizProps) => {
     );
   }
 
+  // Tampilan Hasil Quiz
   if (quizCompleted && selectedQuiz) {
     const correct = selectedQuiz.questions.filter(
       (q, i) => selectedAnswers[i] === q.correctAnswer
@@ -235,10 +245,9 @@ const Quiz = ({ darkMode }: QuizProps) => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className={`${
-              darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
-            } border rounded-xl p-8 text-center shadow-lg`}
+            className={`rounded-xl p-8 text-center shadow-lg ${glassmorphismBase}`} // Glassmorphism applied
           >
+            {/* ... (Konten Hasil Quiz tidak diubah) ... */}
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -330,6 +339,7 @@ const Quiz = ({ darkMode }: QuizProps) => {
     );
   }
 
+  // Tampilan Daftar Quiz
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -383,12 +393,13 @@ const Quiz = ({ darkMode }: QuizProps) => {
                           darkMode ? 'text-gray-300' : 'text-gray-700'
                         }`}
                       >
-                        Selesaikan materi dulu
+                        Quiz akan segera hadir
                       </p>
                     </div>
                   </div>
                 )}
 
+                {/* Card - Asumsi menggunakan komponen Card dengan Glassmorphism */}
                 <Card
                   title={quiz.title}
                   description={quiz.description}
@@ -421,7 +432,7 @@ const Quiz = ({ darkMode }: QuizProps) => {
                     {previousScore !== undefined && (
                       <div
                         className={`flex items-center justify-between p-3 rounded-lg ${
-                          darkMode ? 'bg-gray-700' : 'bg-gray-100'
+                          darkMode ? 'bg-gray-700/50 backdrop-blur-sm' : 'bg-gray-100/70 backdrop-blur-sm' // Diperkuat Glassmorphism di skor
                         }`}
                       >
                         <span

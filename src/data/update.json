@@ -3,28 +3,7 @@
     "id": "update-1",
     "date": "2025-10-08",
     "title": "🎉 Portal Pembelajaran ITC Programming Resmi Diluncurkan!",
-    "content": "Selamat datang di ITC Programming Learning Portal! Mulai belajar HTML, CSS, dan JavaScript dengan materi terstruktur dan quiz interaktif.",
+    "content": "Selamat datang di ITC Programming Learning Portal! Mulai belajar HTML, CSS, Javascript dan banyak materi lainnya dengan terstruktur dan quiz interaktif.",
     "type": "announcement"
-  },
-  {
-    "id": "update-2",
-    "date": "2025-10-07",
-    "title": "📚 Materi JavaScript Dasar Sudah Tersedia",
-    "content": "Materi JavaScript meliputi variable, function, array, dan DOM manipulation. Jangan lupa kerjakan quiz untuk mengetes pemahaman!",
-    "type": "new-content"
-  },
-  {
-    "id": "update-3",
-    "date": "2025-10-06",
-    "title": "🏆 Lomba Hackathon ITS 2025 Dibuka!",
-    "content": "Deadline pendaftaran: 20 Oktober 2025. Cek halaman Lomba untuk info lebih detail dan link pendaftaran.",
-    "type": "competition"
-  },
-  {
-    "id": "update-4",
-    "date": "2025-10-05",
-    "title": "💡 Tips: Gunakan Progress Tracker",
-    "content": "Tandai materi sebagai selesai untuk unlock project dan quiz baru. Progress kamu tersimpan otomatis di browser!",
-    "type": "tip"
   }
 ]
