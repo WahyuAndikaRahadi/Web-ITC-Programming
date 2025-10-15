@@ -259,76 +259,266 @@
     }
   ]
 },
-  {
-    "id": "quiz-html-menengah",
-    "title": "Quiz HTML Menengah",
-    "topic": "HTML",
-    "description": "Uji pemahaman Anda tentang semantic HTML, form, dan tabel.",
-    "locked": true,
-    "requiredMaterials": ["html-menengah"],
-    "questions": [
-      {
-        "id": "q1",
-        "question": "Tag HTML5 mana yang digunakan untuk konten utama halaman?",
-        "options": [
-          "<main>",
-          "<body>",
-          "<content>",
-          "<section>"
-        ],
-        "correctAnswer": 0,
-        "explanation": "Tag <main> digunakan untuk menandai konten utama halaman yang unik dan tidak termasuk dalam header, footer, atau sidebar."
-      },
-      {
-        "id": "q2",
-        "question": "Apa fungsi atribut 'alt' pada tag <img>?",
-        "options": [
-          "Menentukan ukuran gambar",
-          "Memberikan teks alternatif untuk accessibility dan SEO",
-          "Mengatur warna latar gambar",
-          "Menghubungkan gambar ke link"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Atribut alt memberikan deskripsi teks untuk gambar, penting untuk pengguna screen reader dan SEO."
-      },
-      {
-        "id": "q3",
-        "question": "Untuk membuat form yang mengirim data ke server, atribut 'method' yang paling umum digunakan adalah?",
-        "options": [
-          "GET",
-          "POST",
-          "SEND",
-          "PUT"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Method POST digunakan untuk mengirim data sensitif atau besar ke server, sedangkan GET untuk permintaan biasa."
-      },
-      {
-        "id": "q4",
-        "question": "Apa tag yang digunakan untuk membuat dropdown list dalam form?",
-        "options": [
-          "<input type=\"dropdown\">",
-          "<list>",
-          "<select>",
-          "<option-group>"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Tag <select> digunakan bersama <option> untuk membuat dropdown menu dalam form HTML."
-      },
-      {
-        "id": "q5",
-        "question": "Apa tujuan dari tag <caption> dalam tabel?",
-        "options": [
-          "Memberi judul pada tabel untuk accessibility",
-          "Mengatur warna header",
-          "Menyembunyikan tabel di mobile",
-          "Menghitung jumlah baris"
-        ],
-        "correctAnswer": 0,
-        "explanation": "Tag <caption> memberikan judul deskriptif untuk tabel, sangat membantu pengguna screen reader."
-      }
-    ]
-  },
+{
+  "id": "quiz-html-menengah-semantic",
+  "title": "Quiz: Semantic HTML & Struktur Halaman",
+  "topic": "HTML Menengah",
+  "description": "Uji pemahaman Anda tentang elemen semantik HTML5, struktur dokumen, dan praktik aksesibilitas.",
+  "locked": false,
+  "requiredMaterials": ["html-menengah"],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Elemen HTML5 mana yang digunakan untuk menandai konten utama halaman?",
+      "options": [
+        "<content>",
+        "<main>",
+        "<body>",
+        "<section>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<main> digunakan untuk menandai konten utama halaman—bagian yang unik dan relevan langsung dengan topik halaman. Hanya boleh ada satu <main> per halaman."
+    },
+    {
+      "id": "q2",
+      "question": "Apa perbedaan utama antara <section> dan <article>?",
+      "options": [
+        "<section> untuk gambar, <article> untuk teks",
+        "<article> bisa berdiri sendiri sebagai entitas mandiri, <section> tidak",
+        "<section> hanya boleh di dalam <header>",
+        "Tidak ada perbedaan—keduanya bisa dipakai bergantian"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<article> adalah konten mandiri (seperti blog post atau berita) yang bisa didistribusikan terpisah. <section> hanya mengelompokkan konten bertema dalam dokumen yang lebih besar."
+    },
+    {
+      "id": "q3",
+      "question": "Elemen apa yang digunakan untuk konten sampingan yang terkait tapi tidak esensial?",
+      "options": [
+        "<div>",
+        "<sidebar>",
+        "<aside>",
+        "<extra>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "<aside> digunakan untuk konten yang terkait dengan konten utama tapi bisa dihapus tanpa mengurangi makna inti—misalnya, link terkait atau kutipan."
+    },
+    {
+      "id": "q4",
+      "question": "Apa fungsi elemen <time> dengan atribut datetime?",
+      "options": [
+        "Menampilkan jam real-time di browser",
+        "Menyediakan format tanggal yang dapat dibaca mesin",
+        "Mengatur waktu loading halaman",
+        "Menjadwalkan publikasi konten"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<time datetime=\"2024-01-10\">10 Jan 2024</time> memungkinkan mesin (seperti asisten suara) membaca tanggal dalam format standar ISO, sementara pengguna melihat format ramah."
+    },
+    {
+      "id": "q5",
+      "question": "Apa kegunaan elemen <details> dan <summary>?",
+      "options": [
+        "Menampilkan data dari database",
+        "Membuat konten yang bisa dibuka/ditutup tanpa JavaScript",
+        "Menyimpan metadata tersembunyi",
+        "Mengganti fungsi <div> di HTML5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<details> dan <summary> membuat widget disclosure interaktif—sempurna untuk FAQ atau petunjuk lanjutan—tanpa satu baris JavaScript pun."
+    },
+    {
+      "id": "q6",
+      "question": "Di mana sebaiknya meletakkan elemen <address>?",
+      "options": [
+        "Hanya di footer halaman",
+        "Di dalam <article> untuk kontak penulis artikel tersebut",
+        "Di dalam <head>",
+        "Di luar tag <html>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<address> harus ditempatkan di dalam konteks yang relevan—misalnya, di dalam <article> untuk informasi kontak penulis artikel tersebut."
+    },
+    {
+      "id": "q7",
+      "question": "Apa yang terjadi jika Anda menggunakan lebih dari satu <main> dalam satu halaman?",
+      "options": [
+        "Halaman tidak akan dimuat",
+        "Browser akan error",
+        "Melanggar standar aksesibilitas dan semantik",
+        "Tidak ada masalah—boleh digunakan"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Spesifikasi HTML hanya mengizinkan satu <main> per halaman. Lebih dari satu akan membingungkan teknologi bantu dan melanggar prinsip semantik."
+    },
+    {
+      "id": "q8",
+      "question": "Elemen apa yang digunakan untuk judul grup input dalam formulir?",
+      "options": [
+        "<label>",
+        "<title>",
+        "<legend>",
+        "<caption>"
+      ],
+      "correctAnswer": 2,
+      "explanation": "<legend> memberikan judul deskriptif untuk <fieldset>, yang sangat penting untuk aksesibilitas dan kejelasan struktur formulir."
+    },
+    {
+      "id": "q9",
+      "question": "Apa fungsi atribut open pada elemen <details>?",
+      "options": [
+        "Mengizinkan akses dari luar domain",
+        "Membuat konten terbuka secara default",
+        "Mengaktifkan mode edit",
+        "Menghubungkan ke API eksternal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Atribut open membuat konten <details> terlihat saat halaman dimuat—berguna untuk item FAQ yang paling relevan."
+    },
+    {
+      "id": "q10",
+      "question": "Mengapa semantic HTML penting untuk SEO?",
+      "options": [
+        "Karena membuat halaman lebih cepat",
+        "Karena mengurangi ukuran file HTML",
+        "Karena membantu mesin pencari memahami struktur dan konten halaman",
+        "Karena menggantikan kebutuhan akan CSS"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mesin pencari seperti Google menggunakan elemen semantik untuk memahami hierarki dan topik konten, yang meningkatkan peringkat dalam hasil pencarian."
+    }
+  ]
+},
+{
+  "id": "quiz-html-menengah-form-tabel-seo",
+  "title": "Quiz: Formulir, Tabel & Metadata HTML",
+  "topic": "HTML Menengah",
+  "description": "Uji pemahaman Anda tentang formulir interaktif, tabel aksesibel, dan optimasi SEO dengan metadata.",
+  "locked": false,
+  "requiredMaterials": ["html-menengah"],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Atribut apa yang memastikan input email divalidasi formatnya oleh browser?",
+      "options": [
+        "type=\"text\"",
+        "type=\"email\"",
+        "validate=\"email\"",
+        "format=\"email\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "type=\"email\" memicu validasi bawaan browser dan keyboard mobile yang sesuai—tanpa JavaScript."
+    },
+    {
+      "id": "q2",
+      "question": "Apa fungsi <caption> dalam tabel HTML?",
+      "options": [
+        "Memberi judul pada tabel untuk aksesibilitas",
+        "Menampilkan keterangan di bawah setiap sel",
+        "Mengganti fungsi <th>",
+        "Menyembunyikan tabel di mobile"
+      ],
+      "correctAnswer": 0,
+      "explanation": "<caption> adalah judul deskriptif untuk seluruh tabel, yang diumumkan screen reader sebelum membaca data—sangat penting untuk aksesibilitas."
+    },
+    {
+      "id": "q3",
+      "question": "Atribut apa yang digunakan untuk menggabungkan 3 kolom dalam tabel?",
+      "options": [
+        "merge=\"3\"",
+        "colspan=\"3\"",
+        "span=\"3\"",
+        "width=\"3\""
+      ],
+      "correctAnswer": 1,
+      "explanation": "colspan=\"3\" menggabungkan sel secara horizontal melintasi 3 kolom. rowspan digunakan untuk penggabungan vertikal."
+    },
+    {
+      "id": "q4",
+      "question": "Meta tag apa yang WAJIB untuk desain responsif di perangkat mobile?",
+      "options": [
+        "<meta name=\"description\">",
+        "<meta name=\"viewport\">",
+        "<meta name=\"robots\">",
+        "<meta charset=\"UTF-8\">"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> memberi tahu browser mobile cara mengatur skala halaman—tanpa ini, situs tidak responsif."
+    },
+    {
+      "id": "q5",
+      "question": "Apa tujuan dari atribut scope pada <th> dalam tabel?",
+      "options": [
+        "Mengatur warna latar header",
+        "Menentukan apakah header berlaku untuk kolom atau baris",
+        "Menghitung jumlah sel dalam tabel",
+        "Mengaktifkan scroll horizontal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "scope=\"col\" atau scope=\"row\" memberi konteks eksplisit kepada screen reader tentang hubungan antara header dan data—kunci aksesibilitas tabel."
+    },
+    {
+      "id": "q6",
+      "question": "Format structured data apa yang paling direkomendasikan oleh Google?",
+      "options": [
+        "Microdata",
+        "RDFa",
+        "JSON-LD",
+        "XML Schema"
+      ],
+      "correctAnswer": 2,
+      "explanation": "JSON-LD ditempatkan di dalam <script> dan tidak mengganggu DOM—format pilihan Google untuk structured data."
+    },
+    {
+      "id": "q7",
+      "question": "Apa fungsi atribut pattern pada input HTML5?",
+      "options": [
+        "Mengatur tampilan visual input",
+        "Memvalidasi input dengan ekspresi reguler",
+        "Mengubah warna border saat error",
+        "Menghubungkan ke database"
+      ],
+      "correctAnswer": 1,
+      "explanation": "pattern=\"[0-9]{10,12}\" memastikan input hanya berisi 10–12 digit angka—contoh validasi regex bawaan browser."
+    },
+    {
+      "id": "q8",
+      "question": "Apa kegunaan meta tag Open Graph (og:image)?",
+      "options": [
+        "Menampilkan gambar di hasil pencarian Google",
+        "Menentukan favicon situs",
+        "Menentukan gambar preview saat link dibagikan di media sosial",
+        "Mengoptimalkan gambar untuk SEO"
+      ],
+      "correctAnswer": 2,
+      "explanation": "og:image mengontrol gambar yang muncul di preview Facebook, LinkedIn, dll—tanpa ini, preview akan hambar atau tidak relevan."
+    },
+    {
+      "id": "q9",
+      "question": "Apa perbedaan antara atribut readonly dan disabled pada input?",
+      "options": [
+        "Tidak ada perbedaan",
+        "readonly tidak mengirim nilai ke server, disabled mengirim",
+        "readonly mengirim nilai ke server, disabled tidak mengirim",
+        "readonly hanya untuk teks, disabled untuk semua tipe"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Input dengan readonly tetap dikirim ke server saat form disubmit, sedangkan disabled diabaikan sepenuhnya."
+    },
+    {
+      "id": "q10",
+      "question": "Apa tujuan dari <link rel=\"canonical\">?",
+      "options": [
+        "Mengganti URL halaman di browser",
+        "Mencegah konten duplikat di mesin pencari",
+        "Mengarahkan pengguna ke halaman login",
+        "Mengaktifkan mode malam otomatis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Canonical URL memberi tahu Google versi 'resmi' dari halaman jika ada duplikat (misalnya karena parameter URL), mencegah penalti SEO."
+    }
+  ]
+},
   {
     "id": "quiz-html-advanced",
     "title": "Quiz HTML Advanced",

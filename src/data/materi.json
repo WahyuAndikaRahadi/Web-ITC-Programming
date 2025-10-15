@@ -378,227 +378,226 @@
     }
   ]
 },
-  {
-    "id": "html-menengah",
-    "title": "HTML Menengah",
-    "isLocked": true,
-    "description": "Semantic HTML, forms, tables, dan struktur website yang lebih kompleks",
-    "icon": "code-bracket",
-    "subContent": [
-      {
-        "id": "semantic-html",
-        "title": "1. Semantic HTML5",
-        "description": "Tag semantik untuk struktur yang lebih baik",
-        "contentDetails": [
-          {
-            "id": "apa-itu-semantic",
-            "title": "Apa Itu Semantic HTML?",
-            "explanation": "Semantic HTML adalah penggunaan tag yang memberikan makna pada struktur konten, bukan hanya presentasi visual. Tag semantik menjelaskan tujuan konten.\nContoh: <header>, <nav>, <article>, <section>, <footer> lebih jelas daripada <div>.\nKeuntungan:\n- SEO lebih baik\n- Accessibility meningkat\n- Kode lebih mudah dibaca dan di-maintain\n- Browser dan screen reader memahami struktur",
-            "video": "",
-            "code": "<!-- Non-semantic (kurang baik) -->\n<div id=\"header\">...</div>\n<div id=\"nav\">...</div>\n<div class=\"article\">...</div>\n<div id=\"footer\">...</div>\n<!-- Semantic (baik!) -->\n<header>...</header>\n<nav>...</nav>\n<article>...</article>\n<footer>...</footer>",
-            "images": []
-          },
-          {
-            "id": "header-nav-footer",
-            "title": "Header, Nav, dan Footer",
-            "explanation": "<header>: Kepala halaman atau section. Biasanya berisi logo, judul, navigasi.\n<nav>: Navigasi utama website. Untuk link navigasi yang penting.\n<footer>: Kaki halaman atau section. Biasanya copyright, kontak, link tambahan.\nBisa digunakan di level halaman atau di dalam section/article.",
-            "video": "",
-            "code": "<!-- Header halaman -->\n<header>\n  <img src=\"logo.png\" alt=\"Logo\">\n  <h1>Website Saya</h1>\n  <nav>\n    <ul>\n      <li><a href=\"/\">Home</a></li>\n      <li><a href=\"/about\">About</a></li>\n      <li><a href=\"/contact\">Contact</a></li>\n    </ul>\n  </nav>\n</header>\n<!-- Footer halaman -->\n<footer>\n  <p>&copy; 2024 Website Saya. All rights reserved.</p>\n  <nav>\n    <a href=\"/privacy\">Privacy</a>\n    <a href=\"/terms\">Terms</a>\n  </nav>\n</footer>",
-            "images": []
-          },
-          {
-            "id": "main-section-article",
-            "title": "Main, Section, dan Article",
-            "explanation": "<main>: Konten utama halaman. Hanya satu per halaman. Tidak di dalam header, footer, nav, aside.\n<section>: Pengelompokan konten bertema. Biasanya punya heading.\n<article>: Konten independen yang bisa berdiri sendiri (blog post, berita, komentar). Bisa di-syndicate atau di-distribute sendiri.",
-            "video": "",
-            "code": "<main>\n  <section>\n    <h2>Berita Terkini</h2>\n    <article>\n      <h3>Judul Berita 1</h3>\n      <p>Konten berita...</p>\n      <footer>\n        <p>Ditulis oleh John Doe - 10 Jan 2024</p>\n      </footer>\n    </article>\n    <article>\n      <h3>Judul Berita 2</h3>\n      <p>Konten berita...</p>\n    </article>\n  </section>\n  <section>\n    <h2>Tentang Kami</h2>\n    <p>Deskripsi tentang kami...</p>\n  </section>\n</main>",
-            "images": []
-          },
-          {
-            "id": "aside-details-summary",
-            "title": "Aside, Details, dan Summary",
-            "explanation": "<aside>: Konten sampingan yang terkait tapi bisa dipisah dari konten utama (sidebar, callout, quotes).\n<details>: Konten yang bisa dibuka/tutup (disclosure widget).\n<summary>: Judul/ringkasan untuk <details>. Yang terlihat sebelum dibuka.\nInteraktif tanpa JavaScript!",
-            "video": "",
-            "code": "<!-- Aside sidebar -->\n<main>\n  <article>\n    <h1>Artikel Utama</h1>\n    <p>Konten artikel...</p>\n  </article>\n  <aside>\n    <h3>Artikel Terkait</h3>\n    <ul>\n      <li><a href=\"#\">Artikel 1</a></li>\n      <li><a href=\"#\">Artikel 2</a></li>\n    </ul>\n  </aside>\n</main>\n<!-- Details dan Summary -->\n<details>\n  <summary>Lihat Detail</summary>\n  <p>Konten detail yang tersembunyi sampai diklik...</p>\n</details>\n<details open>\n  <summary>FAQ: Apa itu HTML?</summary>\n  <p>HTML adalah HyperText Markup Language...</p>\n</details>",
-            "images": []
-          },
-          {
-            "id": "time-mark-address",
-            "title": "Time, Mark, dan Address",
-            "explanation": "<time>: Waktu atau tanggal yang machine-readable. Atribut datetime untuk format standar.\n<mark>: Highlight atau tandai teks yang relevan/penting dalam konteks tertentu.\n<address>: Informasi kontak untuk author atau owner. Tidak harus alamat fisik.",
-            "video": "",
-            "code": "<!-- Time -->\n<article>\n  <h2>Judul Artikel</h2>\n  <p>Dipublikasikan: <time datetime=\"2024-01-10\">10 Januari 2024</time></p>\n  <p>Event dimulai: <time datetime=\"2024-02-14T19:00\">14 Feb 2024, 7:00 PM</time></p>\n</article>\n<!-- Mark -->\n<p>Hasil pencarian untuk: <mark>HTML tutorial</mark></p>\n<p>Harga spesial: <mark>Diskon 50%</mark> hari ini!</p>\n<!-- Address -->\n<address>\n  <p>Hubungi penulis:</p>\n  <a href=\"mailto:john@example.com\">john@example.com</a><br>\n  <a href=\"tel:+6281234567890\">+62 812 3456 7890</a>\n</address>",
-            "images": []
-          },
-          {
-            "id": "semantic-layout-complete",
-            "title": "Semantic Layout Lengkap",
-            "explanation": "Contoh struktur halaman lengkap dengan semantic HTML5. Ini adalah best practice untuk website modern.\nPerhatikan hierarki dan penggunaan setiap tag. Struktur ini membantu SEO, accessibility, dan maintainability.",
-            "video": "",
-            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Website Semantic</title>\n</head>\n<body>\n  <header>\n    <h1>Website Saya</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#home\">Home</a></li>\n        <li><a href=\"#about\">About</a></li>\n        <li><a href=\"#blog\">Blog</a></li>\n        <li><a href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section id=\"hero\">\n      <h2>Selamat Datang</h2>\n      <p>Deskripsi singkat...</p>\n    </section>\n    <section id=\"blog\">\n      <h2>Blog Terbaru</h2>\n      <article>\n        <header>\n          <h3>Judul Post</h3>\n          <p><time datetime=\"2024-01-10\">10 Jan 2024</time></p>\n        </header>\n        <p>Konten blog...</p>\n        <footer>\n          <p>Tags: <a href=\"#\">HTML</a>, <a href=\"#\">Tutorial</a></p>\n        </footer>\n      </article>\n    </section>\n    <aside>\n      <h3>Sidebar</h3>\n      <p>Konten sampingan...</p>\n    </aside>\n  </main>\n  <footer>\n    <p>&copy; 2024 Website Saya</p>\n    <address>\n      <a href=\"mailto:info@example.com\">Email Us</a>\n    </address>\n  </footer>\n</body>\n</html>",
-            "images": []
-          }
-        ]
-      },
-      {
-        "id": "html-tables",
-        "title": "2. Tables",
-        "description": "Membuat tabel data yang terstruktur",
-        "contentDetails": [
-          {
-            "id": "table-basics",
-            "title": "Dasar-dasar Table",
-            "explanation": "Table untuk menampilkan data tabular (baris dan kolom). Jangan gunakan untuk layout!\nTag dasar:\n- <table>: Container table\n- <tr>: Table row (baris)\n- <td>: Table data (cell data)\n- <th>: Table header (cell header)\n<th> untuk header kolom/baris, otomatis bold dan center.",
-            "video": "",
-            "code": "<!-- Table sederhana -->\n<table>\n  <tr>\n    <th>Nama</th>\n    <th>Email</th>\n    <th>Umur</th>\n  </tr>\n  <tr>\n    <td>John Doe</td>\n    <td>john@example.com</td>\n    <td>25</td>\n  </tr>\n  <tr>\n    <td>Jane Smith</td>\n    <td>jane@example.com</td>\n    <td>30</td>\n  </tr>\n</table>",
-            "images": []
-          },
-          {
-            "id": "table-structure",
-            "title": "Struktur Table Lengkap",
-            "explanation": "Struktur table yang proper menggunakan:\n- <thead>: Header table\n- <tbody>: Body table (data utama)\n- <tfoot>: Footer table (summary, total)\n- <caption>: Judul table\n- <colgroup> & <col>: Styling kolom\nStruktur ini meningkatkan accessibility dan memudahkan styling.",
-            "video": "",
-            "code": "<table>\n  <caption>Data Penjualan Q1 2024</caption>\n  <thead>\n    <tr>\n      <th>Bulan</th>\n      <th>Penjualan</th>\n      <th>Target</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Januari</td>\n      <td>Rp 10.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Februari</td>\n      <td>Rp 15.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Maret</td>\n      <td>Rp 13.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <th>Total</th>\n      <td>Rp 38.000.000</td>\n      <td>Rp 36.000.000</td>\n    </tr>\n  </tfoot>\n</table>",
-            "images": []
-          },
-          {
-            "id": "table-spanning",
-            "title": "Colspan dan Rowspan",
-            "explanation": "Atribut untuk menggabungkan cells:\n- colspan: Gabung kolom horizontal\n- rowspan: Gabung baris vertikal\nBerguna untuk table kompleks dengan header multi-level atau data yang perlu digabung.",
-            "video": "",
-            "code": "<!-- Colspan -->\n<table>\n  <tr>\n    <th colspan=\"3\">Header Gabungan (3 kolom)</th>\n  </tr>\n  <tr>\n    <td>Data 1</td>\n    <td>Data 2</td>\n    <td>Data 3</td>\n  </tr>\n</table>\n<!-- Rowspan -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Kategori</th>\n    <th>Product</th>\n    <th>Harga</th>\n  </tr>\n  <tr>\n    <td>Laptop</td>\n    <td>Rp 10.000.000</td>\n  </tr>\n  <tr>\n    <td>Mouse</td>\n    <td>Rp 200.000</td>\n  </tr>\n</table>\n<!-- Kombinasi -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Nama</th>\n    <th colspan=\"2\">Nilai</th>\n  </tr>\n  <tr>\n    <th>UTS</th>\n    <th>UAS</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>85</td>\n    <td>90</td>\n  </tr>\n</table>",
-            "images": []
-          },
-          {
-            "id": "table-accessibility",
-            "title": "Table Accessibility",
-            "explanation": "Membuat table accessible untuk screen reader:\n- Gunakan <th> dengan scope attribute\n- scope=\"col\" untuk header kolom\n- scope=\"row\" untuk header baris\n- Gunakan <caption> untuk deskripsi table\n- id dan headers attribute untuk table kompleks\nAccessibility penting untuk pengguna dengan disabilitas!",
-            "video": "",
-            "code": "<!-- Table dengan scope -->\n<table>\n  <caption>Jadwal Pelajaran Kelas 10A</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\">Hari</th>\n      <th scope=\"col\">Jam 1</th>\n      <th scope=\"col\">Jam 2</th>\n      <th scope=\"col\">Jam 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">Senin</th>\n      <td>Matematika</td>\n      <td>Bahasa Indonesia</td>\n      <td>Fisika</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">Selasa</th>\n      <td>Kimia</td>\n      <td>Sejarah</td>\n      <td>Bahasa Inggris</td>\n    </tr>\n  </tbody>\n</table>",
-            "images": []
-          },
-          {
-            "id": "responsive-tables",
-            "title": "Responsive Tables",
-            "explanation": "Table bisa sulit di mobile karena lebar terbatas. Teknik membuat table responsive:\n1. Wrapper dengan overflow\n2. Transform ke layout card di mobile (butuh CSS)\n3. Sembunyikan kolom tidak penting di mobile\nContoh wrapper sederhana yang paling umum digunakan.",
-            "video": "",
-            "code": "<!-- Wrapper untuk horizontal scroll -->\n<div style=\"overflow-x: auto;\">\n  <table>\n    <thead>\n      <tr>\n        <th>Nama</th>\n        <th>Email</th>\n        <th>Telepon</th>\n        <th>Alamat</th>\n        <th>Kota</th>\n        <th>Negara</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>John Doe</td>\n        <td>john@example.com</td>\n        <td>+62 812 3456 7890</td>\n        <td>Jl. Sudirman No. 123</td>\n        <td>Jakarta</td>\n        <td>Indonesia</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
-            "images": []
-          }
-        ]
-      },
-      {
-        "id": "html-forms",
-        "title": "3. Forms",
-        "description": "Membuat form interaktif untuk input user",
-        "contentDetails": [
-          {
-            "id": "form-basics",
-            "title": "Dasar-dasar Form",
-            "explanation": "<form> untuk mengumpulkan input user. Atribut penting:\n- action: URL tujuan submit\n- method: GET atau POST\n- name: Nama form\n<input> untuk berbagai jenis input. Atribut:\n- type: Jenis input\n- name: Nama field (key untuk data)\n- value: Nilai default\n- placeholder: Teks hint\n- required: Wajib diisi",
-            "video": "",
-            "code": "<!-- Form sederhana -->\n<form action=\"/submit\" method=\"POST\">\n  <label for=\"name\">Nama:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required>\n  <button type=\"submit\">Kirim</button>\n</form>",
-            "images": []
-          },
-          {
-            "id": "input-types",
-            "title": "Berbagai Tipe Input",
-            "explanation": "HTML5 punya banyak tipe input dengan validasi built-in:\n- text: Teks biasa\n- email: Email (validasi format)\n- password: Password (karakter tersembunyi)\n- number: Angka\n- tel: Nomor telepon\n- url: URL (validasi format)\n- date: Tanggal (date picker)\n- time: Waktu\n- color: Color picker\n- range: Slider\n- search: Search field\n- file: Upload file\nValidasi otomatis oleh browser!",
-            "video": "",
-            "code": "<form>\n  <label>Text: <input type=\"text\" name=\"text\"></label><br>\n  <label>Email: <input type=\"email\" name=\"email\"></label><br>\n  <label>Password: <input type=\"password\" name=\"pass\"></label><br>\n  <label>Number: <input type=\"number\" min=\"0\" max=\"100\" name=\"num\"></label><br>\n  <label>Date: <input type=\"date\" name=\"date\"></label><br>\n  <label>Time: <input type=\"time\" name=\"time\"></label><br>\n  <label>Color: <input type=\"color\" name=\"color\"></label><br>\n  <label>Range: <input type=\"range\" min=\"0\" max=\"100\" name=\"range\"></label><br>\n  <label>File: <input type=\"file\" name=\"file\"></label><br>\n  <label>Search: <input type=\"search\" name=\"search\"></label><br>\n  <label>URL: <input type=\"url\" name=\"url\"></label><br>\n  <label>Tel: <input type=\"tel\" name=\"tel\"></label><br>\n</form>",
-            "images": []
-          },
-          {
-            "id": "checkboxes-radio",
-            "title": "Checkbox dan Radio Button",
-            "explanation": "Checkbox untuk pilihan multiple:\n- type=\"checkbox\"\n- Bisa pilih beberapa\n- checked untuk default\nRadio untuk pilihan tunggal:\n- type=\"radio\"\n- Same name untuk grup\n- Hanya satu bisa dipilih per grup\nSelalu gunakan <label> untuk accessibility!",
-            "video": "",
-            "code": "<!-- Checkboxes -->\n<fieldset>\n  <legend>Hobi (pilih semua yang sesuai):</legend>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"coding\">\n    Coding\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"reading\">\n    Reading\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"gaming\" checked>\n    Gaming\n  </label>\n</fieldset>\n<!-- Radio buttons -->\n<fieldset>\n  <legend>Jenis Kelamin:</legend>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"male\" required>\n    Laki-laki\n  </label>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"female\">\n    Perempuan\n  </label>\n</fieldset>",
-            "images": []
-          },
-          {
-            "id": "select-textarea",
-            "title": "Select dan Textarea",
-            "explanation": "<select> untuk dropdown menu:\n- <option> untuk setiap pilihan\n- value attribute untuk data yang dikirim\n- selected untuk default\n- multiple untuk pilihan ganda\n<textarea> untuk teks multi-baris:\n- rows dan cols untuk ukuran\n- Tidak ada value attribute, konten di antara tag",
-            "video": "",
-            "code": "<!-- Select dropdown -->\n<label for=\"country\">Negara:</label>\n<select id=\"country\" name=\"country\" required>\n  <option value=\"\">-- Pilih Negara --</option>\n  <option value=\"id\">Indonesia</option>\n  <option value=\"my\">Malaysia</option>\n  <option value=\"sg\" selected>Singapore</option>\n  <option value=\"th\">Thailand</option>\n</select>\n<!-- Multiple select -->\n<label for=\"skills\">Skills (Ctrl+Click untuk multiple):</label>\n<select id=\"skills\" name=\"skills\" multiple>\n  <option value=\"html\">HTML</option>\n  <option value=\"css\">CSS</option>\n  <option value=\"js\">JavaScript</option>\n  <option value=\"php\">PHP</option>\n</select>\n<!-- Textarea -->\n<label for=\"message\">Pesan:</label>\n<textarea id=\"message\" name=\"message\" rows=\"5\" cols=\"40\" placeholder=\"Tulis pesan Anda...\"></textarea>",
-            "images": []
-          },
-          {
-            "id": "form-attributes",
-            "title": "Atribut Validasi Form",
-            "explanation": "HTML5 punya validasi built-in dengan atribut:\n- required: Wajib diisi\n- min, max: Nilai minimum/maksimum (number, date)\n- minlength, maxlength: Panjang karakter\n- pattern: Regex pattern\n- disabled: Nonaktifkan input\n- readonly: Baca saja (tidak bisa edit)\nBrowser akan validasi sebelum submit!",
-            "video": "",
-            "code": "<form>\n  <!-- Required -->\n  <input type=\"text\" name=\"username\" required>\n  <!-- Min/Max length -->\n  <input type=\"password\" name=\"pass\" minlength=\"8\" maxlength=\"20\" required>\n  <!-- Min/Max value -->\n  <input type=\"number\" name=\"age\" min=\"18\" max=\"100\" required>\n  <!-- Pattern (regex) -->\n  <input type=\"text\" name=\"phone\" pattern=\"[0-9]{10,12}\" placeholder=\"08123456789\">\n  <!-- Readonly -->\n  <input type=\"text\" name=\"username\" value=\"johndoe\" readonly>\n  <!-- Disabled -->\n  <input type=\"text\" name=\"field\" value=\"Tidak aktif\" disabled>\n  <button type=\"submit\">Submit</button>\n</form>",
-            "images": []
-          },
-          {
-            "id": "fieldset-legend",
-            "title": "Fieldset, Legend, dan Label",
-            "explanation": "<fieldset> untuk mengelompokkan input terkait. Border otomatis.\n<legend> untuk judul fieldset.\n<label> untuk label input. Dua cara:\n1. Wrap input\n2. Gunakan for=\"id\" ke id input\nLabel penting untuk accessibility! Screen reader membacanya.",
-            "video": "",
-            "code": "<!-- Fieldset dengan legend -->\n<fieldset>\n  <legend>Informasi Pribadi</legend>\n  <!-- Label dengan for -->\n  <label for=\"fname\">Nama Depan:</label>\n  <input type=\"text\" id=\"fname\" name=\"fname\"><br>\n  <label for=\"lname\">Nama Belakang:</label>\n  <input type=\"text\" id=\"lname\" name=\"lname\"><br>\n</fieldset>\n<fieldset>\n  <legend>Alamat</legend>\n  <!-- Label wrap input -->\n  <label>\n    Jalan:\n    <input type=\"text\" name=\"street\">\n  </label><br>\n  <label>\n    Kota:\n    <input type=\"text\" name=\"city\">\n  </label><br>\n  <label>\n    Kode Pos:\n    <input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}\">\n  </label>\n</fieldset>",
-            "images": []
-          },
-          {
-            "id": "form-complete-example",
-            "title": "Form Lengkap",
-            "explanation": "Contoh form lengkap dengan berbagai elemen dan best practices:\n- Semantic grouping dengan fieldset\n- Label accessible\n- Validasi appropriate\n- Button types yang benar\n- Placeholder dan hint text\nIni template yang bisa Anda gunakan dan modifikasi.",
-            "video": "",
-            "code": "<form action=\"/register\" method=\"POST\">\n  <h2>Form Registrasi</h2>\n  <fieldset>\n    <legend>Informasi Akun</legend>\n    <label for=\"username\">Username:</label>\n    <input type=\"text\" id=\"username\" name=\"username\" minlength=\"3\" required><br>\n    <label for=\"email\">Email:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required><br>\n    <label for=\"password\">Password:</label>\n    <input type=\"password\" id=\"password\" name=\"password\" minlength=\"8\" required><br>\n    <label for=\"confirm\">Konfirmasi Password:</label>\n    <input type=\"password\" id=\"confirm\" name=\"confirm\" minlength=\"8\" required><br>\n  </fieldset>\n  <fieldset>\n    <legend>Informasi Pribadi</legend>\n    <label for=\"fullname\">Nama Lengkap:</label>\n    <input type=\"text\" id=\"fullname\" name=\"fullname\" required><br>\n    <label for=\"dob\">Tanggal Lahir:</label>\n    <input type=\"date\" id=\"dob\" name=\"dob\" required><br>\n    <label>Jenis Kelamin:</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"male\" required> Laki-laki</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"female\"> Perempuan</label><br>\n    <label for=\"country\">Negara:</label>\n    <select id=\"country\" name=\"country\" required>\n      <option value=\"\">-- Pilih --</option>\n      <option value=\"id\">Indonesia</option>\n      <option value=\"my\">Malaysia</option>\n    </select><br>\n  </fieldset>\n  <fieldset>\n    <legend>Preferensi</legend>\n    <label><input type=\"checkbox\" name=\"newsletter\"> Subscribe newsletter</label><br>\n    <label><input type=\"checkbox\" name=\"terms\" required> Setuju dengan syarat dan ketentuan</label><br>\n  </fieldset>\n  <button type=\"submit\">Daftar</button>\n  <button type=\"reset\">Reset</button>\n</form>",
-            "images": []
-          }
-        ]
-      },
-      {
-        "id": "html-metadata",
-        "title": "4. Metadata dan SEO",
-        "description": "Optimasi website untuk search engine",
-        "contentDetails": [
-          {
-            "id": "meta-tags-seo",
-            "title": "Meta Tags untuk SEO",
-            "explanation": "Meta tags penting untuk SEO dan social media:\n- description: Deskripsi di search results\n- keywords: Keywords (kurang penting sekarang)\n- author: Penulis\n- viewport: Responsive design (wajib!)\n- robots: Instruksi untuk crawler\nSearch engine menggunakan ini untuk indexing dan ranking.",
-            "video": "",
-            "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <!-- SEO Meta Tags -->\n  <title>Belajar HTML - Tutorial Lengkap untuk Pemula</title>\n  <meta name=\"description\" content=\"Tutorial HTML lengkap dari dasar hingga mahir. Pelajari HTML5, semantic tags, forms, dan best practices web development.\">\n  <meta name=\"keywords\" content=\"html, tutorial html, belajar html, html5, web development\">\n  <meta name=\"author\" content=\"Nama Anda\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <!-- Canonical URL (hindari duplicate content) -->\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n</head>",
-            "images": []
-          },
-          {
-            "id": "open-graph",
-            "title": "Open Graph untuk Social Media",
-            "explanation": "Open Graph protocol untuk preview link di social media (Facebook, LinkedIn, dll).\nAtribut penting:\n- og:title: Judul\n- og:description: Deskripsi\n- og:image: Gambar preview\n- og:url: URL canonical\n- og:type: Tipe konten\nTanpa ini, preview link di social media akan buruk!",
-            "video": "",
-            "code": "<head>\n  <!-- Open Graph Meta Tags -->\n  <meta property=\"og:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir dengan contoh kode lengkap.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <meta property=\"og:site_name\" content=\"WebDev Academy\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta name=\"twitter:creator\" content=\"@yourusername\">\n</head>",
-            "images": []
-          },
-          {
-            "id": "favicon-icons",
-            "title": "Favicon dan Icons",
-            "explanation": "Favicon adalah icon kecil di tab browser. Modern website perlu berbagai ukuran untuk device berbeda.\nIcon sizes:\n- 16x16, 32x32: Browser tab\n- 180x180: Apple Touch Icon\n- 192x192, 512x512: Android\nGunakan favicon generator online untuk semua ukuran!",
-            "video": "",
-            "code": "<head>\n  <!-- Favicon -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n  <!-- Apple Touch Icon -->\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Android Chrome -->\n  <link rel=\"manifest\" href=\"/site.webmanifest\">\n  <!-- Safari Pinned Tab -->\n  <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <!-- Theme Color -->\n  <meta name=\"theme-color\" content=\"#ffffff\">\n</head>",
-            "images": []
-          },
-          {
-            "id": "structured-data",
-            "title": "Structured Data (Schema.org)",
-            "explanation": "Structured data membantu search engine memahami konten website. Menggunakan JSON-LD format.\nSchema.org types:\n- Article: Artikel/blog post\n- Person: Profil orang\n- Organization: Perusahaan\n- Product: Produk e-commerce\n- Recipe: Resep masakan\n- Event: Acara/event\nRich snippets di search results!",
-            "video": "",
-            "code": "<head>\n  <!-- Structured Data untuk Article -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap untuk Pemula\",\n    \"image\": \"https://www.example.com/images/html-tutorial.jpg\",\n    \"author\": {\n      \"@type\": \"Person\",\n      \"name\": \"John Doe\"\n    },\n    \"publisher\": {\n      \"@type\": \"Organization\",\n      \"name\": \"WebDev Academy\",\n      \"logo\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://www.example.com/logo.png\"\n      }\n    },\n    \"datePublished\": \"2024-01-10\",\n    \"dateModified\": \"2024-01-15\",\n    \"description\": \"Tutorial HTML dari dasar hingga mahir.\"\n  }\n  </script>\n</head>",
-            "images": []
-          },
-          {
-            "id": "complete-head-example",
-            "title": "Complete Head Section",
-            "explanation": "Contoh <head> lengkap dengan semua best practices:\n- Encoding dan viewport\n- Title dan meta description\n- Open Graph dan Twitter Card\n- Favicon\n- Canonical URL\n- Structured data\n- CSS dan fonts\nTemplate ini siap digunakan untuk project Anda!",
-            "video": "",
-            "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <!-- Essential Meta Tags -->\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <!-- SEO Meta Tags -->\n  <title>Tutorial HTML Lengkap - WebDev Academy</title>\n  <meta name=\"description\" content=\"Pelajari HTML dari dasar hingga mahir. Tutorial lengkap dengan contoh kode dan best practices web development modern.\">\n  <meta name=\"keywords\" content=\"html, tutorial, web development, html5\">\n  <meta name=\"author\" content=\"WebDev Academy\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n  <!-- Open Graph -->\n  <meta property=\"og:title\" content=\"Tutorial HTML Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/og-image.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Tutorial HTML Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/twitter-image.jpg\">\n  <!-- Favicons -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Stylesheets -->\n  <link rel=\"stylesheet\" href=\"/css/style.css\">\n  <!-- Fonts -->\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n  <!-- Structured Data -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap\",\n    \"datePublished\": \"2024-01-10\"\n  }\n  </script>\n</head>\n<body>\n  <!-- Content here -->\n</body>\n</html>",
-            "images": []
-          }
-        ]
-      }
-    ]
-  },
+{
+  "id": "html-menengah",
+  "title": "Menjelajah jauh lebih dalam HTML: HTML Menengah",
+  "description": "pembelajaran ini fokus kepada Semantic HTML, forms, tables, dan struktur website yang lebih kompleks",
+  "icon": "code-bracket",
+  "subContent": [
+    {
+      "id": "semantic-html",
+      "title": "1. Semantic HTML5",
+      "description": "Tag semantik untuk struktur yang lebih baik",
+      "contentDetails": [
+        {
+          "id": "apa-itu-semantic",
+          "title": "Apa Itu Semantic HTML?",
+          "explanation": "Semantic HTML adalah praktik menggunakan tag HTML yang secara eksplisit menggambarkan makna dan tujuan konten, bukan hanya tampilannya. Alih-alih mengandalkan <div> dan <span> untuk segalanya, HTML5 memperkenalkan elemen seperti <header>, <nav>, <main>, <article>, <section>, dan <footer> yang memberi konteks jelas tentang peran setiap bagian halaman.\n\nKeuntungan utama dari semantic HTML adalah peningkatan aksesibilitas. Teknologi bantu seperti screen reader dapat memahami struktur halaman dengan lebih baik, memungkinkan pengguna tunanetra menavigasi konten secara efisien—misalnya, melompat langsung ke <nav> atau <main> tanpa harus membaca seluruh halaman.\n\nDari sisi SEO (Search Engine Optimization), mesin pencari seperti Google sangat menghargai struktur semantik. Halaman dengan hierarki yang jelas dan elemen bermakna lebih mudah diindeks dan dipahami, sehingga cenderung mendapat peringkat lebih tinggi dalam hasil pencarian.\n\nBagi developer, kode semantik jauh lebih mudah dibaca, dipelihara, dan dikembangkan. Saat Anda kembali ke proyek setelah beberapa bulan, atau saat rekan tim membaca kode Anda, struktur yang jelas mengurangi kebingungan dan mempercepat proses debugging atau penambahan fitur.\n\nTerakhir, semantic HTML adalah bagian dari standar web modern. Ini menunjukkan profesionalisme dan komitmen terhadap praktik terbaik. Dengan menggunakan elemen yang tepat untuk pekerjaan yang tepat, Anda tidak hanya membuat website yang indah, tapi juga yang inklusif, berkelanjutan, dan siap masa depan.",
+          "video": "https://youtube.com/embed/9vWR9hFiYL4?si=um_8ueH7pjInchHv",
+          "code": "<!-- Non-semantic (kurang baik) -->\n<div id=\"header\">...</div>\n<div id=\"nav\">...</div>\n<div class=\"article\">...</div>\n<div id=\"footer\">...</div>\n<!-- Semantic (baik!) -->\n<header>...</header>\n<nav>...</nav>\n<article>...</article>\n<footer>...</footer>",
+          "images": ["https://static.semrush.com/blog/uploads/media/cc/85/cc85d452a743e27f68d426df35e4da7d/original.png"]
+        },
+        {
+          "id": "header-nav-footer",
+          "title": "Header, Nav, dan Footer",
+          "explanation": "Elemen <header> digunakan untuk menandai bagian perkenalan dari sebuah halaman atau bagian konten. Di level halaman, <header> biasanya berisi logo, judul utama, dan navigasi utama. Namun, <header> juga bisa digunakan di dalam <article> atau <section> untuk menampung judul dan metadata spesifik konten tersebut.\n\n<nav> adalah elemen khusus untuk blok navigasi utama—biasanya daftar link ke halaman-halaman penting di situs Anda. Penting untuk tidak menyalahgunakannya: jangan gunakan <nav> untuk setiap grup link (misalnya tag di akhir artikel). Cukup gunakan untuk navigasi inti yang membantu pengguna berpindah antar bagian utama situs.\n\n<footer> menandai bagian penutup dari halaman atau bagian konten. Di level halaman, ini sering berisi informasi hak cipta, link ke kebijakan privasi, atau kontak. Di dalam <article>, <footer> bisa berisi metadata seperti penulis, tanggal publikasi, atau tag.\n\nYang menarik, elemen-elemen ini bisa digunakan lebih dari sekali dalam satu halaman—misalnya, <header> dan <footer> di dalam setiap <article> dalam halaman blog. Ini memperkaya struktur semantik tanpa mengganggu hierarki global.\n\nPenggunaan yang konsisten dari <header>, <nav>, dan <footer> menciptakan pola yang dapat diprediksi bagi pengguna dan mesin. Ini adalah fondasi dari pengalaman web yang intuitif, di mana pengguna tahu di mana menemukan navigasi atau informasi kontak—tanpa harus menebak.",
+          "video": "",
+          "code": "<!-- Header halaman -->\n<header>\n  <img src=\"logo.png\" alt=\"Logo\">\n  <h1>Website Saya</h1>\n  <nav>\n    <ul>\n      <li><a href=\"/\">Home</a></li>\n      <li><a href=\"/about\">About</a></li>\n      <li><a href=\"/contact\">Contact</a></li>\n    </ul>\n  </nav>\n</header>\n<!-- Footer halaman -->\n<footer>\n  <p>&copy; 2024 Website Saya. All rights reserved.</p>\n  <nav>\n    <a href=\"/privacy\">Privacy</a>\n    <a href=\"/terms\">Terms</a>\n  </nav>\n</footer>",
+          "images": ["https://www.w3schools.com/html/img_sem_elements.gif"]
+        },
+        {
+          "id": "main-section-article",
+          "title": "Main, Section, dan Article",
+          "explanation": "<main> adalah elemen krusial yang menandai konten utama halaman—bagian yang unik dan langsung relevan dengan topik halaman tersebut. Setiap halaman HTML hanya boleh memiliki satu <main>, dan elemen ini tidak boleh berada di dalam <header>, <footer>, <nav>, atau <aside>.\n\n<section> digunakan untuk mengelompokkan konten bertema yang biasanya memiliki heading sendiri. Ini bukan sekadar pembungkus visual, tapi unit logis dalam dokumen—misalnya, bagian \"Tentang Kami\", \"Layanan\", atau \"Testimoni\" dalam halaman landing.\n\n<article> adalah konten mandiri yang secara konseptual bisa berdiri sendiri—seperti posting blog, berita, komentar, atau entri forum. Ciri khas <article> adalah kemampuannya untuk didistribusikan atau disindikasi secara terpisah tanpa kehilangan makna.\n\nPerbedaan antara <section> dan <article> sering membingungkan. Aturan praktis: jika kontennya masuk akal sebagai entri dalam feed RSS, gunakan <article>. Jika tidak, tapi tetap merupakan kelompok bertema, gunakan <section>. Sebuah <article> bisa berisi beberapa <section>, dan sebuah <section> bisa berisi beberapa <article>.\n\nStruktur ini tidak hanya memperjelas hierarki konten, tapi juga memungkinkan browser dan teknologi bantu memberikan pengalaman yang lebih kaya. Misalnya, pembaca berita bisa secara otomatis mengenali dan mengekstrak <article> untuk ditampilkan dalam format yang lebih nyaman.",
+          "video": "",
+          "code": "<main>\n  <section>\n    <h2>Berita Terkini</h2>\n    <article>\n      <h3>Judul Berita 1</h3>\n      <p>Konten berita...</p>\n      <footer>\n        <p>Ditulis oleh John Doe - 10 Jan 2024</p>\n      </footer>\n    </article>\n    <article>\n      <h3>Judul Berita 2</h3>\n      <p>Konten berita...</p>\n    </article>\n  </section>\n  <section>\n    <h2>Tentang Kami</h2>\n    <p>Deskripsi tentang kami...</p>\n  </section>\n</main>",
+          "images": []
+        },
+        {
+          "id": "aside-details-summary",
+          "title": "Aside, Details, dan Summary",
+          "explanation": "<aside> digunakan untuk konten yang terkait dengan konten utama, tapi tidak langsung bagian darinya—dan bisa dihapus tanpa mengurangi makna inti halaman. Contoh klasik: sidebar dengan link terkait, iklan, kutipan menarik, atau definisi istilah.\n\nYang penting, <aside> bukan hanya untuk posisi visual \"di samping\". Ini tentang relevansi kontekstual. Jika konten di sidebar hanya dekoratif atau tidak terkait topik, itu bukan <aside>—mungkin cukup <div> biasa.\n\n<details> dan <summary> adalah pasangan elemen interaktif yang memungkinkan pengguna membuka dan menutup konten tambahan—tanpa satu baris JavaScript pun. Ini sempurna untuk FAQ, petunjuk lanjutan, atau metadata teknis yang tidak perlu selalu terlihat.\n\n<summary> adalah satu-satunya bagian yang terlihat saat <details> tertutup. Saat diklik, konten di dalam <details> muncul. Atribut open membuatnya terbuka secara default—berguna untuk item FAQ yang paling sering ditanyakan.\n\nKombinasi ini sangat meningkatkan UX (User Experience) dengan mengurangi kebisingan visual. Pengguna tidak dipaksa melihat semua informasi sekaligus, tapi bisa memilih apa yang ingin mereka eksplorasi. Ini adalah contoh sempurna bagaimana HTML semantik modern mendukung desain yang berpusat pada pengguna.",
+          "video": "",
+          "code": "<!-- Aside sidebar -->\n<main>\n  <article>\n    <h1>Artikel Utama</h1>\n    <p>Konten artikel...</p>\n  </article>\n  <aside>\n    <h3>Artikel Terkait</h3>\n    <ul>\n      <li><a href=\"#\">Artikel 1</a></li>\n      <li><a href=\"#\">Artikel 2</a></li>\n    </ul>\n  </aside>\n</main>\n<!-- Details dan Summary -->\n<details>\n  <summary>Lihat Detail</summary>\n  <p>Konten detail yang tersembunyi sampai diklik...</p>\n</details>\n<details open>\n  <summary>FAQ: Apa itu HTML?</summary>\n  <p>HTML adalah HyperText Markup Language...</p>\n</details>",
+          "images": []
+        },
+        {
+          "id": "time-mark-address",
+          "title": "Time, Mark, dan Address",
+          "explanation": "<time> adalah elemen khusus untuk menandai tanggal dan/atau waktu dalam format yang dapat dibaca mesin. Atribut datetime memungkinkan Anda menyediakan nilai standar ISO (misalnya \"2024-01-10\" atau \"2024-02-14T19:00\") yang tidak terlihat pengguna, sementara teks di dalam tag bisa berupa format yang lebih ramah manusia (\"10 Januari 2024\").\n\nIni sangat berguna untuk kalender, jadwal acara, atau timestamp artikel. Browser, asisten suara, dan aplikasi pihak ketiga bisa mengenali dan berinteraksi dengan data ini—misalnya, menambahkan acara ke kalender pengguna hanya dengan satu klik.\n\n<mark> digunakan untuk menyorot teks yang relevan dalam konteks tertentu—bukan hanya untuk gaya visual. Contoh umum: hasil pencarian (kata kunci disorot), penekanan dalam kutipan, atau bagian penting dalam instruksi. Ini berbeda dari <strong> atau <em> karena fokusnya pada relevansi, bukan penekanan semantik.\n\n<address> menandai informasi kontak untuk penulis atau pemilik konten. Ini tidak harus alamat fisik—bisa berupa email, nomor telepon, atau link media sosial. Penting: <address> hanya berlaku untuk kontak terkait konten induknya (misalnya, di dalam <article> untuk penulis artikel tersebut).\n\nMeski terlihat kecil, elemen-elemen ini menunjukkan kedalaman pemahaman HTML. Mereka mengubah teks biasa menjadi data terstruktur yang dapat ditindaklanjuti—langkah penting menuju web yang lebih cerdas dan interaktif.",
+          "video": "",
+          "code": "<!-- Time -->\n<article>\n  <h2>Judul Artikel</h2>\n  <p>Dipublikasikan: <time datetime=\"2024-01-10\">10 Januari 2024</time></p>\n  <p>Event dimulai: <time datetime=\"2024-02-14T19:00\">14 Feb 2024, 7:00 PM</time></p>\n</article>\n<!-- Mark -->\n<p>Hasil pencarian untuk: <mark>HTML tutorial</mark></p>\n<p>Harga spesial: <mark>Diskon 50%</mark> hari ini!</p>\n<!-- Address -->\n<address>\n  <p>Hubungi penulis:</p>\n  <a href=\"mailto:john@example.com\">john@example.com</a><br>\n  <a href=\"tel:+6281234567890\">+62 812 3456 7890</a>\n</address>",
+          "images": []
+        },
+        {
+          "id": "semantic-layout-complete",
+          "title": "Semantic Layout Lengkap",
+          "explanation": "Contoh struktur halaman lengkap ini adalah cetak biru untuk website modern yang mengikuti praktik terbaik HTML5. Setiap elemen dipilih tidak hanya untuk tampilan, tapi untuk makna dan fungsi semantiknya.\n\nPerhatikan bagaimana <header> berisi logo, judul, dan navigasi utama—semua elemen perkenalan halaman. <main> membungkus seluruh konten utama, yang kemudian dipecah menjadi <section> untuk berita dan <article> untuk setiap posting individu.\n\nSetiap <article> memiliki struktur internalnya sendiri: <header> untuk judul dan metadata, isi utama, dan <footer> untuk tag atau informasi tambahan. Ini menciptakan hierarki bersarang yang logis dan mudah diikuti.\n\n<aside> ditempatkan di luar <article> tapi tetap di dalam <main>, menunjukkan bahwa ia terkait dengan konten utama halaman, bukan hanya satu artikel. Dan <footer> halaman menutup semuanya dengan informasi kontak dan hak cipta.\n\nStruktur seperti ini bukan hanya rapi—ia adalah fondasi untuk aksesibilitas, SEO, dan pemeliharaan jangka panjang. Ini adalah standar yang diharapkan di industri profesional, dan menguasainya menunjukkan bahwa Anda siap membangun website berkualitas produksi.",
+          "video": "",
+          "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Website Semantic</title>\n</head>\n<body>\n  <header>\n    <h1>Website Saya</h1>\n    <nav>\n      <ul>\n        <li><a href=\"#home\">Home</a></li>\n        <li><a href=\"#about\">About</a></li>\n        <li><a href=\"#blog\">Blog</a></li>\n        <li><a href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main>\n    <section id=\"hero\">\n      <h2>Selamat Datang</h2>\n      <p>Deskripsi singkat...</p>\n    </section>\n    <section id=\"blog\">\n      <h2>Blog Terbaru</h2>\n      <article>\n        <header>\n          <h3>Judul Post</h3>\n          <p><time datetime=\"2024-01-10\">10 Jan 2024</time></p>\n        </header>\n        <p>Konten blog...</p>\n        <footer>\n          <p>Tags: <a href=\"#\">HTML</a>, <a href=\"#\">Tutorial</a></p>\n        </footer>\n      </article>\n    </section>\n    <aside>\n      <h3>Sidebar</h3>\n      <p>Konten sampingan...</p>\n    </aside>\n  </main>\n  <footer>\n    <p>&copy; 2024 Website Saya</p>\n    <address>\n      <a href=\"mailto:info@example.com\">Email Us</a>\n    </address>\n  </footer>\n</body>\n</html>",
+          "images": ["https://static.semrush.com/blog/uploads/media/9f/f4/9ff4decb66abd1d1b2bfff1afbca5a68/Semantic-html.png"]
+        }
+      ]
+    },
+    {
+      "id": "html-tables",
+      "title": "2. Tables",
+      "description": "Membuat tabel data yang terstruktur",
+      "contentDetails": [
+        {
+          "id": "table-basics",
+          "title": "Dasar-dasar Table",
+          "explanation": "Tabel HTML dirancang khusus untuk menampilkan data tabular—informasi yang secara alami tersusun dalam baris dan kolom, seperti daftar harga, jadwal pelajaran, atau hasil keuangan. Sangat penting untuk tidak menggunakan tabel untuk layout halaman; itu adalah praktik lama yang telah digantikan oleh CSS Flexbox dan Grid.\n\nStruktur dasar tabel terdiri dari <table> sebagai wadah utama, <tr> (table row) untuk setiap baris, dan <td> (table data) untuk setiap sel data. Untuk header kolom atau baris, gunakan <th> (table header), yang secara default ditampilkan tebal dan rata tengah.\n\nPenggunaan <th> bukan hanya soal gaya—ia memberi makna semantik bahwa sel tersebut adalah header. Ini sangat penting untuk aksesibilitas, karena screen reader akan mengumumkan header saat membaca data di bawahnya, memberi konteks yang jelas.\n\nTabel yang baik selalu memiliki struktur yang logis. Header kolom harus menggambarkan dengan jelas jenis data di bawahnya. Hindari menggabungkan sel secara berlebihan atau membuat struktur yang membingungkan, karena ini akan menyulitkan semua pengguna—terutama yang mengandalkan teknologi bantu.\n\nAkhirnya, ingat bahwa tabel harus digunakan dengan bijak. Jika data Anda tidak benar-benar tabular (misalnya, hanya kumpulan kartu produk), pertimbangkan struktur lain seperti daftar atau grid CSS. Tabel adalah alat khusus untuk data khusus—bukan solusi serba guna.",
+          "video": "",
+          "code": "<!-- Table sederhana -->\n<table>\n  <tr>\n    <th>Nama</th>\n    <th>Email</th>\n    <th>Umur</th>\n  </tr>\n  <tr>\n    <td>John Doe</td>\n    <td>john@example.com</td>\n    <td>25</td>\n  </tr>\n  <tr>\n    <td>Jane Smith</td>\n    <td>jane@example.com</td>\n    <td>30</td>\n  </tr>\n</table>",
+          "images": ["https://tse3.mm.bing.net/th/id/OIP.49SOCe8EsH5wh99dZsYTFAHaFa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "table-structure",
+          "title": "Struktur Table Lengkap",
+          "explanation": "Untuk tabel yang lebih kompleks dan profesional, HTML menyediakan elemen struktural tambahan: <thead>, <tbody>, dan <tfoot>. Ini membagi tabel menjadi bagian logis: header, body, dan footer—mirip dengan struktur dokumen HTML itu sendiri.\n\n<thead> membungkus baris header, yang biasanya berisi judul kolom. <tbody> berisi data utama tabel—ini adalah bagian terbesar dan paling sering diperbarui. <tfoot> digunakan untuk ringkasan, total, atau catatan kaki, dan menariknya, bisa ditempatkan sebelum <tbody> dalam kode (meski ditampilkan di akhir).\n\n<caption> adalah elemen penting yang sering diabaikan. Ini menyediakan judul atau deskripsi untuk seluruh tabel, yang sangat membantu pengguna screen reader memahami konteks data sebelum mulai membacanya. Letakkan <caption> tepat setelah tag <table> pembuka.\n\n<colgroup> dan <col> memungkinkan Anda menerapkan gaya atau atribut ke seluruh kolom sekaligus—misalnya, lebar kolom atau perataan teks. Ini mengurangi pengulangan dan membuat kode lebih rapi.\n\nStruktur ini bukan hanya rapi—ia meningkatkan aksesibilitas secara signifikan, memudahkan styling dengan CSS, dan membuat data lebih mudah diproses oleh skrip atau alat eksternal. Ini adalah standar untuk tabel data profesional.",
+          "video": "",
+          "code": "<table>\n  <caption>Data Penjualan Q1 2024</caption>\n  <thead>\n    <tr>\n      <th>Bulan</th>\n      <th>Penjualan</th>\n      <th>Target</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Januari</td>\n      <td>Rp 10.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Februari</td>\n      <td>Rp 15.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n    <tr>\n      <td>Maret</td>\n      <td>Rp 13.000.000</td>\n      <td>Rp 12.000.000</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <th>Total</th>\n      <td>Rp 38.000.000</td>\n      <td>Rp 36.000.000</td>\n    </tr>\n  </tfoot>\n</table>",
+          "images": []
+        },
+        {
+          "id": "table-spanning",
+          "title": "Colspan dan Rowspan",
+          "explanation": "Dalam tabel kompleks, seringkali diperlukan untuk menggabungkan beberapa sel menjadi satu. HTML menyediakan dua atribut untuk ini: colspan (menggabung kolom secara horizontal) dan rowspan (menggabung baris secara vertikal).\n\nColspan sangat berguna untuk header yang mencakup beberapa kolom—misalnya, \"Nilai\" yang mencakup \"UTS\" dan \"UAS\". Rowspan berguna ketika satu nilai berlaku untuk beberapa baris—misalnya, \"Kategori\" yang berlaku untuk beberapa produk.\n\nSaat menggunakan rowspan atau colspan, pastikan struktur tabel tetap logis dan tidak membingungkan. Setiap sel yang digabung mengurangi jumlah sel yang diharapkan di baris atau kolom tersebut, jadi hitung dengan cermat agar tidak terjadi kesalahan rendering.\n\nTabel dengan penggabungan sel bisa menjadi tantangan besar untuk aksesibilitas. Screen reader mungkin kesulitan mengaitkan data dengan header yang benar. Untuk kasus kompleks, pertimbangkan untuk menyederhanakan struktur atau memberikan konteks tambahan melalui atribut aksesibilitas.\n\nMeski powerful, jangan tergoda untuk menyalahgunakan fitur ini. Tabel yang terlalu banyak penggabungan sel seringkali lebih sulit dibaca dan dipelihara. Gunakan hanya ketika benar-benar diperlukan untuk kejelasan data.",
+          "video": "",
+          "code": "<!-- Colspan -->\n<table>\n  <tr>\n    <th colspan=\"3\">Header Gabungan (3 kolom)</th>\n  </tr>\n  <tr>\n    <td>Data 1</td>\n    <td>Data 2</td>\n    <td>Data 3</td>\n  </tr>\n</table>\n<!-- Rowspan -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Kategori</th>\n    <th>Product</th>\n    <th>Harga</th>\n  </tr>\n  <tr>\n    <td>Laptop</td>\n    <td>Rp 10.000.000</td>\n  </tr>\n  <tr>\n    <td>Mouse</td>\n    <td>Rp 200.000</td>\n  </tr>\n</table>\n<!-- Kombinasi -->\n<table>\n  <tr>\n    <th rowspan=\"2\">Nama</th>\n    <th colspan=\"2\">Nilai</th>\n  </tr>\n  <tr>\n    <th>UTS</th>\n    <th>UAS</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>85</td>\n    <td>90</td>\n  </tr>\n</table>",
+          "images": ["https://th.bing.com/th/id/R.c31b4bb8dca8b8d3b1a05ec5fcb4d88e?rik=nl8s%2bax%2f7%2fncrg&riu=http%3a%2f%2fimage.slidesharecdn.com%2fch04moreontables-rowspanncolspan-150930234111-lva1-app6892%2f95%2fhtml-tables-rowspan-n-colspan-3-638.jpg%3fcb%3d1443658127&ehk=mixFZ4Ee7%2bTXS4Xb%2fXN3ase2dmSePNxa2Q9mgI5lxso%3d&risl=&pid=ImgRaw&r=0","https://th.bing.com/th/id/R.6a21581d9f784d3b6cade217c2d79cc9?rik=Wwez22L7nnytHg&riu=http%3a%2f%2fimage.slidesharecdn.com%2fch04moreontables-rowspanncolspan-150930234111-lva1-app6892%2f95%2fhtml-tables-rowspan-n-colspan-4-638.jpg%3fcb%3d1443658127&ehk=RFMdunbDJFb0%2f9kbBnml5rgjotxumDB4bQtETo%2fY1sE%3d&risl=&pid=ImgRaw&r=0"]
+        },
+        {
+          "id": "table-accessibility",
+          "title": "Table Accessibility",
+          "explanation": "Aksesibilitas tabel adalah aspek kritis yang sering diabaikan. Pengguna screen reader mengandalkan struktur semantik untuk memahami hubungan antara data dan header-nya. Tanpa struktur yang benar, tabel bisa menjadi labirin informasi yang membingungkan.\n\nAtribut scope pada <th> adalah alat utama untuk ini. scope=\"col\" menunjukkan bahwa header tersebut berlaku untuk seluruh kolom di bawahnya, sementara scope=\"row\" berlaku untuk seluruh baris di sebelahnya. Ini memberi konteks eksplisit yang dibutuhkan screen reader.\n\n<caption> juga berperan penting. Ini adalah judul tabel yang diumumkan sebelum data dibaca, memberi gambaran umum tentang isi tabel. Jangan biarkan <caption> kosong atau terlalu umum—buat deskriptif dan informatif.\n\nUntuk tabel yang sangat kompleks (misalnya dengan header multi-level), Anda mungkin perlu menggunakan atribut id dan headers. Setiap <td> memiliki atribut headers yang mencantumkan id dari semua <th> yang relevan, menciptakan peta hubungan eksplisit.\n\nMengutamakan aksesibilitas bukan hanya soal kepatuhan—ini soal inklusivitas. Dengan membuat tabel yang dapat diakses, Anda memastikan bahwa semua pengguna, terlepas dari kemampuan mereka, dapat memahami dan memanfaatkan data Anda.",
+          "video": "",
+          "code": "<!-- Table dengan scope -->\n<table>\n  <caption>Jadwal Pelajaran Kelas 10A</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\">Hari</th>\n      <th scope=\"col\">Jam 1</th>\n      <th scope=\"col\">Jam 2</th>\n      <th scope=\"col\">Jam 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">Senin</th>\n      <td>Matematika</td>\n      <td>Bahasa Indonesia</td>\n      <td>Fisika</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">Selasa</th>\n      <td>Kimia</td>\n      <td>Sejarah</td>\n      <td>Bahasa Inggris</td>\n    </tr>\n  </tbody>\n</table>",
+          "images": []
+        },
+        {
+          "id": "responsive-tables",
+          "title": "Responsive Tables",
+          "explanation": "Tabel adalah tantangan besar dalam desain responsif karena sifatnya yang lebar dan kaku. Di layar kecil, tabel sering kali meluap dari viewport, memaksa pengguna menggulir horizontal—pengalaman yang frustrasi.\n\nTeknik paling sederhana dan paling umum adalah membungkus tabel dalam <div> dengan gaya overflow-x: auto. Ini memungkinkan tabel mempertahankan lebarnya, sementara wadahnya menyediakan bilah gulir horizontal hanya jika diperlukan.\n\nUntuk pengalaman yang lebih baik, pertimbangkan transformasi struktural di layar kecil. Misalnya, ubah setiap baris menjadi \"kartu\" vertikal dengan CSS, di mana setiap sel menjadi pasangan label-nilai. Ini membutuhkan lebih banyak pekerjaan CSS, tapi hasilnya jauh lebih ramah mobile.\n\nTeknik lain adalah menyembunyikan kolom yang kurang penting di layar kecil menggunakan media query. Misalnya, sembunyikan kolom \"Deskripsi Panjang\" dan tampilkan hanya \"Nama\" dan \"Harga\" di mobile.\n\nPilihan teknik tergantung pada kompleksitas data dan kebutuhan pengguna. Yang penting, jangan biarkan tabel rusak tata letak halaman Anda di perangkat mobile. Responsivitas adalah bagian tak terpisahkan dari pengembangan web modern.",
+          "video": "https://youtube.com/embed/hd2dIJzDIQE?si=9elEZAlZpDqezi_H",
+          "code": "<!-- Wrapper untuk horizontal scroll -->\n<div style=\"overflow-x: auto;\">\n  <table>\n    <thead>\n      <tr>\n        <th>Nama</th>\n        <th>Email</th>\n        <th>Telepon</th>\n        <th>Alamat</th>\n        <th>Kota</th>\n        <th>Negara</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>John Doe</td>\n        <td>john@example.com</td>\n        <td>+62 812 3456 7890</td>\n        <td>Jl. Sudirman No. 123</td>\n        <td>Jakarta</td>\n        <td>Indonesia</td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
+          "images": ["https://www.codewithfaraz.com/img/Mastering%20the%20Table%20Tag%20in%20HTML%20A%20Comprehensive%20Guide.jpg","https://www.codewithfaraz.com/img/Mastering%20the%20Table%20Tag%20in%20HTML%20A%20Comprehensive%20Guide.jpg"]
+        }
+      ]
+    },
+    {
+      "id": "html-forms",
+      "title": "3. Forms",
+      "description": "Membuat form interaktif untuk input user",
+      "contentDetails": [
+        {
+          "id": "form-basics",
+          "title": "Dasar-dasar Form",
+          "explanation": "Formulir HTML adalah jembatan antara pengguna dan server—cara utama pengguna berinteraksi dengan website Anda, dari login hingga pembelian. Elemen <form> adalah wadah utama yang mengelompokkan semua input dan menentukan bagaimana data dikirim.\n\nAtribut action menentukan URL tujuan di mana data akan dikirim setelah submit. Atribut method menentukan protokol HTTP: GET (data di URL, untuk pencarian) atau POST (data di body request, untuk data sensitif atau besar).\n\nSetiap input harus memiliki atribut name, karena ini menjadi \"kunci\" dalam pasangan key-value yang dikirim ke server. Tanpa name, data tidak akan dikirim.\n\n<label> adalah elemen krusial yang sering diabaikan. Ini menghubungkan teks deskriptif ke input tertentu, yang sangat membantu pengguna mouse (klik label fokus ke input) dan pengguna screen reader (tahu untuk apa input tersebut).\n\nValidasi dasar seperti required, minlength, atau type=\"email\" disediakan oleh HTML5 secara native—tanpa JavaScript. Ini memberikan umpan balik instan kepada pengguna dan mengurangi beban server. Namun, selalu lakukan validasi ulang di sisi server, karena validasi klien bisa dilewati.",
+          "video": "",
+          "code": "<!-- Form sederhana -->\n<form action=\"/submit\" method=\"POST\">\n  <label for=\"name\">Nama:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required>\n  <button type=\"submit\">Kirim</button>\n</form>",
+          "images": ["https://www.enjoysharepoint.com/wp-content/uploads/2021/04/project-details-form.png"]
+        },
+        {
+          "id": "input-types",
+          "title": "Berbagai Tipe Input",
+          "explanation": "HTML5 merevolusi formulir dengan memperkenalkan berbagai tipe input yang sesuai konteks. Ini bukan hanya soal validasi—tapi juga pengalaman pengguna yang lebih baik di perangkat mobile.\n\nMisalnya, type=\"email\" tidak hanya memvalidasi format email, tapi juga memicu keyboard khusus di ponsel dengan tombol \"@\" dan \".com\" yang mudah diakses. Type=\"tel\" memunculkan keypad numerik, type=\"date\" menampilkan date picker native, dan type=\"color\" membuka color picker.\n\nType=\"number\" memastikan hanya angka yang bisa dimasukkan, dan sering kali menampilkan tombol panah untuk menaikkan/menurunkan nilai. Type=\"range\" membuat slider interaktif yang sempurna untuk pengaturan seperti volume atau rating.\n\nType=\"search\" dan type=\"url\" juga memicu keyboard yang sesuai, dan sering kali menyertakan tombol \"x\" untuk menghapus input dengan cepat. Type=\"file\" memungkinkan upload file, dengan atribut accept untuk membatasi jenis file.\n\nDengan memilih tipe input yang tepat, Anda tidak hanya mengurangi kesalahan pengguna, tapi juga membuat formulir lebih intuitif dan efisien—terutama di perangkat sentuh. Ini adalah contoh sempurna bagaimana HTML semantik modern mendukung UX yang unggul.",
+          "video": "",
+          "code": "<form>\n  <label>Text: <input type=\"text\" name=\"text\"></label><br>\n  <label>Email: <input type=\"email\" name=\"email\"></label><br>\n  <label>Password: <input type=\"password\" name=\"pass\"></label><br>\n  <label>Number: <input type=\"number\" min=\"0\" max=\"100\" name=\"num\"></label><br>\n  <label>Date: <input type=\"date\" name=\"date\"></label><br>\n  <label>Time: <input type=\"time\" name=\"time\"></label><br>\n  <label>Color: <input type=\"color\" name=\"color\"></label><br>\n  <label>Range: <input type=\"range\" min=\"0\" max=\"100\" name=\"range\"></label><br>\n  <label>File: <input type=\"file\" name=\"file\"></label><br>\n  <label>Search: <input type=\"search\" name=\"search\"></label><br>\n  <label>URL: <input type=\"url\" name=\"url\"></label><br>\n  <label>Tel: <input type=\"tel\" name=\"tel\"></label><br>\n</form>",
+          "images": ["https://www.zohowebstatic.com/sites/default/files/creator/forms_stateless_ex1.png"]
+        },
+        {
+          "id": "checkboxes-radio",
+          "title": "Checkbox dan Radio Button",
+          "explanation": "Checkbox dan radio button adalah dua tipe input pilihan yang sering digunakan, tapi memiliki tujuan yang berbeda. Checkbox (type=\"checkbox\") memungkinkan pengguna memilih **satu atau lebih** opsi dari daftar—misalnya, hobi, layanan tambahan, atau preferensi newsletter.\n\nRadio button (type=\"radio\") memungkinkan pengguna memilih **hanya satu** opsi dari grup. Kuncinya adalah memberi semua radio button dalam satu grup atribut name yang sama—browser akan secara otomatis memastikan hanya satu yang bisa dipilih.\n\nKeduanya harus selalu dipasangkan dengan <label> yang jelas. Idealnya, bungkus input dan teksnya dalam <label>, atau gunakan atribut for yang mengarah ke id input. Ini memperbesar area klik dan membuatnya lebih mudah diakses.\n\nUntuk mengelompokkan beberapa checkbox atau radio yang terkait, gunakan <fieldset> dengan <legend>. Ini memberi konteks semantik yang jelas—misalnya, \"Jenis Kelamin\" atau \"Hobi\"—yang sangat membantu pengguna screen reader.\n\nAtribut checked digunakan untuk menetapkan pilihan default. Gunakan dengan bijak: jangan centang \"Setuju dengan syarat\" secara default, karena ini bisa dianggap manipulatif. Biarkan pengguna membuat pilihan sadar.",
+          "video": "",
+          "code": "<!-- Checkboxes -->\n<fieldset>\n  <legend>Hobi (pilih semua yang sesuai):</legend>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"coding\">\n    Coding\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"reading\">\n    Reading\n  </label>\n  <label>\n    <input type=\"checkbox\" name=\"hobi\" value=\"gaming\" checked>\n    Gaming\n  </label>\n</fieldset>\n<!-- Radio buttons -->\n<fieldset>\n  <legend>Jenis Kelamin:</legend>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"male\" required>\n    Laki-laki\n  </label>\n  <label>\n    <input type=\"radio\" name=\"gender\" value=\"female\">\n    Perempuan\n  </label>\n</fieldset>",
+          "images": ["https://docs.devexpress.com/WindowsForms/images/xtrarichedit_checkboxes133120.png"]
+        },
+        {
+          "id": "select-textarea",
+          "title": "Select dan Textarea",
+          "explanation": "<select> adalah elemen untuk membuat dropdown menu—daftar pilihan yang disembunyikan sampai diklik. Setiap pilihan didefinisikan dengan <option>, yang memiliki atribut value (data yang dikirim ke server) dan teks yang ditampilkan kepada pengguna.\n\nAtribut selected menentukan pilihan default. Seringkali, opsi pertama adalah placeholder seperti \"-- Pilih --\" dengan value kosong, yang memaksa pengguna membuat pilihan sadar.\n\nDengan atribut multiple, <select> memungkinkan pemilihan lebih dari satu opsi (biasanya dengan Ctrl+Klik). Ini berguna untuk daftar keterampilan, kategori, atau tag.\n\n<textarea> digunakan untuk input teks multi-baris, seperti komentar, pesan, atau deskripsi. Berbeda dengan <input>, nilainya ditempatkan di antara tag pembuka dan penutup, bukan di atribut value.\n\nAtribut rows dan cols memberikan ukuran awal, tapi tampilan akhir biasanya dikontrol oleh CSS. Placeholder memberikan petunjuk tentang jenis teks yang diharapkan. Ingat, <textarea> tidak mendukung atribut maxlength secara native di semua browser lama, jadi pertimbangkan validasi JavaScript jika diperlukan.",
+          "video": "",
+          "code": "<!-- Select dropdown -->\n<label for=\"country\">Negara:</label>\n<select id=\"country\" name=\"country\" required>\n  <option value=\"\">-- Pilih Negara --</option>\n  <option value=\"id\">Indonesia</option>\n  <option value=\"my\">Malaysia</option>\n  <option value=\"sg\" selected>Singapore</option>\n  <option value=\"th\">Thailand</option>\n</select>\n<!-- Multiple select -->\n<label for=\"skills\">Skills (Ctrl+Click untuk multiple):</label>\n<select id=\"skills\" name=\"skills\" multiple>\n  <option value=\"html\">HTML</option>\n  <option value=\"css\">CSS</option>\n  <option value=\"js\">JavaScript</option>\n  <option value=\"php\">PHP</option>\n</select>\n<!-- Textarea -->\n<label for=\"message\">Pesan:</label>\n<textarea id=\"message\" name=\"message\" rows=\"5\" cols=\"40\" placeholder=\"Tulis pesan Anda...\"></textarea>",
+          "images": ["https://cdn.educba.com/academy/wp-content/uploads/2020/02/TextArea-Tag-in-HTML-l.jpg.webp"]
+        },
+        {
+          "id": "form-attributes",
+          "title": "Atribut Validasi Form",
+          "explanation": "HTML5 memperkenalkan sistem validasi formulir bawaan yang kuat, mengurangi ketergantungan pada JavaScript untuk validasi dasar. Atribut required memastikan field tidak kosong—sederhana tapi sangat efektif.\n\nUntuk input teks, minlength dan maxlength membatasi jumlah karakter, berguna untuk username, password, atau kode pos. Untuk angka atau tanggal, min dan max memastikan nilai berada dalam rentang yang valid—misalnya, usia antara 18-100 tahun.\n\nAtribut pattern memungkinkan validasi dengan ekspresi reguler (regex). Ini sangat fleksibel—misalnya, memastikan nomor telepon hanya berisi angka dan memiliki panjang tertentu. Namun, gunakan dengan hati-hati, karena regex bisa membingungkan pengguna jika pesan error tidak jelas.\n\nAtribut readonly membuat field tidak bisa diedit, tapi nilainya tetap dikirim ke server—berbeda dengan disabled, yang tidak mengirim nilai sama sekali. Ini berguna untuk menampilkan informasi yang dihitung atau diambil dari database.\n\nValidasi bawaan ini memberikan umpan balik visual instan di sebagian besar browser modern. Namun, selalu ingat: validasi sisi klien bisa dilewati. Validasi sisi server tetap wajib untuk keamanan dan integritas data.",
+          "video": "",
+          "code": "<form>\n  <!-- Required -->\n  <input type=\"text\" name=\"username\" required>\n  <!-- Min/Max length -->\n  <input type=\"password\" name=\"pass\" minlength=\"8\" maxlength=\"20\" required>\n  <!-- Min/Max value -->\n  <input type=\"number\" name=\"age\" min=\"18\" max=\"100\" required>\n  <!-- Pattern (regex) -->\n  <input type=\"text\" name=\"phone\" pattern=\"[0-9]{10,12}\" placeholder=\"08123456789\">\n  <!-- Readonly -->\n  <input type=\"text\" name=\"username\" value=\"johndoe\" readonly>\n  <!-- Disabled -->\n  <input type=\"text\" name=\"field\" value=\"Tidak aktif\" disabled>\n  <button type=\"submit\">Submit</button>\n</form>",
+          "images": ["https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1366,h_768/https://www.myprograming.com/wp-content/uploads/2021/05/form-attribute-myprograming.jpg"]
+        },
+        {
+          "id": "fieldset-legend",
+          "title": "Fieldset, Legend, dan Label",
+          "explanation": "<fieldset> adalah elemen untuk mengelompokkan input yang terkait secara logis—misalnya, \"Informasi Pribadi\", \"Alamat Pengiriman\", atau \"Preferensi Email\". Secara default, browser menampilkan border di sekitarnya, tapi tampilan ini bisa diubah dengan CSS.\n\n<legend> adalah judul untuk <fieldset>. Ini tidak hanya dekoratif—ia memberikan konteks semantik yang sangat penting untuk aksesibilitas. Screen reader akan mengumumkan <legend> sebelum membaca input di dalamnya, sehingga pengguna tahu grup input tersebut untuk apa.\n\n<label> adalah elemen yang menghubungkan teks deskriptif ke input tertentu. Ada dua cara: membungkus input dalam <label>, atau menggunakan atribut for pada <label> yang sesuai dengan id input. Keduanya valid, tapi konsistensi adalah kunci.\n\nLabel yang baik tidak hanya membantu pengguna biasa—ia juga memperbesar area klik untuk input seperti checkbox dan radio, membuatnya lebih mudah digunakan di layar sentuh. Ini adalah praktik UX dasar yang sering diabaikan.\n\nMenggunakan <fieldset>, <legend>, dan <label> secara konsisten menciptakan formulir yang terstruktur, mudah dinavigasi, dan dapat diakses oleh semua pengguna—termasuk mereka yang mengandalkan teknologi bantu.",
+          "video": "",
+          "code": "<!-- Fieldset dengan legend -->\n<fieldset>\n  <legend>Informasi Pribadi</legend>\n  <label for=\"fname\">Nama Depan:</label>\n  <input type=\"text\" id=\"fname\" name=\"fname\"><br>\n  <label for=\"lname\">Nama Belakang:</label>\n  <input type=\"text\" id=\"lname\" name=\"lname\"><br>\n</fieldset>\n<fieldset>\n  <legend>Alamat</legend>\n  <!-- Label wrap input -->\n  <label>\n    Jalan:\n    <input type=\"text\" name=\"street\">\n  </label><br>\n  <label>\n    Kota:\n    <input type=\"text\" name=\"city\">\n  </label><br>\n  <label>\n    Kode Pos:\n    <input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}\">\n  </label>\n</fieldset>",
+          "images": ["https://tse1.mm.bing.net/th/id/OIP.vsTTLHo41rop_100l50EHQHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "form-complete-example",
+          "title": "Form Lengkap",
+          "explanation": "Contoh formulir lengkap ini menggabungkan semua praktik terbaik yang telah dibahas: struktur semantik dengan <fieldset> dan <legend>, label yang accessible, validasi HTML5 yang sesuai, dan tipe input yang kontekstual.\n\nPerhatikan bagaimana setiap bagian dikelompokkan secara logis: informasi akun, data pribadi, dan preferensi. Ini membuat formulir panjang terasa lebih ringan dan mudah diisi, karena pengguna bisa fokus pada satu bagian sekaligus.\n\nValidasi digunakan secara bijak: required untuk field wajib, minlength untuk password, type=\"email\" untuk validasi format, dan pattern untuk kode pos. Ini memberikan umpan balik instan tanpa JavaScript.\n\nTombol submit dan reset menggunakan type yang benar, memastikan perilaku yang diharapkan di semua browser. Placeholder memberikan petunjuk tanpa menggantikan label yang jelas.\n\nFormulir seperti ini adalah standar industri untuk aplikasi web modern. Ini tidak hanya berfungsi dengan baik, tapi juga inklusif, aman, dan mudah dipelihara. Ini adalah template yang bisa Anda gunakan sebagai dasar untuk hampir semua formulir di proyek Anda.",
+          "video": "https://youtube.com/embed/LQf_Jj7jbCI?si=uwQ5b4HCONbs3kvN",
+          "code": "<form action=\"/register\" method=\"POST\">\n  <h2>Form Registrasi</h2>\n  <fieldset>\n    <legend>Informasi Akun</legend>\n    <label for=\"username\">Username:</label>\n    <input type=\"text\" id=\"username\" name=\"username\" minlength=\"3\" required><br>\n    <label for=\"email\">Email:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required><br>\n    <label for=\"password\">Password:</label>\n    <input type=\"password\" id=\"password\" name=\"password\" minlength=\"8\" required><br>\n    <label for=\"confirm\">Konfirmasi Password:</label>\n    <input type=\"password\" id=\"confirm\" name=\"confirm\" minlength=\"8\" required><br>\n  </fieldset>\n  <fieldset>\n    <legend>Informasi Pribadi</legend>\n    <label for=\"fullname\">Nama Lengkap:</label>\n    <input type=\"text\" id=\"fullname\" name=\"fullname\" required><br>\n    <label for=\"dob\">Tanggal Lahir:</label>\n    <input type=\"date\" id=\"dob\" name=\"dob\" required><br>\n    <label>Jenis Kelamin:</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"male\" required> Laki-laki</label>\n    <label><input type=\"radio\" name=\"gender\" value=\"female\"> Perempuan</label><br>\n    <label for=\"country\">Negara:</label>\n    <select id=\"country\" name=\"country\" required>\n      <option value=\"\">-- Pilih --</option>\n      <option value=\"id\">Indonesia</option>\n      <option value=\"my\">Malaysia</option>\n    </select><br>\n  </fieldset>\n  <fieldset>\n    <legend>Preferensi</legend>\n    <label><input type=\"checkbox\" name=\"newsletter\"> Subscribe newsletter</label><br>\n    <label><input type=\"checkbox\" name=\"terms\" required> Setuju dengan syarat dan ketentuan</label><br>\n  </fieldset>\n  <button type=\"submit\">Daftar</button>\n  <button type=\"reset\">Reset</button>\n</form>",
+          "images": []  
+        }
+      ]
+    },
+    {
+      "id": "html-metadata",
+      "title": "4. Metadata dan SEO",
+      "description": "Optimasi website untuk search engine",
+      "contentDetails": [
+        {
+          "id": "meta-tags-seo",
+          "title": "Meta Tags untuk SEO",
+          "explanation": "Meta tags adalah potongan informasi tersembunyi di bagian <head> dokumen HTML yang memberikan konteks tentang halaman kepada browser, mesin pencari, dan platform sosial. Meski tidak terlihat pengguna, dampaknya sangat besar.\n\n<meta name=\"description\"> mungkin yang paling penting untuk SEO. Ini adalah ringkasan singkat yang sering ditampilkan di hasil pencarian Google. Deskripsi yang menarik dan relevan bisa meningkatkan klik-through rate (CTR) secara signifikan.\n\n<meta name=\"keywords\"> dulu sangat penting, tapi sekarang diabaikan oleh Google karena sering disalahgunakan. Namun, beberapa mesin pencari lama mungkin masih menggunakannya, jadi tidak ada salahnya menyertakannya dengan bijak.\n\n<meta name=\"author\"> mengidentifikasi pembuat konten, yang berguna untuk arsip atau situs multi-penulis. <meta name=\"robots\"> memberikan instruksi eksplisit kepada crawler: \"index, follow\" (indeks halaman dan ikuti link) atau \"noindex, nofollow\" (abaikan sepenuhnya).\n\nYang paling krusial adalah <meta name=\"viewport\">. Tanpa ini, halaman Anda tidak akan responsif di perangkat mobile—Google bahkan bisa menghukum peringkat Anda karena pengalaman mobile yang buruk.\n\nMengelola meta tags dengan baik adalah langkah pertama dan paling dasar dalam SEO teknis. Ini menunjukkan kepada dunia digital bahwa halaman Anda layak untuk diperhatikan.",
+          "video": "",
+          "code": "<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <!-- SEO Meta Tags -->\n  <title>Belajar HTML - Tutorial Lengkap untuk Pemula</title>\n  <meta name=\"description\" content=\"Tutorial HTML lengkap dari dasar hingga mahir. Pelajari HTML5, semantic tags, forms, dan best practices web development.\">\n  <meta name=\"keywords\" content=\"html, tutorial html, belajar html, html5, web development\">\n  <meta name=\"author\" content=\"Nama Anda\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <!-- Canonical URL (hindari duplicate content) -->\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n</head>",
+          "images": ["https://tse3.mm.bing.net/th/id/OIP.pULGnl15Lyg2RfwjebqlSwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "open-graph",
+          "title": "Open Graph untuk Social Media",
+          "explanation": "Ketika Anda membagikan link di Facebook, LinkedIn, atau WhatsApp, platform tersebut tidak hanya mengambil judul dan URL—mereka mencari meta tags Open Graph untuk membuat preview yang kaya dan menarik.\n\nTanpa Open Graph, preview Anda akan terlihat hambar: hanya URL dan sedikit teks acak dari halaman. Dengan Open Graph, Anda bisa mengontrol judul, deskripsi, dan gambar yang ditampilkan—membuat link Anda jauh lebih menarik untuk diklik.\n\nProperti utama meliputi og:title (judul preview), og:description (deskripsi singkat), og:image (gambar besar beresolusi tinggi), og:url (URL canonical), dan og:type (jenis konten: article, website, product, dll).\n\nTwitter memiliki sistem serupa yang disebut Twitter Cards, dengan meta tags sendiri seperti twitter:card dan twitter:image. Meski mirip, Anda perlu menyertakan keduanya untuk cakupan maksimal.\n\nGambar og:image sangat penting. Gunakan rasio 1.91:1 (misalnya 1200x630 piksel) untuk hasil terbaik. Pastikan gambar tidak terlalu besar (maks 5MB) dan di-host di URL yang stabil. Preview yang menarik bisa meningkatkan traffic sosial Anda secara dramatis.",
+          "video": "",
+          "code": "<head>\n  <!-- Open Graph Meta Tags -->\n  <meta property=\"og:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir dengan contoh kode lengkap.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <meta property=\"og:site_name\" content=\"WebDev Academy\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Belajar HTML - Tutorial Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/images/html-tutorial.jpg\">\n  <meta name=\"twitter:creator\" content=\"@yourusername\">\n</head>",
+          "images": []
+        },
+        {
+          "id": "favicon-icons",
+          "title": "Favicon dan Icons",
+          "explanation": "Favicon adalah ikon kecil yang muncul di tab browser, bookmark, dan riwayat. Meski kecil, favicon memberikan identitas visual instan untuk situs Anda dan meningkatkan profesionalisme.\n\nDi era modern, satu favicon.ico tidak cukup. Perangkat dan platform berbeda membutuhkan ukuran dan format berbeda: 16x16 dan 32x32 untuk tab browser, 180x180 untuk Apple Touch Icon (saat pengguna menyematkan situs ke homescreen iPhone), dan 192x192 atau 512x512 untuk aplikasi web progresif (PWA) di Android.\n\n<link rel=\"apple-touch-icon\"> memberi tahu perangkat Apple gambar mana yang digunakan untuk homescreen. <link rel=\"manifest\"> mengarah ke file manifest JSON yang mendefinisikan nama, warna tema, dan ikon untuk PWA.\n\n<meta name=\"theme-color\"> mengatur warna bilah status di browser mobile Android, memberikan tampilan yang lebih terintegrasi.\n\nUntungnya, ada banyak generator favicon online yang membuat semua ukuran dan kode yang diperlukan dalam satu klik. Menyertakan favicon lengkap adalah sentuhan akhir yang kecil tapi berdampak besar pada persepsi merek Anda.",
+          "video": "",
+          "code": "<head>\n  <!-- Favicon -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n  <!-- Apple Touch Icon -->\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Android Chrome -->\n  <link rel=\"manifest\" href=\"/site.webmanifest\">\n  <!-- Safari Pinned Tab -->\n  <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"#5bbad5\">\n  <!-- Theme Color -->\n  <meta name=\"theme-color\" content=\"#ffffff\">\n</head>",
+          "images": ["https://tse3.mm.bing.net/th/id/OIP.pULGnl15Lyg2RfwjebqlSwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        },
+        {
+          "id": "structured-data",
+          "title": "Structured Data (Schema.org)",
+          "explanation": "Structured data adalah cara memberi tahu mesin pencari tentang isi halaman Anda dalam format yang dapat mereka pahami secara pasti. Daripada menebak apakah teks tertentu adalah tanggal publikasi atau nama penulis, Anda memberikan data terstruktur yang eksplisit.\n\nSchema.org adalah kosakata bersama yang didukung oleh Google, Bing, Yahoo, dan Yandex. Ini mendefinisikan jenis entitas seperti Article, Person, Product, Event, dan ratusan lainnya, lengkap dengan properti yang relevan.\n\nFormat yang paling direkomendasikan adalah JSON-LD, yang ditempatkan di dalam <script type=\"application/ld+json\"> di bagian <head>. Ini tidak mengganggu DOM dan mudah dibaca oleh mesin.\n\nManfaat utamanya adalah rich snippets—hasil pencarian yang diperkaya dengan rating bintang, harga, tanggal, atau gambar. Ini bisa meningkatkan CTR hingga 30% dibanding hasil biasa.\n\nMisalnya, untuk artikel blog, Anda bisa menentukan headline, image, author, publisher, datePublished, dan dateModified. Google akan menggunakan ini untuk menampilkan cuplikan yang lebih informatif dan menarik di SERP. Ini adalah SEO tingkat lanjut yang wajib untuk situs konten modern.",
+          "video": "",
+          "code": "<head>\n  <!-- Structured Data untuk Article -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap untuk Pemula\",\n    \"image\": \"https://www.example.com/images/html-tutorial.jpg\",\n    \"author\": {\n      \"@type\": \"Person\",\n      \"name\": \"John Doe\"\n    },\n    \"publisher\": {\n      \"@type\": \"Organization\",\n      \"name\": \"WebDev Academy\",\n      \"logo\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"https://www.example.com/logo.png\"\n      }\n    },\n    \"datePublished\": \"2024-01-10\",\n    \"dateModified\": \"2024-01-15\",\n    \"description\": \"Tutorial HTML dari dasar hingga mahir.\"\n  }\n  </script>\n</head>",
+          "images": []
+        },
+        {
+          "id": "complete-head-example",
+          "title": "Complete Head Section",
+          "explanation": "Contoh <head> lengkap ini adalah cetak biru untuk halaman web modern yang mengikuti semua praktik terbaik SEO, aksesibilitas, dan kompatibilitas. Ini adalah template yang bisa Anda gunakan untuk setiap proyek baru.\n\nDimulai dengan meta tag esensial: charset untuk encoding karakter, viewport untuk responsif, dan X-UA-Compatible untuk kompatibilitas IE lama (meski semakin tidak relevan).\n\nBagian SEO mencakup title yang deskriptif, meta description yang menarik, dan canonical URL untuk mencegah konten duplikat—masalah umum yang bisa merusak peringkat Anda.\n\nOpen Graph dan Twitter Card memastikan link Anda terlihat menarik di semua platform sosial. Favicon dalam berbagai ukuran memberikan identitas visual yang konsisten di semua perangkat.\n\nLink ke stylesheet dan font eksternal dioptimalkan dengan preconnect untuk mengurangi latency. Dan structured data JSON-LD memberi Google semua informasi yang dibutuhkan untuk menampilkan rich snippet.\n\nMenggunakan template seperti ini sejak awal menghemat banyak waktu dan masalah di kemudian hari. Ini adalah fondasi tak terlihat yang membuat website Anda tidak hanya terlihat bagus, tapi juga ditemukan, dibagikan, dan dipercaya.",
+          "video": "",
+          "code": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <!-- Essential Meta Tags -->\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <!-- SEO Meta Tags -->\n  <title>Tutorial HTML Lengkap - WebDev Academy</title>\n  <meta name=\"description\" content=\"Pelajari HTML dari dasar hingga mahir. Tutorial lengkap dengan contoh kode dan best practices web development modern.\">\n  <meta name=\"keywords\" content=\"html, tutorial, web development, html5\">\n  <meta name=\"author\" content=\"WebDev Academy\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <link rel=\"canonical\" href=\"https://www.example.com/html-tutorial\">\n  <!-- Open Graph -->\n  <meta property=\"og:title\" content=\"Tutorial HTML Lengkap\">\n  <meta property=\"og:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta property=\"og:image\" content=\"https://www.example.com/og-image.jpg\">\n  <meta property=\"og:url\" content=\"https://www.example.com/html-tutorial\">\n  <meta property=\"og:type\" content=\"article\">\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Tutorial HTML Lengkap\">\n  <meta name=\"twitter:description\" content=\"Tutorial HTML dari dasar hingga mahir.\">\n  <meta name=\"twitter:image\" content=\"https://www.example.com/twitter-image.jpg\">\n  <!-- Favicons -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n  <!-- Stylesheets -->\n  <link rel=\"stylesheet\" href=\"/css/style.css\">\n  <!-- Fonts -->\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap\" rel=\"stylesheet\">\n  <!-- Structured Data -->\n  <script type=\"application/ld+json\">\n  {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"Article\",\n    \"headline\": \"Tutorial HTML Lengkap\",\n    \"datePublished\": \"2024-01-10\"\n  }\n  </script>\n</head>\n<body>\n  <!-- Content here -->\n</body>\n</html>",
+          "images": ["https://tse3.mm.bing.net/th/id/OIP.pULGnl15Lyg2RfwjebqlSwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"]
+        }
+      ]
+    }
+  ]
+},
   {
     "id": "html-advanced",
     "title": "HTML Advanced",
