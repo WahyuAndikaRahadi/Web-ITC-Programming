@@ -78,7 +78,7 @@ function App() {
         {currentPage === 'quiz' && <Quiz darkMode={darkMode} />}
         
         {/* 2. Integrasi Footer di sini */}
-        <Footer darkMode={darkMode} />
+        <Footer darkMode={darkMode} onNavigate={handleNavigate} />
 
       </div>
     </div>

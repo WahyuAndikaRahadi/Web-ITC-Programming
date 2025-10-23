@@ -598,115 +598,115 @@
     }
   ]
 },
-  {
-    "id": "html-advanced",
-    "title": "HTML Advanced",
-        "isLocked": true,
-    "description": "Teknik lanjutan: Web Components, API integrasi, performance, dan best practices profesional",
-    "icon": "code-bracket-square",
-    "subContent": [
-      {
-        "id": "web-components",
-        "title": "1. Web Components",
-        "description": "Membuat komponen UI reusable dengan standar web",
-        "contentDetails": [
-          {
-            "id": "custom-elements",
-            "title": "Custom Elements",
-            "explanation": "Buat elemen HTML sendiri dengan JavaScript. Contoh: <my-button>, <user-card>.\nGunakan class yang extends HTMLElement dan daftarkan dengan customElements.define().",
-            "video": "",
-            "code": "class MyButton extends HTMLElement {\n  constructor() {\n    super();\n    this.innerHTML = `<button style=\"color: blue;\">${this.getAttribute('label')}</button>`;\n  }\n}\ncustomElements.define('my-button', MyButton);\n\n<!-- Penggunaan -->\n<my-button label=\"Klik Saya\"></my-button>",
-            "images": []
-          },
-          {
-            "id": "shadow-dom",
-            "title": "Shadow DOM",
-            "explanation": "Isolasi styling dan markup komponen dari dokumen utama. Hindari konflik CSS.",
-            "video": "",
-            "code": "class UserCard extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({mode: 'open'});\n    shadow.innerHTML = `\n      <style>h3 { color: green; }</style>\n      <h3>${this.getAttribute('name')}</h3>\n    `;\n  }\n}\ncustomElements.define('user-card', UserCard);",
-            "images": []
-          },
-          {
-            "id": "html-templates",
-            "title": "HTML Templates",
-            "explanation": "Gunakan <template> untuk menyimpan markup yang tidak dirender sampai dibutuhkan.",
-            "video": "",
-            "code": "<template id=\"card-template\">\n  <div class=\"card\">\n    <h3></h3>\n    <p></p>\n  </div>\n</template>\n\n<script>\n  const template = document.getElementById('card-template');\n  const clone = template.content.cloneNode(true);\n  clone.querySelector('h3').textContent = 'Judul';\n  document.body.appendChild(clone);\n</script>",
-            "images": []
-          }
-        ]
-      },
-      {
-        "id": "accessibility-advanced",
-        "title": "2. Accessibility Lanjutan",
-        "description": "Membuat website yang benar-benar inklusif",
-        "contentDetails": [
-          {
-            "id": "aria-landmarks",
-            "title": "ARIA Landmarks",
-            "explanation": "Gunakan role dan ARIA attributes untuk membantu screen reader:\n- role=\"banner\", \"main\", \"navigation\", \"complementary\", \"contentinfo\"\n- aria-label, aria-labelledby, aria-describedby",
-            "video": "",
-            "code": "<header role=\"banner\">...</header>\n<nav role=\"navigation\" aria-label=\"Primary\">...</nav>\n<main role=\"main\">...</main>\n<aside role=\"complementary\">...</aside>\n<footer role=\"contentinfo\">...</footer>",
-            "images": []
-          },
-          {
-            "id": "keyboard-navigation",
-            "title": "Keyboard Navigation",
-            "explanation": "Pastikan semua interaksi bisa dilakukan dengan keyboard (tab, enter, space). Gunakan tabindex, focus management.",
-            "video": "",
-            "code": "<button tabindex=\"0\">Fokus dengan Tab</button>\n<div tabindex=\"0\" role=\"button\" onclick=\"doSomething()\">Div sebagai tombol</div>",
-            "images": []
-          }
-        ]
-      },
-      {
-        "id": "performance-html",
-        "title": "3. Performance Optimization",
-        "description": "Optimasi kecepatan dan efisiensi HTML",
-        "contentDetails": [
-          {
-            "id": "critical-rendering-path",
-            "title": "Critical Rendering Path",
-            "explanation": "Minimalkan blocking render: letakkan CSS di <head>, JS di akhir <body> atau gunakan async/defer.",
-            "video": "",
-            "code": "<head>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <!-- Konten -->\n  <script src=\"script.js\" defer></script>\n</body>",
-            "images": []
-          },
-          {
-            "id": "preload-prefetch",
-            "title": "Resource Hints",
-            "explanation": "Gunakan <link rel=\"preload\">, <link rel=\"prefetch\"> untuk memuat aset lebih cepat.",
-            "video": "",
-            "code": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>\n<link rel=\"prefetch\" href=\"next-page.html\">",
-            "images": []
-          }
-        ]
-      },
-      {
-        "id": "security-html",
-        "title": "4. Keamanan HTML",
-        "description": "Mencegah serangan umum di frontend",
-        "contentDetails": [
-          {
-            "id": "xss-prevention",
-            "title": "Mencegah XSS",
-            "explanation": "Jangan pernah memasukkan input user langsung ke DOM. Gunakan textContent, bukan innerHTML.",
-            "video": "",
-            "code": "// Aman\nel.textContent = userInput;\n// Berbahaya\nel.innerHTML = userInput;",
-            "images": []
-          },
-          {
-            "id": "csp-basics",
-            "title": "Content Security Policy (CSP)",
-            "explanation": "Atur kebijakan keamanan melalui header HTTP atau meta tag untuk membatasi sumber daya yang diizinkan.",
-            "video": "",
-            "code": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' https://trusted.cdn.com\">",
-            "images": []
-          }
-        ]
-      }
-    ]
-  }
+{
+  "id": "html-advanced",
+  "title": "HTML Advanced",
+  "isLocked": false,
+  "description": "Teknik lanjutan: Web Components, API integrasi, performance, dan best practices profesional",
+  "icon": "code-bracket-square",
+  "subContent": [
+    {
+      "id": "web-components",
+      "title": "1. Web Components",
+      "description": "Membuat komponen UI reusable dengan standar web",
+      "contentDetails": [
+        {
+          "id": "custom-elements",
+          "title": "Custom Elements",
+          "explanation": "Custom Elements memungkinkan Anda membuat elemen HTML sendiri yang dapat digunakan seperti tag bawaan browser—misalnya <user-profile>, <modal-dialog>, atau <rating-star>. Ini adalah bagian dari standar Web Components yang didukung native oleh semua browser modern.\n\nUntuk membuat custom element, Anda mendefinisikan kelas JavaScript yang mewarisi HTMLElement, lalu mendaftarkannya ke browser menggunakan customElements.define(). Setiap instance elemen ini berperilaku seperti elemen DOM biasa, tapi dengan logika dan tampilan khusus.\n\nKeuntungan utamanya adalah **reusabilitas** dan **enkapsulasi**. Anda bisa membuat komponen sekali, lalu menggunakannya di banyak proyek—tanpa ketergantungan pada framework seperti React atau Vue. Ini adalah komponen berbasis standar web murni.\n\nCustom Elements juga mendukung atribut, properti, dan metode publik. Anda bisa mengambil nilai dari atribut HTML (misalnya label=\"Kirim\") dan menggunakannya dalam logika komponen. Bahkan, Anda bisa menangani perubahan atribut secara dinamis dengan metode observedAttributes dan attributeChangedCallback.\n\nMeski sederhana, Custom Elements adalah fondasi kuat untuk arsitektur UI modern. Mereka memungkinkan Anda membangun aplikasi modular, mudah diuji, dan bebas framework—sebuah pendekatan yang semakin populer di kalangan developer profesional.",
+          "video": "https://youtube.com/embed/gfvFEBXMVSU?si=YCrmlipx20plqRCK",
+          "code": "class MyButton extends HTMLElement {\n  constructor() {\n    super();\n    this.innerHTML = `<button style=\"color: blue;\">${this.getAttribute('label')}</button>`;\n  }\n}\ncustomElements.define('my-button', MyButton);\n\n<!-- Penggunaan -->\n<my-button label=\"Klik Saya\"></my-button>",
+          "images": []
+        },
+        {
+          "id": "shadow-dom",
+          "title": "Shadow DOM",
+          "explanation": "Shadow DOM adalah mekanisme enkapsulasi yang memisahkan markup, styling, dan perilaku komponen dari dokumen utama. Ini berarti CSS di luar komponen tidak akan memengaruhi isi Shadow DOM, dan sebaliknya—menghindari konflik gaya yang sering terjadi dalam aplikasi besar.\n\nAnda membuat Shadow DOM dengan memanggil this.attachShadow({mode: 'open'}) di dalam constructor komponen. Mode 'open' memungkinkan akses dari luar (misalnya melalui dev tools), sementara 'closed' menyembunyikannya sepenuhnya—meski jarang digunakan.\n\nDi dalam Shadow DOM, Anda bisa menulis HTML dan CSS seperti biasa. Semua aturan gaya hanya berlaku di dalam komponen tersebut. Ini memungkinkan Anda menggunakan nama kelas umum seperti .button atau .card tanpa takut bentrok dengan kode global.\n\nShadow DOM juga mendukung slot—mekanisme untuk menyisipkan konten dari luar ke dalam komponen. Misalnya, Anda bisa membuat <modal-dialog><h2>Judul Modal</h2></modal-dialog>, dan <h2> akan muncul di tempat yang ditentukan oleh <slot> di dalam Shadow DOM.\n\nDengan menggabungkan Custom Elements dan Shadow DOM, Anda menciptakan komponen yang benar-benar mandiri, aman dari kebocoran gaya, dan siap digunakan di mana saja—baik di proyek vanilla JavaScript maupun di dalam framework besar.",
+          "video": "https://youtube.com/embed/Is4FZxKGqqk?si=IFsmOsLF4smqtSda",
+          "code": "class UserCard extends HTMLElement {\n  constructor() {\n    super();\n    const shadow = this.attachShadow({mode: 'open'});\n    shadow.innerHTML = `\n      <style>h3 { color: green; }</style>\n      <h3>${this.getAttribute('name')}</h3>\n    `;\n  }\n}\ncustomElements.define('user-card', UserCard);",
+          "images": []
+        },
+        {
+          "id": "html-templates",
+          "title": "HTML Templates",
+          "explanation": "Elemen <template> adalah cara efisien untuk menyimpan fragmen HTML yang tidak dirender saat halaman dimuat, tapi bisa diklon dan disisipkan ke DOM saat dibutuhkan. Ini sangat berguna untuk membuat komponen dinamis atau daftar item yang di-generate dari data.\n\nKonten di dalam <template> tidak aktif: gambar tidak dimuat, skrip tidak dijalankan, dan gaya tidak diterapkan—menghemat sumber daya. Baru ketika Anda mengkloning isinya dengan cloneNode(true) dan menambahkannya ke DOM, elemen tersebut menjadi hidup.\n\n<template> sering digunakan bersama Web Components atau dalam aplikasi yang menampilkan daftar besar (seperti feed berita atau hasil pencarian). Daripada membangun string HTML dengan JavaScript (yang rentan error dan XSS), Anda mendesain markup di HTML murni, lalu mengisinya dengan data secara programatik.\n\nAnda juga bisa menyematkan <template> di dalam Shadow DOM komponen, menciptakan struktur yang benar-benar modular. Ini memisahkan desain visual dari logika, sesuai prinsip separation of concerns.\n\nMeski sederhana, <template> adalah alat yang ampuh untuk meningkatkan performa dan keamanan aplikasi Anda. Ini mengurangi manipulasi DOM manual, meminimalkan kesalahan sintaks, dan membuat kode lebih mudah dibaca—karena markup tetap berada di tempatnya: di HTML.",
+          "video": "",
+          "code": "<template id=\"card-template\">\n  <div class=\"card\">\n    <h3></h3>\n    <p></p>\n  </div>\n</template>\n\n<script>\n  const template = document.getElementById('card-template');\n  const clone = template.content.cloneNode(true);\n  clone.querySelector('h3').textContent = 'Judul';\n  document.body.appendChild(clone);\n</script>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "accessibility-advanced",
+      "title": "2. Accessibility Lanjutan",
+      "description": "Membuat website yang benar-benar inklusif",
+      "contentDetails": [
+        {
+          "id": "aria-landmarks",
+          "title": "ARIA Landmarks",
+          "explanation": "WAI-ARIA (Web Accessibility Initiative – Accessible Rich Internet Applications) adalah spesifikasi yang memperkaya HTML dengan atribut untuk meningkatkan aksesibilitas, terutama untuk konten dinamis atau interaktif yang tidak memiliki elemen semantik bawaan.\n\nARIA Landmarks seperti role=\"banner\", role=\"navigation\", role=\"main\", role=\"complementary\", dan role=\"contentinfo\" memberikan peta struktural eksplisit untuk teknologi bantu. Meski HTML5 sudah menyediakan <header>, <nav>, <main>, dll., menambahkan role eksplisit memastikan kompatibilitas dengan screen reader lama.\n\nAtribut seperti aria-label memberikan label teks untuk elemen yang tidak memiliki teks terlihat (misalnya ikon hamburger menu). aria-labelledby menghubungkan elemen ke teks label yang sudah ada di halaman, sementara aria-describedby memberikan deskripsi tambahan.\n\nPenting: jangan gunakan ARIA jika HTML semantik sudah cukup. Aturan emasnya adalah \"Don’t use ARIA if you can use native HTML.\" ARIA adalah pelengkap, bukan pengganti.\n\nMenggunakan ARIA dengan bijak menunjukkan komitmen terhadap inklusivitas. Ini memastikan bahwa pengguna dengan disabilitas—baik tunanetra, tunarungu, atau gangguan motorik—dapat mengakses dan menggunakan website Anda dengan setara.",
+          "video": "",
+          "code": "<header role=\"banner\">...</header>\n<nav role=\"navigation\" aria-label=\"Primary\">...</nav>\n<main role=\"main\">...</main>\n<aside role=\"complementary\">...</aside>\n<footer role=\"contentinfo\">...</footer>",
+          "images": []
+        },
+        {
+          "id": "keyboard-navigation",
+          "title": "Keyboard Navigation",
+          "explanation": "Tidak semua pengguna bisa menggunakan mouse. Banyak pengguna disabilitas mengandalkan keyboard untuk menavigasi website—dengan tombol Tab, Enter, Space, dan panah. Website yang baik harus sepenuhnya dapat dioperasikan tanpa mouse.\n\nSecara default, hanya elemen interaktif seperti <a>, <button>, dan form input yang bisa difokuskan dengan Tab. Jika Anda membuat tombol dari <div> atau <span>, Anda harus menambahkan tabindex=\"0\" agar bisa difokuskan.\n\nNamun, hindari tabindex dengan nilai positif (misalnya tabindex=\"1\"), karena ini memaksa urutan fokus yang tidak alami dan membingungkan pengguna. Gunakan hanya tabindex=\"0\" (masuk ke urutan fokus alami) atau tabindex=\"-1\" (bisa difokuskan programatik, tapi tidak dengan Tab).\n\nUntuk komponen kompleks seperti dropdown, modal, atau carousel, Anda perlu mengelola fokus secara manual dengan JavaScript—misalnya, memindahkan fokus ke tombol pertama saat modal terbuka, dan menjebak fokus di dalam modal sampai ditutup.\n\nKeyboard navigation yang baik bukan hanya soal aksesibilitas—ini juga meningkatkan UX untuk semua pengguna. Banyak power user lebih suka keyboard karena lebih cepat. Dengan mendukung navigasi keyboard, Anda membuat website yang lebih efisien, inklusif, dan profesional.",
+          "video": "",
+          "code": "<button tabindex=\"0\">Fokus dengan Tab</button>\n<div tabindex=\"0\" role=\"button\" onclick=\"doSomething()\">Div sebagai tombol</div>",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "performance-html",
+      "title": "3. Performance Optimization",
+      "description": "Optimasi kecepatan dan efisiensi HTML",
+      "contentDetails": [
+        {
+          "id": "critical-rendering-path",
+          "title": "Critical Rendering Path",
+          "explanation": "Critical Rendering Path (CRP) adalah urutan langkah yang dilalui browser untuk mengubah HTML, CSS, dan JavaScript menjadi piksel di layar. Memahami CRP adalah kunci untuk membangun website yang cepat dan responsif.\n\nLangkah pertama adalah parsing HTML untuk membangun DOM. Jika browser menemukan <link rel=\"stylesheet\">, ia akan menghentikan parsing HTML sampai CSS dimuat dan diproses—karena CSS bersifat render-blocking. Oleh karena itu, letakkan CSS di <head> agar mulai dimuat sedini mungkin.\n\nJavaScript juga bisa menghentikan parsing HTML jika tidak ditangani dengan benar. Skrip tanpa atribut async atau defer akan memblokir parsing. Solusinya: gunakan defer untuk skrip yang perlu menunggu DOM siap, atau async untuk skrip independen seperti analytics.\n\nMinimalkan jumlah dan ukuran aset kritis. Gabungkan file CSS kecil, hapus CSS yang tidak digunakan (critical CSS only), dan tunda pemuatan JavaScript non-esensial. Setiap milidetik penghematan di CRP meningkatkan Core Web Vitals Anda.\n\nOptimasi CRP bukan hanya untuk kecepatan—ini juga untuk persepsi pengguna. Halaman yang mulai menampilkan konten dalam 1 detik terasa instan. Dengan mengoptimalkan CRP, Anda menciptakan pengalaman yang tidak hanya cepat, tapi juga memuaskan secara psikologis.",
+          "video": "",
+          "code": "<head>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <!-- Konten -->\n  <script src=\"script.js\" defer></script>\n</body>",
+          "images": []
+        },
+        {
+          "id": "preload-prefetch",
+          "title": "Resource Hints",
+          "explanation": "Resource Hints adalah mekanisme untuk memberi petunjuk kepada browser tentang aset yang akan dibutuhkan di masa depan, sehingga browser bisa memuatnya lebih awal dan meningkatkan performa.\n\n<link rel=\"preload\"> memberi tahu browser untuk memuat aset segera karena akan digunakan di halaman saat ini. Ini sangat berguna untuk font kritis, hero image, atau skrip penting yang tidak ditemukan oleh parser secara alami.\n\n<link rel=\"prefetch\"> memberi tahu browser untuk memuat aset di latar belakang karena kemungkinan besar akan dibutuhkan di halaman berikutnya. Ini ideal untuk pramuat halaman berikutnya dalam alur pengguna (misalnya halaman checkout setelah keranjang).\n\n<link rel=\"preconnect\"> mempersingkat waktu koneksi ke origin eksternal (seperti CDN atau API) dengan memulai handshake DNS, TCP, dan TLS lebih awal. Ini mengurangi latency untuk permintaan pertama ke domain tersebut.\n\nGunakan resource hints dengan bijak. Preload yang berlebihan bisa membanjiri bandwidth dan memperlambat pemuatan konten utama. Analisis kebutuhan aktual dengan tools seperti Lighthouse sebelum menerapkannya.\n\nDengan resource hints, Anda mengambil kendali atas cara browser mengambil aset—mengubah pengalaman dari reaktif menjadi proaktif. Ini adalah teknik tingkat lanjut yang digunakan oleh situs-situs performa tinggi seperti Google, Amazon, dan Netflix.",
+          "video": "",
+          "code": "<link rel=\"preload\" href=\"font.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>\n<link rel=\"prefetch\" href=\"next-page.html\">",
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "security-html",
+      "title": "4. Keamanan HTML",
+      "description": "Mencegah serangan umum di frontend",
+      "contentDetails": [
+        {
+          "id": "xss-prevention",
+          "title": "Mencegah XSS",
+          "explanation": "Cross-Site Scripting (XSS) adalah kerentanan keamanan di mana penyerang menyisipkan skrip berbahaya ke dalam halaman web yang dilihat pengguna lain. Ini bisa mencuri cookie sesi, mengalihkan ke situs phishing, atau bahkan mengambil alih akun pengguna.\n\nPenyebab utama XSS adalah memasukkan input pengguna langsung ke DOM menggunakan innerHTML, outerHTML, atau document.write(). Browser akan mengeksekusi semua skrip di dalam string tersebut—tanpa membedakan antara konten dan kode.\n\nSolusi utamanya adalah **jangan pernah mempercayai input pengguna**. Selalu perlakukan input sebagai teks biasa. Gunakan textContent alih-alih innerHTML untuk menampilkan data. Jika Anda harus menyisipkan HTML, pastikan untuk membersihkannya (sanitize) dengan library tepercaya seperti DOMPurify.\n\nJika Anda menggunakan template string untuk membangun HTML, pastikan untuk meng-escape karakter khusus (<, >, &, \", ') secara manual atau dengan fungsi helper. Lebih baik lagi, gunakan <template> dan manipulasi DOM yang aman.\n\nPencegahan XSS adalah tanggung jawab bersama antara frontend dan backend. Tapi sebagai developer frontend, Anda adalah garis pertahanan terakhir. Dengan praktik yang aman, Anda melindungi pengguna Anda dari ancaman yang sangat nyata di dunia web modern.",
+          "video": "",
+          "code": "// Aman\nel.textContent = userInput;\n// Berbahaya\nel.innerHTML = userInput;",
+          "images": []
+        },
+        {
+          "id": "csp-basics",
+          "title": "Content Security Policy (CSP)",
+          "explanation": "Content Security Policy (CSP) adalah lapisan keamanan tambahan yang membantu mendeteksi dan mencegah serangan XSS, data injection, dan eksekusi skrip tidak sah. CSP bekerja dengan membatasi sumber daya yang diizinkan untuk dimuat oleh halaman Anda.\n\nAnda bisa menerapkan CSP melalui header HTTP (lebih aman) atau meta tag di HTML. Kebijakan ini mendefinisikan daftar putih untuk berbagai jenis sumber daya: script-src, style-src, img-src, font-src, dll.\n\nMisalnya, script-src 'self' https://trusted.cdn.com hanya mengizinkan skrip dari domain Anda sendiri dan CDN tepercaya. Skrip inline (seperti <script>alert()</script>) atau dari domain lain akan diblokir—menghentikan banyak vektor serangan XSS.\n\nCSP juga mendukung mode 'report-only', di mana pelanggaran dilaporkan ke endpoint Anda tanpa memblokir eksekusi. Ini memungkinkan Anda menguji kebijakan sebelum menerapkannya secara penuh.\n\nMenerapkan CSP membutuhkan perencanaan, karena bisa memecahkan fungsionalitas jika tidak dikonfigurasi dengan benar. Tapi manfaatnya sangat besar: CSP adalah salah satu alat paling efektif untuk mengamankan aplikasi web modern terhadap serangan klien-sisi.",
+          "video": "",
+          "code": "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' https://trusted.cdn.com\">",
+          "images": []
+        }
+      ]
+    }
+  ]
+}
 
 
 ]

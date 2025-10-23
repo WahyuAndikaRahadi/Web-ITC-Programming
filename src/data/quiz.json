@@ -519,76 +519,266 @@
     }
   ]
 },
-  {
-    "id": "quiz-html-advanced",
-    "title": "Quiz HTML Advanced",
-    "topic": "HTML",
-    "description": "Uji pemahaman lanjutan: Web Components, accessibility, dan performance.",
-    "locked": true,
-    "requiredMaterials": ["html-advanced"],
-    "questions": [
-      {
-        "id": "q1",
-        "question": "Apa tujuan utama dari Shadow DOM dalam Web Components?",
-        "options": [
-          "Meningkatkan kecepatan rendering",
-          "Mengisolasi styling dan markup komponen dari dokumen utama",
-          "Mengganti JavaScript dengan HTML",
-          "Mengenkripsi konten halaman"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Shadow DOM mengisolasi CSS dan DOM internal komponen agar tidak terpengaruh oleh gaya global."
-      },
-      {
-        "id": "q2",
-        "question": "Atribut ARIA apa yang digunakan untuk memberi label pada elemen non-semantik seperti <div>?",
-        "options": [
-          "aria-id",
-          "aria-label",
-          "aria-title",
-          "aria-describe"
-        ],
-        "correctAnswer": 1,
-        "explanation": "aria-label memberikan label aksesibel pada elemen yang tidak memiliki teks terlihat."
-      },
-      {
-        "id": "q3",
-        "question": "Apa fungsi dari <link rel=\"preload\">?",
-        "options": [
-          "Memuat halaman berikutnya secara otomatis",
-          "Menghindari XSS",
-          "Memberi tahu browser untuk memuat sumber daya penting lebih awal",
-          "Mengganti favicon"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Preload memerintahkan browser untuk memuat aset kritis (seperti font atau CSS) lebih awal untuk meningkatkan performa."
-      },
-      {
-        "id": "q4",
-        "question": "Mana yang BUKAN cara mencegah serangan XSS di frontend?",
-        "options": [
-          "Gunakan textContent alih-alih innerHTML",
-          "Validasi input di sisi server",
-          "Gunakan innerHTML dengan data pengguna langsung",
-          "Terapkan Content Security Policy (CSP)"
-        ],
-        "correctAnswer": 2,
-        "explanation": "Menggunakan innerHTML dengan input pengguna mentah sangat berbahaya dan bisa menyebabkan XSS."
-      },
-      {
-        "id": "q5",
-        "question": "Tag <template> digunakan untuk?",
-        "options": [
-          "Membuat halaman default",
-          "Menyimpan markup yang tidak dirender sampai dibutuhkan",
-          "Mengganti fungsi JavaScript",
-          "Mengatur tema warna"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Tag <template> menyimpan konten HTML yang disembunyikan dan hanya dirender saat dikloning via JavaScript."
-      }
-    ]
-  },
+{
+  "id": "quiz-html-advanced-web-components-a11y",
+  "title": "Quiz: Web Components & Aksesibilitas Lanjutan",
+  "topic": "HTML Advanced",
+  "description": "Uji pemahaman Anda tentang Web Components, Shadow DOM, ARIA, dan navigasi keyboard.",
+  "locked": false,
+  "requiredMaterials": ["html-advanced"],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Apa tujuan utama dari Shadow DOM dalam Web Components?",
+      "options": [
+        "Mempercepat rendering halaman",
+        "Mengenkapsulasi styling dan markup agar tidak bentrok dengan dokumen utama",
+        "Mengganti fungsi JavaScript",
+        "Menghubungkan ke API eksternal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Shadow DOM mengisolasi CSS dan HTML komponen dari dokumen utama, mencegah kebocoran gaya dan konflik—kunci enkapsulasi dalam Web Components."
+    },
+    {
+      "id": "q2",
+      "question": "Bagaimana cara mendaftarkan Custom Element di browser?",
+      "options": [
+        "document.createElement('my-element')",
+        "HTMLElement.define('my-element', MyElementClass)",
+        "customElements.define('my-element', MyElementClass)",
+        "new CustomElement('my-element')"
+      ],
+      "correctAnswer": 2,
+      "explanation": "customElements.define() adalah API standar untuk mendaftarkan Custom Element dengan nama dan kelas yang telah dibuat."
+    },
+    {
+      "id": "q3",
+      "question": "Apa fungsi elemen <template> dalam HTML?",
+      "options": [
+        "Menyimpan markup yang tidak dirender sampai diklon",
+        "Mengganti fungsi <div> di HTML5",
+        "Menyediakan template email",
+        "Membuat komponen React"
+      ],
+      "correctAnswer": 0,
+      "explanation": "<template> menyimpan fragmen HTML yang tidak aktif saat halaman dimuat—ideal untuk kloning dinamis tanpa manipulasi string berisiko."
+    },
+    {
+      "id": "q4",
+      "question": "Atribut ARIA apa yang digunakan untuk memberi label teks pada elemen tanpa teks terlihat?",
+      "options": [
+        "aria-hidden",
+        "aria-label",
+        "role=\"text\"",
+        "alt"
+      ],
+      "correctAnswer": 1,
+      "explanation": "aria-label memberikan label deskriptif untuk elemen seperti ikon tombol, yang penting untuk screen reader meski tidak terlihat pengguna."
+    },
+    {
+      "id": "q5",
+      "question": "Apa nilai tabindex yang benar untuk membuat elemen bisa difokuskan dalam urutan tab alami?",
+      "options": [
+        "tabindex=\"1\"",
+        "tabindex=\"-1\"",
+        "tabindex=\"0\"",
+        "tabindex=\"true\""
+      ],
+      "correctAnswer": 2,
+      "explanation": "tabindex=\"0\" memasukkan elemen ke urutan fokus alami (berdasarkan posisi DOM), sedangkan tabindex positif memaksa urutan—sebaiknya dihindari."
+    },
+    {
+      "id": "q6",
+      "question": "Apa yang terjadi jika Anda menggunakan innerHTML dengan input pengguna tanpa sanitasi?",
+      "options": [
+        "Tidak ada efek",
+        "Performa meningkat",
+        "Berisiko terkena serangan XSS",
+        "Browser otomatis memblokirnya"
+      ],
+      "correctAnswer": 2,
+      "explanation": "innerHTML mengeksekusi semua skrip dalam string—jika input pengguna mengandung <script>, itu akan dijalankan, membuka celah XSS."
+    },
+    {
+      "id": "q7",
+      "question": "Apa peran slot dalam Shadow DOM?",
+      "options": [
+        "Menyimpan data sementara",
+        "Memungkinkan konten dari luar disisipkan ke dalam komponen",
+        "Mengganti fungsi <template>",
+        "Mengatur animasi"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<slot> adalah placeholder di Shadow DOM tempat konten light DOM (dari luar komponen) ditampilkan—memungkinkan komposisi fleksibel."
+    },
+    {
+      "id": "q8",
+      "question": "Prinsip utama dalam penggunaan ARIA adalah?",
+      "options": [
+        "Selalu gunakan ARIA untuk semua elemen",
+        "Gunakan ARIA hanya jika tidak ada elemen HTML semantik yang sesuai",
+        "ARIA menggantikan HTML semantik",
+        "ARIA hanya untuk mobile"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Aturan emas: 'Don’t use ARIA if you can use native HTML.' HTML semantik (seperti <button>) sudah aksesibel—ARIA hanya pelengkap."
+    },
+    {
+      "id": "q9",
+      "question": "Apa mode Shadow DOM yang memungkinkan akses dari luar melalui JavaScript?",
+      "options": [
+        "closed",
+        "open",
+        "public",
+        "visible"
+      ],
+      "correctAnswer": 1,
+      "explanation": "mode: 'open' memungkinkan akses ke Shadow DOM melalui element.shadowRoot, berguna untuk debugging dan integrasi."
+    },
+    {
+      "id": "q10",
+      "question": "Mengapa navigasi keyboard penting dalam pengembangan web?",
+      "options": [
+        "Hanya untuk developer",
+        "Agar website terlihat modern",
+        "Untuk mendukung pengguna disabilitas dan power user",
+        "Untuk meningkatkan SEO"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Banyak pengguna disabilitas mengandalkan keyboard. Navigasi keyboard yang baik juga meningkatkan UX untuk semua pengguna—termasuk power user."
+    }
+  ]
+},
+{
+  "id": "quiz-html-advanced-performance-security",
+  "title": "Quiz: Performa, Keamanan & Best Practices HTML",
+  "topic": "HTML Advanced",
+  "description": "Uji pemahaman Anda tentang optimasi performa, CSP, XSS, dan resource hints.",
+  "locked": false,
+  "requiredMaterials": ["html-advanced"],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Apa yang dimaksud dengan Critical Rendering Path (CRP)?",
+      "options": [
+        "Jalur data dari server ke browser",
+        "Urutan langkah browser untuk merender halaman dari HTML, CSS, dan JS",
+        "Proses enkripsi data",
+        "Alur kerja Git"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CRP adalah proses browser mengubah kode menjadi piksel—memahaminya kunci untuk membangun website yang cepat dan responsif."
+    },
+    {
+      "id": "q2",
+      "question": "Atribut apa yang membuat skrip tidak memblokir parsing HTML?",
+      "options": [
+        "async atau defer",
+        "load=\"lazy\"",
+        "type=\"module\"",
+        "run=\"background\""
+      ],
+      "correctAnswer": 0,
+      "explanation": "async menjalankan skrip segera setelah dimuat (tanpa urutan), defer menunggu DOM siap lalu jalankan—keduanya tidak memblokir parsing."
+    },
+    {
+      "id": "q3",
+      "question": "Apa fungsi <link rel=\"preload\">?",
+      "options": [
+        "Memuat halaman berikutnya di latar belakang",
+        "Memberi tahu browser untuk memuat aset segera karena akan digunakan di halaman ini",
+        "Mengganti fungsi <img>",
+        "Mengaktifkan mode gelap"
+      ],
+      "correctAnswer": 1,
+      "explanation": "preload memprioritaskan pemuatan aset kritis (font, hero image) yang mungkin tidak terdeteksi parser—meningkatkan kecepatan tampil awal."
+    },
+    {
+      "id": "q4",
+      "question": "Apa cara paling aman untuk menampilkan input pengguna di halaman?",
+      "options": [
+        "innerHTML",
+        "outerHTML",
+        "textContent",
+        "document.write()"
+      ],
+      "correctAnswer": 2,
+      "explanation": "textContent memperlakukan input sebagai teks biasa—tidak mengeksekusi skrip, sehingga mencegah XSS."
+    },
+    {
+      "id": "q5",
+      "question": "Apa tujuan utama Content Security Policy (CSP)?",
+      "options": [
+        "Mempercepat loading gambar",
+        "Membatasi sumber daya yang diizinkan untuk mencegah XSS dan serangan injeksi",
+        "Mengganti fungsi HTTPS",
+        "Mengoptimalkan SEO"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CSP mendefinisikan daftar putih untuk skrip, gaya, gambar, dll.—memblokir eksekusi dari sumber tidak tepercaya, termasuk skrip inline berbahaya."
+    },
+    {
+      "id": "q6",
+      "question": "Di mana sebaiknya meletakkan CSS untuk optimasi CRP?",
+      "options": [
+        "Di akhir <body>",
+        "Di dalam <script>",
+        "Di <head>",
+        "Di file terpisah tanpa link"
+      ],
+      "correctAnswer": 2,
+      "explanation": "CSS di <head> memungkinkan browser mulai memuat dan memprosesnya sedini mungkin—meski render-blocking, ini diperlukan untuk tampilan yang benar."
+    },
+    {
+      "id": "q7",
+      "question": "Apa perbedaan antara rel=\"preload\" dan rel=\"prefetch\"?",
+      "options": [
+        "Tidak ada perbedaan",
+        "preload untuk halaman saat ini, prefetch untuk halaman berikutnya",
+        "prefetch lebih cepat dari preload",
+        "preload hanya untuk gambar"
+      ],
+      "correctAnswer": 1,
+      "explanation": "preload = 'saya butuh ini sekarang', prefetch = 'saya mungkin butuh ini nanti'—strategi berbeda untuk kebutuhan berbeda."
+    },
+    {
+      "id": "q8",
+      "question": "Apa yang harus dilakukan jika Anda harus menyisipkan HTML dari input pengguna?",
+      "options": [
+        "Langsung gunakan innerHTML",
+        "Hapus semua tag HTML",
+        "Gunakan library sanitasi seperti DOMPurify",
+        "Konversi ke base64"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DOMPurify membersihkan HTML berbahaya (seperti <script>) sambil mempertahankan konten aman—solusi terbaik untuk menampilkan HTML dinamis."
+    },
+    {
+      "id": "q9",
+      "question": "Apa keuntungan menggunakan <template> daripada membangun string HTML dengan JavaScript?",
+      "options": [
+        "Lebih cepat dieksekusi",
+        "Mengurangi risiko XSS dan kesalahan sintaks",
+        "Mengurangi ukuran file",
+        "Tidak memerlukan JavaScript"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Markup di <template> divalidasi oleh parser HTML—menghindari kesalahan penulisan dan mencegah XSS karena tidak menggunakan string mentah."
+    },
+    {
+      "id": "q10",
+      "question": "Apa yang dilakukan <link rel=\"preconnect\">?",
+      "options": [
+        "Memuat seluruh situs eksternal",
+        "Memulai koneksi awal ke origin eksternal (DNS, TCP, TLS)",
+        "Mengganti fungsi fetch()",
+        "Mengaktifkan WebSocket"
+      ],
+      "correctAnswer": 1,
+      "explanation": "preconnect mengurangi latency untuk permintaan pertama ke domain eksternal (seperti CDN) dengan memulai handshake jaringan lebih awal."
+    }
+  ]
+},
   {
     "id": "quiz-css-dasar",
     "title": "Quiz CSS Dasar",
